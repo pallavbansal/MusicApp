@@ -611,3 +611,14 @@ border-radius: 0.25rem;
    
     transform: translateX(2px);
 }
+
+.vranger {
+  display: none;
+  height: 30px !important;
+  margin-bottom: 170px;
+  margin-right: 15px;
+  overflow: visible;
+  transform: rotate(270deg);
+ 
+   /*do same for other browsers if required*/
+}
