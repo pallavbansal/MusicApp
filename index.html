@@ -606,17 +606,23 @@
                   </div>
                 </div>
               </div>
+
+              <!-- <div class="range-div">
+                <i class="fas fa-volume-down" aria-hidden="true" style=""></i>
+                    <input type="range" class="vranger"/>
+              </div> -->
                             
               <div class="p-2">
-                 <div class="container">
+                <div class="container" style="position: relative;">
                 <div class="range-div">
-                    <input type="range" class="vranger"/>
+                  <i class="fas fa-volume-down" aria-hidden="true" style=""></i>
+                  <input type="range" class="vranger"/>
                 </div>
                 <div class="button button-lg" onclick="volumeclick()">
                   <i class="fas fa-volume-up" aria-hidden="true" style=""></i>
                   <span class="sr-only">Volume Up</span>
                 </div>
-                </div>
+              </div>
                 <!-- <div class="button button-lg" onclick="volumeclick()">
                   <i class="fas fa-volume-up" aria-hidden="true" style=""></i>
                   <span class="sr-only">Volume Up</span>
@@ -691,7 +697,9 @@ $(document).ready(function(){
 });
 
 function volumeclick() {
- $(".vranger").show();
+ 
+  $(".range-div").show();
+
 }
 
 </script>
