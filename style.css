@@ -25,6 +25,11 @@ a {
     color: #000;
 
 }
+ol li{
+  list-style-type: none;
+  line-height: 30px;
+  
+}
 
 .tab{
     font-size: 20px;
@@ -175,11 +180,15 @@ a {
 .button-lg {
     width: 3.25rem;
     height: 3.25rem;
+}
+.button-pause {
+    width: 3.25rem;
+    height: 3.25rem;
     background-color: #42ddf5;
    
 }
 .button {
-    color: white;
+    color: #000;
     border-radius: 50%;
     margin: 10px 3px;
     display: flex;
@@ -188,17 +197,16 @@ a {
    
 }
 
-.button-sm {
+/*.button-sm {
     width: 2rem;
     height: 2rem;
     opacity: 0.75;
 }
-
 .button-md {
     width: 2.5rem;
     height: 2.5rem;
     opacity: 0.85;
-}
+}*/
 
 
 .bar {
@@ -247,6 +255,22 @@ a {
   font-size: 36px;
   margin-left: 50px;
 }
+.sidebar div a {
+    color: #000;
+    border-bottom: 1px solid #cfd4d1;
+    width: 70%;
+    margin-left: 40px;
+}
+.footer {
+
+    width:100%;
+    position:absolute;
+    bottom:50px;
+}
+.right{
+    margin-top: 25px;
+}
+
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
   border-bottom: 3px solid #fff;
   font-size: 15px;
@@ -322,6 +346,7 @@ a {
     font-weight: 500;
     font-size: 16px;
     transition: 0.8s;
+    color: #fff;
 
 }
 
@@ -345,6 +370,7 @@ a {
 
 .channel-img{
    border: none;
+   border-radius: 30%;
 }
 .text-block{
         
@@ -382,9 +408,10 @@ a {
     object-fit: cover;
 }
  
- input::placeholder {
-  color: #fff;
+input::placeholder {
+  color: #000;
 }
+
 
 .slider_container {
   width: 75%;
@@ -562,7 +589,7 @@ border-radius: 0.25rem;
   top:0px;
   left:0px;
   font-size:16px;
-  color:#fff; 
+  color:#000; 
   pointer-event:none;
   transition: all 0.5s ease-in-out;
 }
@@ -573,7 +600,7 @@ border-radius: 0.25rem;
   width:100%;
   padding:8px 0 5px 0;
   font-size:16px;
-  color:#fff;
+  color:#000;
 }
 .input{ 
   border:0;
@@ -612,16 +639,122 @@ border-radius: 0.25rem;
     transform: translateX(2px);
 }
 
-.vranger {
-  /*display: none;*/
-  height: 10px !important;
-  /*margin-bottom: 170px;
-  margin-right: 15px;*/
-  overflow: visible;
-  transform: rotate(270deg);
- 
-   /*do same for other browsers if required*/
+
+
+
+.likepopup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
-.range-div{
-  display: none;
+
+
+ /*The actual popup */
+.likepopup .likepopuptext {
+    visibility: hidden;
+    width: 40px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 105%;
+    left: 50%;
+    margin-left: -18px;
+}
+
+
+.likepopup .likepopuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.likepopup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+ 
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+.volumepopup {
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+ 
+/*------------------------ Volume Button CSS Starts Here-----------------------*/
+
+#range {
+    -webkit-appearance: slider-vertical;
+    width: 20px;
+    height: 100px;
+}
+
+ .volumepopup .volumepopuptext {
+    visibility: hidden;
+    width: 40px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 81%;
+    left: 50%;
+    margin-left: -20px;
+}
+
+
+.volumepopup .volumepopuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.volumepopup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+ 
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
 }
