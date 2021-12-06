@@ -219,7 +219,7 @@ ol li{
 .button {
     color: #000;
     border-radius: 50%;
-    margin: 10px 3px;
+    margin: 10px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
