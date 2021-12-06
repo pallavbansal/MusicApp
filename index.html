@@ -14,440 +14,452 @@
 <body>
   <main class="player" >
 
-        <div class="row">
-          <div class="col-md-12 text-center">
-             <h4>BMO</h4>
+    <div class="row">
+      <div class="col-md-12 text-center">
+       <h4>BMO</h4>
+     </div>
+   </div>
+
+   <div class="container">
+    <div class="row" style="margin-left: 0px;">
+      <a href="#" class="tab" onclick="openNav()" style="color:#fff">
+        <i class="fas fa-bars" aria-hidden="true"></i>
+        <span class="sr-only">menu bar</span>
+      </a>
+      <div class="search-container">
+        <input type="text" name="search" placeholder="Search..." class="search-input" onclick="window.open('blank_page.html','_self')" style="color:#fff !important">
+        <a href="#" class="search-btn">
+          <i class="fas fa-search"></i>      
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="sidebar">
+      <div class="row">
+       <a href="#">About</a>
+       <i class="fas fa-angle-right right"></i>
+     </div>
+     <div class="row">
+       <a href="#">Services</a>
+       <i class="fas fa-angle-right right"></i>
+     </div>
+     <div class="row">
+       <a href="#">Clients</a>
+       <i class="fas fa-angle-right right"></i>
+     </div>
+     <div class="row">
+       <a href="#">Contact</a>
+       <i class="fas fa-angle-right right"></i>
+     </div>
+     <div class="row">
+       <a href="login.html">Login</a>
+       <i class="fas fa-angle-right right"></i>
+     </div>
+   </div>
+   <div class="footer">
+    <div class="container ml-2">
+      <ul style="list-style:none">
+        <li>All rights reserved 2021</li>
+        <li>BMO Media Solutions Ltd.</li>
+        <li>RC Version 1.1</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div style="background: #fff;">
+  <ul class="nav nav-tabs nav-justified" role="tablist" style="margin-top:10px;background: #42ddf5;">
+    <li class="nav-item">
+      <a class="nav-link active" id="custom-tabs-four-home-tab" data-toggle="pill" href="#custom-tabs-four-home" role="tab" aria-controls="custom-tabs-four-home" aria-selected="true" style="font-size:12px; font-weight: normal;">Now playing</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="custom-tabs-four-profile-tab" data-toggle="pill" href="#custom-tabs-four-profile" role="tab" aria-controls="custom-tabs-four-profile" aria-selected="false" style="font-size:12px; font-weight: normal;">Channels</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="custom-tabs-four-messages-tab" data-toggle="pill" href="#custom-tabs-four-messages" role="tab" aria-controls="custom-tabs-four-messages" aria-selected="false" style="font-size:12px; font-weight: normal;">Schedule <i class="fa fa-circle" style="font-size: 8px;color:green"></i></a>
+    </li>
+  </ul>
+  <div class="card card-primary card-outline card-outline-tabs"> 
+    <div class="tab-content" id="custom-tabs-four-tabContent">
+
+      <div class="tab-pane fade show active" id="custom-tabs-four-home" role="tabpanel" aria-labelledby="custom-tabs-four-home-tab">
+       <div class="container" style="padding: 4%">
+        <div class="card img-fluid" style="border-radius: 6%;">
+          <img class="card-img-top" src="images/singer/9.jpg" alt="Card image" style="height: 300px; border-radius: 6%;">
+          <div class="card-img-overlay">
+            <h4 class="card-title text-center text-white">Chilled Bits <i class="fas fa-angle-down"></i></h4>
+          </div>
+          <div class="card-overlay-bottom">
+            <div class="container-fluid" style="border: 1px solid gray; padding-top: 5px;" >
+              <div class="row">
+                <div class="col">
+                  <p style="color: #f2e687;margin-bottom: 0rem;">next song:</p>
+                  <p style="color: white;margin-bottom: 0rem;">Viexe farka tour</p>
+                  <p style="color: white;margin-bottom: 0rem;">Its Alright</p>
+                </div>
+                <div class="col">
+                  <img src="images/singer/1.jpg" class="float-right rounded" width="50" height="60">
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        
-        <div class="container">
-            <div class="row" style="margin-left: 0px;">
-                  <a href="#" class="tab" onclick="openNav()" style="color:#fff">
-                    <i class="fas fa-bars" aria-hidden="true"></i>
-                    <span class="sr-only">menu bar</span>
-                  </a>
-                <div class="search-container">
-                  <input type="text" name="search" placeholder="Search..." class="search-input" onclick="window.open('blank_page.html','_self')" style="color:#fff !important">
-                  <a href="#" class="search-btn">
-                      <i class="fas fa-search"></i>      
-                  </a>
-                </div>
+      </div>
+    </div>
+
+    <div class="tab-pane fade" id="custom-tabs-four-profile" role="tabpanel" aria-labelledby="custom-tabs-four-profile-tab">
+      <!--------------List of channels---------------------->
+      <div class="container-fluid" style="height: 350px; overflow-y: auto; scrollbar-width: none;margin-top: 10px;" id="album-list">
+        <div class="row">
+          <div class="col">
+
+            <img class="card-img" src="images/singer/7.jpg" alt="Card image" style="border-radius: 10px;">
+            <div class="card-img-overlay">
+              <a href="#" style="color:white"><i class="fas fa-play"></i></a>
             </div>
+
+            <p class="text-center"><b>DJ Khalid</b></p>
+          </div>
+          <div class="col">
+            <div class="card channel-img">
+              <img class="card-img" src="images/singer/2.jpg" alt="Card image" style="border-radius: 10px;">
+              <div class="card-img-overlay">
+                <a href="#" style="color:white"><i class="fas fa-play"></i></a>
+              </div>
+            </div>
+            <p class="text-center"><b>Watson Shane</b></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="card channel-img">
+              <img class="card-img" src="images/singer/3.jpg" alt="Card image" style="border-radius: 10px;">
+              <div class="card-img-overlay">
+                <a href="#" style="color:white"><i class="fas fa-play"></i></a>
+              </div>
+            </div>
+            <p class="text-center"><b>Emma Bantai</b></p>
+          </div>
+          <div class="col">
+            <div class="card channel-img">
+              <img class="card-img" src="images/singer/4.jpg" alt="Card image" style="border-radius: 10px;">
+              <div class="card-img-overlay">
+                <a href="#" style="color:white"><i class="fas fa-play"></i></a>
+              </div>
+            </div>
+            <p class="text-center"><b>Zyan Malik</b></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="card channel-img">
+              <img class="card-img" src="images/singer/5.jpg" alt="Card image" style="border-radius: 10px;">
+              <div class="card-img-overlay">
+                <a href="#" style="color:white"><i class="fas fa-play"></i></a>
+              </div>
+            </div>
+            <p class="text-center"><b>ED Sheren</b></p>
+          </div>
+          <div class="col">
+            <div class="card channel-img">
+              <img class="card-img" src="images/singer/6.jpg" alt="Card image" style="border-radius: 10px;">
+              <div class="card-img-overlay">
+                <a href="#" style="color:white"><i class="fas fa-play"></i></a>
+              </div>
+            </div>
+            <p class="text-center"><b>DJ Khalid</b></p>
+          </div>
         </div>
 
-        <div id="mySidenav" class="sidenav">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <div class="sidebar">
-              <div class="row">
-               <a href="#">About</a>
-               <i class="fas fa-angle-right right"></i>
+        <div class="row">
+          <div class="col">
+            <div class="card channel-img">
+              <img class="card-img" src="images/singer/5.jpg" alt="Card image" style="border-radius: 10px;">
+              <div class="card-img-overlay">
+                <a href="#" style="color:white"><i class="fas fa-play"></i></a>
               </div>
-              <div class="row">
-               <a href="#">Services</a>
-               <i class="fas fa-angle-right right"></i>
+            </div>
+            <p class="text-center"><b>ED Sheren</b></p>
+          </div>
+          <div class="col">
+            <div class="card channel-img">
+              <img class="card-img" src="images/singer/6.jpg" alt="Card image" style="border-radius: 10px;">
+              <div class="card-img-overlay">
+                <a href="#" style="color:white"><i class="fas fa-play"></i></a>
               </div>
-              <div class="row">
-               <a href="#">Clients</a>
-               <i class="fas fa-angle-right right"></i>
+            </div>
+            <p class="text-center"><b>DJ Khalid</b></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="card channel-img">
+              <img class="card-img" src="images/singer/5.jpg" alt="Card image" style="border-radius: 10px;">
+              <div class="card-img-overlay">
+                <a href="#" style="color:white"><i class="fas fa-play"></i></a>
               </div>
-              <div class="row">
-               <a href="#">Contact</a>
-               <i class="fas fa-angle-right right"></i>
+            </div>
+            <p class="text-center"><b>ED Sheren</b></p>
+          </div>
+          <div class="col">
+            <div class="card channel-img">
+              <img class="card-img" src="images/singer/6.jpg" alt="Card image" style="border-radius: 10px;">
+              <div class="card-img-overlay">
+                <a href="#" style="color:white"><i class="fas fa-play"></i></a>
               </div>
-              <div class="row">
-               <a href="login.html">Login</a>
-               <i class="fas fa-angle-right right"></i>
-              </div>
-           </div>
-           <div class="footer">
-              <div class="container" style="margin-left: 50px;">
-                <ul style="list-style:none">
-                  <li>All rights reserved 2021</li>
-                  <li>BMO Media Solutions Ltd.</li>
-                  <li>RC Version 1.1</li>
-                </ul>
-              </div>
-           </div>
+            </div>
+            <p class="text-center"><b>DJ Khalid</b></p>
+          </div>
         </div>
 
-        <div style="background: #fff;">
-            <ul class="nav nav-tabs nav-justified" role="tablist" style="margin-top:10px;background: #42ddf5;">
-              <li class="nav-item">
-                <a class="nav-link active" id="custom-tabs-four-home-tab" data-toggle="pill" href="#custom-tabs-four-home" role="tab" aria-controls="custom-tabs-four-home" aria-selected="true" style="font-size:12px; font-weight: normal;">Now playing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" id="custom-tabs-four-profile-tab" data-toggle="pill" href="#custom-tabs-four-profile" role="tab" aria-controls="custom-tabs-four-profile" aria-selected="false" style="font-size:12px; font-weight: normal;">Channels</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" id="custom-tabs-four-messages-tab" data-toggle="pill" href="#custom-tabs-four-messages" role="tab" aria-controls="custom-tabs-four-messages" aria-selected="false" style="font-size:12px; font-weight: normal;">Schedule <i class="fa fa-circle" style="font-size: 8px;color:green"></i></a>
-              </li>
-            </ul>
-            <div class="card card-primary card-outline card-outline-tabs"> 
-              <div class="tab-content" id="custom-tabs-four-tabContent">
+      </div>
+      <!--------------List of channels---------------------->
 
-                <div class="tab-pane fade show active" id="custom-tabs-four-home" role="tabpanel" aria-labelledby="custom-tabs-four-home-tab">
-                 <div class="container" style="padding: 4%">
-                  <div class="card img-fluid" style="border-radius: 6%;">
-                    <img class="card-img-top" src="images/singer/9.jpg" alt="Card image" style="height: 300px; border-radius: 6%;">
-                    <div class="card-img-overlay">
-                      <h4 class="card-title text-center text-white">Chilled Bits <i class="fas fa-angle-down"></i></h4>
-                    </div>
-                    <div class="card-overlay-bottom">
-                      <div class="container-fluid" style="border: 1px solid gray; padding-top: 5px;" >
-                        <div class="row">
-                          <div class="col">
-                            <p style="color: #f2e687;margin-bottom: 0rem;">next song:</p>
-                            <p style="color: white;margin-bottom: 0rem;">Viexe farka tour</p>
-                            <p style="color: white;margin-bottom: 0rem;">Its Alright</p>
-                          </div>
-                          <div class="col">
-                            <img src="images/singer/1.jpg" class="float-right rounded" width="50" height="60">
-                          </div>
-                        </div>
-                      </div>
+      <!--------------Songs list to be displayed on click channel---------------------->
+
+      <div style="height:350px;display: none;" id="song-list">
+        <div class="container-fluid p-2">
+          <div class="row">
+            <div class="col-1"><i aria-hidden="true" class="fas fa-angle-left"></i></div>
+            <div class="col-10 text-center">Chilled Bits</div>
+          </div>
+        </div>
+        <table class="table">
+          <tbody>
+            <tr>
+              <th width="5%">
+                <img src="images/singer/7.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
+              </th>
+              <td width="35%">
+                <div style="line-height: 4px;margin-top:15px">
+                  <p>Dusk Till Down</p>
+                  <p>Views</p>
+                </div>
+              </td>
+
+              <td width="5%">
+                <div class="song-duration">
+                  <i class='fas fa-heart'></i>
+                </div>
+              </td>
+              <td width="5%">
+                <div class="popup" onclick="song1()"><i class='fas fa-ellipsis-v'></i>
+                  <div class="popuptext"  id="song1">
+                    <ul style="list-style-type:none;">
+                      <li>
+                        <a href="">
+                          <i class="fas fa-ban fa-sm" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li> 
+                        <a href="">
+                          <i class="fas fa-step-forward"></i>
+                        </a>
+                        <li>
+                          <a href="">
+                            <i class="fas fa-step-forward"></i>
+                          </a>
+                        </li>
+                      </ul>
                     </div>
                   </div>
-                </div>
-               </div>
+                </td>
+              </tr>
+              <tr>
+                <th width="5%">
+                  <img src="images/singer/2.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
+                </th>
+                <td width="35%">
+                  <div style="line-height: 4px;margin-top:15px">
+                    <p>Machayege</p>
+                    <p>Views</p>
+                  </div>
+                </td>
 
-                <div class="tab-pane fade" id="custom-tabs-four-profile" role="tabpanel" aria-labelledby="custom-tabs-four-profile-tab">
-
-                    <div class="container-fluid" style="height: 350px; overflow-y: auto; scrollbar-width: none;margin-top: 10px;" id="album-list">
-                      <div class="row">
-                        <div class="col">
-                          
-                            <img class="card-img" src="images/singer/7.jpg" alt="Card image" style="border-radius: 10px;">
-                            <div class="card-img-overlay">
-                              <a href="#" style="color:white"><i class="fas fa-play"></i></a>
-                            </div>
-                        
-                          <p class="text-center"><b>DJ Khalid</b></p>
-                        </div>
-                        <div class="col">
-                          <div class="card channel-img">
-                            <img class="card-img" src="images/singer/2.jpg" alt="Card image" style="border-radius: 10px;">
-                            <div class="card-img-overlay">
-                              <a href="#" style="color:white"><i class="fas fa-play"></i></a>
-                            </div>
-                          </div>
-                          <p class="text-center"><b>Watson Shane</b></p>
-                        </div>
+                <td width="5%">
+                  <div class="song-duration">
+                    <i class='fas fa-heart'></i>
+                  </div>
+                </td>
+                <td width="5%">
+                  <div class="popup" onclick="song2()"><i class='fas fa-ellipsis-v'></i>
+                    <div class="popuptext"  id="song2">
+                      <ul style="list-style-type:none;">
+                        <li>
+                          <a href="">
+                            <i class="fas fa-ban fa-sm" aria-hidden="true"></i>
+                          </a>
+                        </li>
+                        <li> 
+                          <a href="">
+                            <i class="fas fa-step-forward"></i>
+                          </a>
+                          <li>
+                            <a href="">
+                              <i class="fas fa-step-forward"></i>
+                            </a>
+                          </li>
+                        </ul>
                       </div>
-                      <div class="row">
-                        <div class="col">
-                          <div class="card channel-img">
-                            <img class="card-img" src="images/singer/3.jpg" alt="Card image" style="border-radius: 10px;">
-                            <div class="card-img-overlay">
-                              <a href="#" style="color:white"><i class="fas fa-play"></i></a>
-                            </div>
-                          </div>
-                          <p class="text-center"><b>Emma Bantai</b></p>
-                        </div>
-                        <div class="col">
-                          <div class="card channel-img">
-                            <img class="card-img" src="images/singer/4.jpg" alt="Card image" style="border-radius: 10px;">
-                            <div class="card-img-overlay">
-                              <a href="#" style="color:white"><i class="fas fa-play"></i></a>
-                            </div>
-                          </div>
-                          <p class="text-center"><b>Zyan Malik</b></p>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col">
-                          <div class="card channel-img">
-                            <img class="card-img" src="images/singer/5.jpg" alt="Card image" style="border-radius: 10px;">
-                            <div class="card-img-overlay">
-                              <a href="#" style="color:white"><i class="fas fa-play"></i></a>
-                            </div>
-                          </div>
-                          <p class="text-center"><b>ED Sheren</b></p>
-                        </div>
-                        <div class="col">
-                          <div class="card channel-img">
-                            <img class="card-img" src="images/singer/6.jpg" alt="Card image" style="border-radius: 10px;">
-                            <div class="card-img-overlay">
-                              <a href="#" style="color:white"><i class="fas fa-play"></i></a>
-                            </div>
-                          </div>
-                          <p class="text-center"><b>DJ Khalid</b></p>
-                        </div>
-                      </div>
-
-                      <div class="row">
-                        <div class="col">
-                          <div class="card channel-img">
-                            <img class="card-img" src="images/singer/5.jpg" alt="Card image" style="border-radius: 10px;">
-                            <div class="card-img-overlay">
-                              <a href="#" style="color:white"><i class="fas fa-play"></i></a>
-                            </div>
-                          </div>
-                          <p class="text-center"><b>ED Sheren</b></p>
-                        </div>
-                        <div class="col">
-                          <div class="card channel-img">
-                            <img class="card-img" src="images/singer/6.jpg" alt="Card image" style="border-radius: 10px;">
-                            <div class="card-img-overlay">
-                              <a href="#" style="color:white"><i class="fas fa-play"></i></a>
-                            </div>
-                          </div>
-                          <p class="text-center"><b>DJ Khalid</b></p>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col">
-                          <div class="card channel-img">
-                            <img class="card-img" src="images/singer/5.jpg" alt="Card image" style="border-radius: 10px;">
-                            <div class="card-img-overlay">
-                              <a href="#" style="color:white"><i class="fas fa-play"></i></a>
-                            </div>
-                          </div>
-                          <p class="text-center"><b>ED Sheren</b></p>
-                        </div>
-                        <div class="col">
-                          <div class="card channel-img">
-                            <img class="card-img" src="images/singer/6.jpg" alt="Card image" style="border-radius: 10px;">
-                            <div class="card-img-overlay">
-                              <a href="#" style="color:white"><i class="fas fa-play"></i></a>
-                            </div>
-                          </div>
-                          <p class="text-center"><b>DJ Khalid</b></p>
-                        </div>
-                      </div>
-
                     </div>
 
-                        <div style="height:350px;display: none;" id="song-list">
-                          <table class="table">
-                            <tbody>
-                              <tr>
-                                <th width="5%">
-                                  <img src="images/singer/7.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
-                                </th>
-                                <td width="35%">
-                                  <div style="line-height: 4px;margin-top:15px">
-                                    <p>Dusk Till Down</p>
-                                    <p>Views</p>
-                                  </div>
-                                </td>
+                  </td>
+                </tr>
 
-                                <td width="5%">
-                                <div class="song-duration">
-                                  <i class='fas fa-heart'></i>
-                                </div>
-                              </td>
-                              <td width="5%">
-                                <div class="popup" onclick="song1()"><i class='fas fa-ellipsis-v'></i>
-                                <div class="popuptext"  id="song1">
-                                  <ul style="list-style-type:none;">
-                                    <li>
-                                      <a href="">
-                                        <i class="fas fa-ban fa-sm" aria-hidden="true"></i>
-                                      </a>
-                                    </li>
-                                    <li> 
-                                      <a href="">
-                                        <i class="fas fa-step-forward"></i>
-                                      </a>
-                                      <li>
-                                        <a href="">
-                                          <i class="fas fa-step-forward"></i>
-                                        </a>
-                                      </li>
-                                    </ul>
-                                  </div>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <th width="5%">
-                                <img src="images/singer/2.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
-                              </th>
-                              <td width="35%">
-                                <div style="line-height: 4px;margin-top:15px">
-                                  <p>Machayege</p>
-                                  <p>Views</p>
-                                </div>
-                              </td>
-
-                              <td width="5%">
-                              <div class="song-duration">
-                                <i class='fas fa-heart'></i>
-                              </div>
-                            </td>
-                            <td width="5%">
-                              <div class="popup" onclick="song2()"><i class='fas fa-ellipsis-v'></i>
-                              <div class="popuptext"  id="song2">
-                                <ul style="list-style-type:none;">
-                                  <li>
-                                    <a href="">
-                                      <i class="fas fa-ban fa-sm" aria-hidden="true"></i>
-                                    </a>
-                                  </li>
-                                  <li> 
-                                    <a href="">
-                                      <i class="fas fa-step-forward"></i>
-                                    </a>
-                                    <li>
-                                      <a href="">
-                                        <i class="fas fa-step-forward"></i>
-                                      </a>
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                              
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <th width="5%">
-                              <img src="images/singer/3.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
-                            </th>
-                            <td width="35%">
-                              <div style="line-height: 4px;margin-top:15px">
-                                <p>Rock On</p>
-                                <p>Views</p>
-                              </div>
-                            </td>
-                            
-                            <td width="5%">
-                            <div class="song-duration">
-                              <i class='fas fa-heart'></i>
-                            </div>
-                          </td>
-                          <td width="5%">
-                            <div class="popup" onclick="song3()"><i class='fas fa-ellipsis-v'></i>
-                              <div class="popuptext"  id="song3">
-                                <ul style="list-style-type:none;">
-                                  <li>
-                                    <a href="">
-                                      <i class="fas fa-ban fa-sm" aria-hidden="true"></i>
-                                    </a>
-                                  </li>
-                                  <li> 
-                                    <a href="">
-                                      <i class="fas fa-step-forward"></i>
-                                    </a>
-                                    <li>
-                                      <a href="">
-                                        <i class="fas fa-step-forward"></i>
-                                      </a>
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                              
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <th width="5%">
-                              <img src="images/singer/4.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
-                            </th>
-                            <td width="35%">
-                              <div style="line-height: 4px;margin-top:15px">
-                                <p>Milege Milege</p>
-                                <p>Views</p>
-                              </div>
-                            </td>
-                            
-                            <td width="5%">
-                            <div class="song-duration">
-                              <i class='fas fa-heart'></i>
-                            </div>
-                          </td>
-                          <td width="5%">
-                            <div class="popup" onclick="song4()"><i class='fas fa-ellipsis-v'></i>
-                              <div class="popuptext"  id="song4">
-                                <ul style="list-style-type:none;">
-                                  <li>
-                                    <a href="">
-                                      <i class="fas fa-ban fa-sm" aria-hidden="true"></i>
-                                    </a>
-                                  </li>
-                                  <li> 
-                                    <a href="">
-                                      <i class="fas fa-step-forward"></i>
-                                    </a>
-                                    <li>
-                                      <a href="">
-                                        <i class="fas fa-step-forward"></i>
-                                      </a>
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                              
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
+                <tr>
+                  <th width="5%">
+                    <img src="images/singer/3.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
+                  </th>
+                  <td width="35%">
+                    <div style="line-height: 4px;margin-top:15px">
+                      <p>Rock On</p>
+                      <p>Views</p>
                     </div>
-                  </div>   
+                  </td>
+
+                  <td width="5%">
+                    <div class="song-duration">
+                      <i class='fas fa-heart'></i>
+                    </div>
+                  </td>
+                  <td width="5%">
+                    <div class="popup" onclick="song3()"><i class='fas fa-ellipsis-v'></i>
+                      <div class="popuptext"  id="song3">
+                        <ul style="list-style-type:none;">
+                          <li>
+                            <a href="">
+                              <i class="fas fa-ban fa-sm" aria-hidden="true"></i>
+                            </a>
+                          </li>
+                          <li> 
+                            <a href="">
+                              <i class="fas fa-step-forward"></i>
+                            </a>
+                            <li>
+                              <a href="">
+                                <i class="fas fa-step-forward"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th width="5%">
+                      <img src="images/singer/4.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
+                    </th>
+                    <td width="35%">
+                      <div style="line-height: 4px;margin-top:15px">
+                        <p>Milege Milege</p>
+                        <p>Views</p>
+                      </div>
+                    </td>
+
+                    <td width="5%">
+                      <div class="song-duration">
+                        <i class='fas fa-heart'></i>
+                      </div>
+                    </td>
+                    <td width="5%">
+                      <div class="popup" onclick="song4()"><i class='fas fa-ellipsis-v'></i>
+                        <div class="popuptext"  id="song4">
+                          <ul style="list-style-type:none;">
+                            <li>
+                              <a href="">
+                                <i class="fas fa-ban fa-sm" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li> 
+                              <a href="">
+                                <i class="fas fa-step-forward"></i>
+                              </a>
+                              <li>
+                                <a href="">
+                                  <i class="fas fa-step-forward"></i>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <!--------------Songs list to be displayed on click channel---------------------->
+
+            </div>   
 
 
-                    <div class="tab-pane fade" id="custom-tabs-four-messages" role="tabpanel" aria-labelledby="custom-tabs-four-messages-tab">
-                      <div style="height:350px;">
-                        <table class="table">
-                          <tbody>
-                            <tr>
-                              <th width="5%">
-                                <img src="images/singer/6.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
-                              </th>
-                              <td width="35%">
-                                <div style="line-height: 4px;margin-top:15px">
-                                  <p>Dusk Till Down</p>
-                                  <p>Views</p>
-                                </div>
-                              </td>
-                              
-                              <td width="5%">
-                              <div class="song-duration">
-                                <i class='fas fa-heart'></i>
-                              </div>
-                            </td>
-                            <td width="5%">
-                              <div class="popup" onclick="myFunction1()"><i class='fas fa-ellipsis-v'></i>
-                              <div class="popuptext"  id="myPopup1">
-                                <ul style="list-style-type:none;">
-                                  <li>
-                                    <a href="">
-                                      <i class="fas fa-ban fa-sm" aria-hidden="true"></i>
-                                    </a>
-                                  </li>
-                                  <li> 
-                                    <a href="">
-                                      <i class="fas fa-step-forward"></i>
-                                    </a>
-                                    <li>
-                                      <a href="">
-                                        <i class="fas fa-step-forward"></i>
-                                      </a>
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <th width="5%">
-                              <img src="images/singer/2.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
-                            </th>
-                            <td width="35%">
-                              <div style="line-height: 4px;margin-top:15px">
-                                <p>Machayege</p>
-                                <p>Views</p>
-                              </div>
-                            </td>
+            <div class="tab-pane fade" id="custom-tabs-four-messages" role="tabpanel" aria-labelledby="custom-tabs-four-messages-tab">
+              <div style="height:350px;">
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <th width="5%">
+                        <img src="images/singer/6.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
+                      </th>
+                      <td width="35%">
+                        <div style="line-height: 4px;margin-top:15px">
+                          <p>Dusk Till Down</p>
+                          <p>Views</p>
+                        </div>
+                      </td>
 
-                            <td width="5%">
-                            <div class="song-duration">
-                              <i class='fas fa-heart'></i>
+                      <td width="5%">
+                        <div class="song-duration">
+                          <i class='fas fa-heart'></i>
+                        </div>
+                      </td>
+                      <td width="5%">
+                        <div class="popup" onclick="myFunction1()"><i class='fas fa-ellipsis-v'></i>
+                          <div class="popuptext"  id="myPopup1">
+                            <ul style="list-style-type:none;">
+                              <li>
+                                <a href="">
+                                  <i class="fas fa-ban fa-sm" aria-hidden="true"></i>
+                                </a>
+                              </li>
+                              <li> 
+                                <a href="">
+                                  <i class="fas fa-step-forward"></i>
+                                </a>
+                                <li>
+                                  <a href="">
+                                    <i class="fas fa-step-forward"></i>
+                                  </a>
+                                </li>
+                              </ul>
                             </div>
-                          </td>
-                          <td width="5%">
-                            <div class="popup" onclick="myFunction2()"><i class='fas fa-ellipsis-v'></i>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th width="5%">
+                          <img src="images/singer/2.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
+                        </th>
+                        <td width="35%">
+                          <div style="line-height: 4px;margin-top:15px">
+                            <p>Machayege</p>
+                            <p>Views</p>
+                          </div>
+                        </td>
+
+                        <td width="5%">
+                          <div class="song-duration">
+                            <i class='fas fa-heart'></i>
+                          </div>
+                        </td>
+                        <td width="5%">
+                          <div class="popup" onclick="myFunction2()"><i class='fas fa-ellipsis-v'></i>
                             <div class="popuptext"  id="myPopup2">
                               <ul style="list-style-type:none;">
                                 <li>
@@ -483,207 +495,207 @@
                           </td>
 
                           <td width="5%">
-                          <div class="song-duration">
-                            <i class='fas fa-heart'></i>
-                          </div>
-                        </td>
-                        <td width="5%">
-                          <div class="popup" onclick="myFunction3()"><i class='fas fa-ellipsis-v'></i>
-                          <div class="popuptext"  id="myPopup3">
-                            <ul style="list-style-type:none;">
-                              <li>
-                                <a href="">
-                                  <i class="fas fa-ban fa-sm" aria-hidden="true"></i>
-                                </a>
-                              </li>
-                              <li> 
-                                <a href="">
-                                  <i class="fas fa-step-forward"></i>
-                                </a>
-                                <li>
-                                  <a href="">
-                                    <i class="fas fa-step-forward"></i>
-                                  </a>
-                                </li>
-                              </ul>
+                            <div class="song-duration">
+                              <i class='fas fa-heart'></i>
                             </div>
+                          </td>
+                          <td width="5%">
+                            <div class="popup" onclick="myFunction3()"><i class='fas fa-ellipsis-v'></i>
+                              <div class="popuptext"  id="myPopup3">
+                                <ul style="list-style-type:none;">
+                                  <li>
+                                    <a href="">
+                                      <i class="fas fa-ban fa-sm" aria-hidden="true"></i>
+                                    </a>
+                                  </li>
+                                  <li> 
+                                    <a href="">
+                                      <i class="fas fa-step-forward"></i>
+                                    </a>
+                                    <li>
+                                      <a href="">
+                                        <i class="fas fa-step-forward"></i>
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <th width="5%">
+                              <img src="images/singer/4.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
+                            </th>
+                            <td width="35%">
+                              <div style="line-height: 4px;margin-top:15px">
+                                <p>Milege Milege</p>
+                                <p>Views</p>
+                              </div>
+                            </td>
+
+                            <td width="5%">
+                              <div class="song-duration">
+                                <i class='fas fa-heart'></i>
+                              </div>
+                            </td>
+                            <td width="5%">
+                              <div class="popup" onclick="myFunction4()"><i class='fas fa-ellipsis-v'></i>
+                                <div class="popuptext"  id="myPopup4">
+                                  <ul style="list-style-type:none;">
+                                    <li>
+                                      <a href="">
+                                        <i class="fas fa-ban fa-sm" aria-hidden="true"></i>
+                                      </a>
+                                    </li>
+                                    <li> 
+                                      <a href="">
+                                        <i class="fas fa-step-forward"></i>
+                                      </a>
+                                      <li>
+                                        <a href="">
+                                          <i class="fas fa-step-forward"></i>
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+
+
+
+                          </tbody>
+                        </table>
+                      </div> 
+                    </div>
+                  </div>     
+                </div>
+
+
+                <div class="row">
+                  <div class="col-5">
+                    <div class="card">
+                      <img class="card-img" src="images/singer/5.jpg" alt="Card image cap">
+                    </div>
+                  </div>
+                  <div class="col-5">
+                    <div class="details">
+
+                      <div class="now-playing"></div>
+                      <div class="track-art"></div>
+                      <div class="track-name"><b>DJ Khalid</b></div>
+                      <div class="track-artist">Views</div>
+                    </div>
+
+                    <div class="media-progress">
+                      <div class="progress-bar-wrapper progress">
+                        <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+                      </div>
+                      <div class="current-time">
+                        00:00
+                      </div>
+                      <div class="total-duration">
+                        00:00
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="col-2">
+                    <div class="likepopup" onclick="like()"> 
+                      <i class="fas fa-thumbs-up" aria-hidden="true"></i>
+                      <span class="likepopuptext" id="myPopup">
+                        <ol>
+                          <li><i class="fas fa-thumbs-up" aria-hidden="true" onclick="upthumb()"></i></li>
+                          <li><i class="fas fa-thumbs-down" aria-hidden="true" onclick="downthumb()"></i></li>
+                        </ol>
+                      </span>
+                    </div>
+                  </div>
+
+                </div>
+
+                <!--------------Bottom buttons to manage songs----------------------------->
+
+                <div class="container-fluid mt-3">
+                  <div class="d-flex justify-content-between">
+                    <div class="p-1">
+                      <div class="button button-lg">
+                        <i class="fas fa-ban fa-lg" aria-hidden="true"></i>
+                        <span class="sr-only">Ban</span>
+                      </div>
+                    </div>
+                    <div class="container" style="display: flex;justify-content: center;">
+                      <div class="d-inline-flex">  
+                        <div class="p-1">
+                          <div class="button-heart button-lg">
+                            <i class="fas fa-heart fa-lg"></i>
+                            <span class="sr-only">Repeat Song</span>
                           </div>
-
-                        </td>
-                      </tr>
-
-                      <tr>
-                        <th width="5%">
-                          <img src="images/singer/4.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
-                        </th>
-                        <td width="35%">
-                          <div style="line-height: 4px;margin-top:15px">
-                            <p>Milege Milege</p>
-                            <p>Views</p>
-                          </div>
-                        </td>
-
-                        <td width="5%">
-                        <div class="song-duration">
-                          <i class='fas fa-heart'></i>
                         </div>
-                      </td>
-                      <td width="5%">
-                        <div class="popup" onclick="myFunction4()"><i class='fas fa-ellipsis-v'></i>
-                          <div class="popuptext"  id="myPopup4">
-                            <ul style="list-style-type:none;">
-                              <li>
-                                <a href="">
-                                  <i class="fas fa-ban fa-sm" aria-hidden="true"></i>
-                                </a>
-                              </li>
-                              <li> 
-                                <a href="">
-                                  <i class="fas fa-step-forward"></i>
-                                </a>
-                                <li>
-                                  <a href="">
-                                    <i class="fas fa-step-forward"></i>
-                                  </a>
-                                </li>
-                              </ul>
-                            </div>
+                        <div class="p-1">
+                          <div class=" button-pause playpause-track" onclick="playpauseTrack()">
+                            <i class="fas fa-pause fa-lg" aria-hidden="true" aria-hidden="true"></i>
+                            <span class="sr-only">Pause</span>
                           </div>
-                        </td>
-                      </tr>
+                        </div>
+                        <div class="p-1">
+                          <div class="button button-lg next-track" onclick="nextTrack()">
+                            <i class="fas fa-step-forward fa-lg"></i>
+                            <span class="sr-only">Next Music</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
 
-
-
-                    </tbody>
-                  </table>
-                </div> 
-              </div>
-            </div>     
-          </div>
-
-
-            <div class="row">
-              <div class="col-5">
-                <div class="card">
-                  <img class="card-img" src="images/singer/5.jpg" alt="Card image cap">
-                </div>
-              </div>
-              <div class="col-5">
-                <div class="details">
-                  
-                  <div class="now-playing"></div>
-                  <div class="track-art"></div>
-                  <div class="track-name"><b>DJ Khalid</b></div>
-                  <div class="track-artist">Views</div>
-                </div>
-
-                <div class="media-progress">
-                  <div class="progress-bar-wrapper progress">
-                    <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
-                  </div>
-                  <div class="current-time">
-                    00:00
-                  </div>
-                  <div class="total-duration">
-                    00:00
+                    <div class="p-1">
+                      <div class="container">
+                        <div class="button button-lg volumepopup" onclick="volumeclick()">
+                          <i class="fas fa-volume-up fa-lg" aria-hidden="true" style=""></i>
+                          <div class="volumepopuptext" id="volumePopup">
+                            <ol>
+                              <li><i class="fas fa-volume-down" aria-hidden="true" style=""></i></li>
+                              <li><input type="range" id="range" min="0" max="9" step="1" value="3" /></li>
+                            </ol>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
+                <!--------------Bottom buttons to manage songs----------------------------->
               </div>
-              <div class="col-2">
-                <div class="likepopup" onclick="like()"> 
-                  <i class="fas fa-thumbs-up" aria-hidden="true"></i>
-                  <span class="likepopuptext" id="myPopup">
-                    <ol>
-                        <li><i class="fas fa-thumbs-up" aria-hidden="true" onclick="upthumb()"></i></li>
-                        <li><i class="fas fa-thumbs-down" aria-hidden="true" onclick="downthumb()"></i></li>
-                    </ol>
-                  </span>
-                </div>
-              </div>
-              
             </div>
 
-            <!--------------Bottom buttons to manage songs----------------------------->
 
-          <div class="container-fluid mt-3">
-            <div class="d-flex justify-content-between">
-              <div class="p-1">
-                <div class="button button-lg">
-                  <i class="fas fa-ban fa-lg" aria-hidden="true"></i>
-                  <span class="sr-only">Ban</span>
-                </div>
-              </div>
-              <div class="container" style="display: flex;justify-content: center;">
-                <div class="d-inline-flex">  
-                  <div class="p-1">
-                    <div class="button-heart button-lg">
-                      <i class="fas fa-heart fa-lg"></i>
-                      <span class="sr-only">Repeat Song</span>
-                    </div>
-                  </div>
-                  <div class="p-1">
-                    <div class=" button-pause playpause-track" onclick="playpauseTrack()">
-                      <i class="fas fa-pause fa-lg" aria-hidden="true" aria-hidden="true"></i>
-                      <span class="sr-only">Pause</span>
-                    </div>
-                  </div>
-                  <div class="p-1">
-                    <div class="button button-lg next-track" onclick="nextTrack()">
-                      <i class="fas fa-step-forward fa-lg"></i>
-                      <span class="sr-only">Next Music</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-                            
-              <div class="p-1">
-                <div class="container">
-                <div class="button button-lg volumepopup" onclick="volumeclick()">
-                  <i class="fas fa-volume-up fa-lg" aria-hidden="true" style=""></i>
-                  <div class="volumepopuptext" id="volumePopup">
-                    <ol>
-                        <li><i class="fas fa-volume-down" aria-hidden="true" style=""></i></li>
-                        <li><input type="range" id="range" min="0" max="9" step="1" value="3" /></li>
-                    </ol>
-                  </div>
-                </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          </main>
+          <script src="https://kit.fontawesome.com/7d35781f0a.js" crossorigin="anonymous"></script> 
+          <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+          <script type="text/javascript" src="main.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <script>
 
-  <!--------------Bottom buttons to manage songs----------------------------->
-  </div>
-</div>
+            $('.channel-img').click(function(){
+              $("#album-list").hide();
+              $("#song-list").show();
+            });
 
+            $('#custom-tabs-four-home-tab').click(function(){
+              $("#album-list").show();
+              $("#song-list").hide();
+            });
 
-</main>
-<script src="https://kit.fontawesome.com/7d35781f0a.js" crossorigin="anonymous"></script> 
-<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
-<script type="text/javascript" src="main.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
+            $('#custom-tabs-four-profile-tab').click(function(){
+              $("#album-list").show();
+              $("#song-list").hide();
+            });
 
-    $('.channel-img').click(function(){
-        $("#album-list").hide();
-        $("#song-list").show();
-    });
-
-    $('#custom-tabs-four-home-tab').click(function(){
-        $("#album-list").show();
-        $("#song-list").hide();
-    });
-
-    $('#custom-tabs-four-profile-tab').click(function(){
-        $("#album-list").show();
-        $("#song-list").hide();
-    });
-
-    $('#custom-tabs-four-messages-tab').click(function(){
-        $("#album-list").show();
-        $("#song-list").hide();
-    });
+            $('#custom-tabs-four-messages-tab').click(function(){
+              $("#album-list").show();
+              $("#song-list").hide();
+            });
 
 
 // When the user clicks on div, open the popup

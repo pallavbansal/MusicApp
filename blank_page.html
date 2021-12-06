@@ -12,40 +12,53 @@
   <style>
 
 .blank_input {
-  width: 100%;
-  border-radius: 26px;
-  border: none;
-  padding: 1% 15%;
-  margin: -1% 1%;
-  background-image: url(https://www.pngarea.com/pngm/109/1164446_searchicon-png-search-icon-png-download.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  outline: 0;
-  background-position: 12px;
-  background-size: 16px;
+width: 100%;
+border-radius: 5px;
+border: none;
+padding: 1% 15%;
+margin: -1% 1%;
+color: white;
+background-image: url(https://www.pngarea.com/pngm/109/1164446_searchicon-png-search-icon-png-download.png);
+background: #29d5ef;
 }
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #000 !important;
+  color: #FFFFFF !important;
   opacity: 1; /* Firefox */
 }
 </style>
 <body>
   <main class="player" style="background: #42ddf5;height:600px">
-          <div class="row">
+     
+     <!----------------------logo------------------------>
+     <!--      <div class="row">
           <div class="ml-auto mr-3">
              <img src="images/logo1.png" alt="" style="width:100px; height:70;padding: 5px;float: right;">
           </div>
-        </div>
+        </div> -->
 
-        <div class="alert alert-primary" role="alert" style="text-align: center;">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <a href="index.html">
+       <h4>BMO</h4>
+       </a>
+     </div>
+    </div>
+
+    <!----------------------logo ---------------------------->    
+
+        <div class="alert" role="alert" style="text-align: center;">
          <div class="row">
           <div class="col-1"> 
             <a href="index.html">
-            <img src="images/bakward.png" height="20px" width="20px">
+            <!-- <img src="images/bakward.png" height="20px" width="20px"> -->
+            <i class="fas fa-angle-left" aria-hidden="true" style="margin-left: 5px;height: 25px; color: white;"></i>
             </a>
           </div>
           <div class="col-10">
+            <div class="input-group">
+                <i class="fas fa-search" aria-hidden="true" style="position: absolute;margin-left: 5px;height: 25px;display: flex;align-items: center; color: white;"></i>
             <input type="text" placeholder="Search For Song" class="blank_input">
+          </div>
           </div>
          </div>
         </div>
@@ -102,51 +115,56 @@
             </div>
           </div>
 
-          <div class="container-fluid mt-3">
-              <div class="d-flex justify-content-between">
-                <div class="p-2">
-                  <div class="button button-lg">
-                    <i class="fas fa-ban fa-sm" aria-hidden="true"></i>
-                    <span class="sr-only">Ban</span>
-                  </div>
-                </div>
-                <div class="container">
-                  <div class="d-inline-flex">  
-                    <div class="p-2">
+                <!--------------Bottom buttons to manage songs----------------------------->
+
+                <div class="container-fluid mt-3">
+                  <div class="d-flex justify-content-between">
+                    <div class="p-1">
                       <div class="button button-lg">
-                        <i class="fas fa-heart"></i>
-                        <span class="sr-only">Repeat Song</span>
+                        <i class="fas fa-ban fa-lg" aria-hidden="true"></i>
+                        <span class="sr-only">Ban</span>
                       </div>
                     </div>
-                    <div class="p-2">
-                      <div class="button button-lg playpause-track" onclick="playpauseTrack()">
-                        <i class="fas fa-pause fa-lg" aria-hidden="true" aria-hidden="true"></i>
-                        <span class="sr-only">Pause</span>
+                    <div class="container" style="display: flex;justify-content: center;">
+                      <div class="d-inline-flex">  
+                        <div class="p-1">
+                          <div class="button-heart button-lg">
+                            <i class="fas fa-heart fa-lg"></i>
+                            <span class="sr-only">Repeat Song</span>
+                          </div>
+                        </div>
+                        <div class="p-1">
+                          <div class=" button-pause playpause-track" onclick="playpauseTrack()">
+                            <i class="fas fa-pause fa-lg" aria-hidden="true" aria-hidden="true"></i>
+                            <span class="sr-only">Pause</span>
+                          </div>
+                        </div>
+                        <div class="p-1">
+                          <div class="button button-lg next-track" onclick="nextTrack()">
+                            <i class="fas fa-step-forward fa-lg"></i>
+                            <span class="sr-only">Next Music</span>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <div class="p-2">
-                      <div class="button button-lg next-track" onclick="nextTrack()">
-                        <i class="fas fa-step-forward"></i>
-                        <span class="sr-only">Next Music</span>
+
+                    <div class="p-1">
+                      <div class="container">
+                        <div class="button button-lg volumepopup" onclick="volumeclick()">
+                          <i class="fas fa-volume-up fa-lg" aria-hidden="true" style=""></i>
+                          <div class="volumepopuptext" id="volumePopup">
+                            <ol>
+                              <li><i class="fas fa-volume-down" aria-hidden="true" style=""></i></li>
+                              <li><input type="range" id="range" min="0" max="9" step="1" value="3" /></li>
+                            </ol>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="p-2">
-                <div class="container">
-                <div class="button button-lg volumepopup" onclick="volumeclick()">
-                  <i class="fas fa-volume-up" aria-hidden="true" style=""></i>
-                  <div class="volumepopuptext" id="volumePopup">
-                    <ol>
-                        <li><i class="fas fa-volume-down" aria-hidden="true" style=""></i></li>
-                        <li><input type="range" id="range" min="0" max="9" step="1" value="3" /></li>
-                    </ol>
-                  </div>
-                </div>
-                </div>
-                </div>
-              </div>
-          </div>
+
+                <!--------------Bottom buttons to manage songs----------------------------->
       </section>
 
   </main>
