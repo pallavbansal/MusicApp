@@ -87,7 +87,29 @@
 
       <div class="tab-pane fade show active" id="custom-tabs-four-home" role="tabpanel" aria-labelledby="custom-tabs-four-home-tab">
        <div class="container" style="padding: 4%">
+
         <div class="card img-fluid" style="border-radius: 6%;">
+          <img class="card-img-top" src="images/singer/9.jpg" alt="Card image" style="height: 300px; border-radius: 6%;">
+          <div class="card-img-overlay" id="custom-tabs-four-profile-tab" data-toggle="pill" href="#custom-tabs-four-profile" role="tab" aria-controls="custom-tabs-four-profile" aria-selected="false" >
+            <h4 class="card-title text-center text-white">Chilled Bits <i class="fas fa-angle-down"></i></h4>
+          </div>
+          <div class="card-overlay-bottom">
+            <div class="container-fluid" style="border: 1px solid gray; padding-top: 5px;" >
+              <div class="row">
+                <div class="col">
+                  <p style="color: #f2e687;margin-bottom: 0rem;">next song:</p>
+                  <p style="color: white;margin-bottom: 0rem;">Viexe farka tour</p>
+                  <p style="color: white;margin-bottom: 0rem;">Its Alright</p>
+                </div>
+                <div class="col">
+                  <img src="images/singer/1.jpg" class="float-right rounded" width="50" height="60">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="card img-fluid" style="border-radius:6%;display:none" id="list-modal">
           <img class="card-img-top" src="images/singer/9.jpg" alt="Card image" style="height: 300px; border-radius: 6%;">
           <div class="card-img-overlay">
             <h4 class="card-title text-center text-white">Chilled Bits <i class="fas fa-angle-down"></i></h4>
@@ -106,7 +128,8 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
+
       </div>
     </div>
 
@@ -115,12 +138,12 @@
       <div class="container-fluid" style="height: 350px; overflow-y: auto; scrollbar-width: none;margin-top: 10px;" id="album-list">
         <div class="row">
           <div class="col">
-
-            <img class="card-img" src="images/singer/7.jpg" alt="Card image" style="border-radius: 10px;">
-            <div class="card-img-overlay">
-              <a href="#" style="color:white"><i class="fas fa-play"></i></a>
+            <div class="card channel-img">
+              <img class="card-img" src="images/singer/7.jpg" alt="Card image" style="border-radius: 10px;">
+              <div class="card-img-overlay">
+                <a href="#" style="color:white"><i class="fas fa-play"></i></a>
+              </div>
             </div>
-
             <p class="text-center"><b>DJ Khalid</b></p>
           </div>
           <div class="col">
@@ -219,8 +242,7 @@
       <!--------------List of channels---------------------->
 
       <!--------------Songs list to be displayed on click channel---------------------->
-
-      <div style="height:350px;display: none;" id="song-list">
+      <div class="container-fluid" style="height: 350px; overflow-y: auto; scrollbar-width: none;margin-top: 10px;" id="song-list">
         <div class="container-fluid p-2">
           <div class="row">
             <div class="col-1"><i aria-hidden="true" class="fas fa-angle-left"></i></div>
@@ -400,7 +422,7 @@
 
 
             <div class="tab-pane fade" id="custom-tabs-four-messages" role="tabpanel" aria-labelledby="custom-tabs-four-messages-tab">
-              <div style="height:350px;">
+              <div class="container-fluid" style="height: 350px; overflow-y: auto; scrollbar-width: none;margin-top: 10px;">
                 <table class="table">
                   <tbody>
                     <tr>
@@ -423,12 +445,7 @@
                         <div class="popup" onclick="myFunction1()"><i class='fas fa-ellipsis-v'></i>
                           <div class="popuptext"  id="myPopup1">
                             <ul style="list-style-type:none;">
-                              <li>
-                                <a href="">
-                                  <i class="fas fa-ban fa-sm" aria-hidden="true"></i>
-                                </a>
-                              </li>
-                              <li> 
+                                <li> 
                                 <a href="">
                                   <i class="fas fa-step-forward"></i>
                                 </a>
@@ -437,7 +454,12 @@
                                     <i class="fas fa-step-forward"></i>
                                   </a>
                                 </li>
-                              </ul>
+                                <li>
+                                <a href="">
+                                  <i class="fas fa-ban fa-sm" aria-hidden="true"></i>
+                                </a>
+                              </li>
+                            </ul>
                             </div>
                           </div>
                         </td>
@@ -462,21 +484,21 @@
                           <div class="popup" onclick="myFunction2()"><i class='fas fa-ellipsis-v'></i>
                             <div class="popuptext"  id="myPopup2">
                               <ul style="list-style-type:none;">
-                                <li>
-                                  <a href="">
-                                    <i class="fas fa-ban fa-sm" aria-hidden="true"></i>
-                                  </a>
-                                </li>
                                 <li> 
+                                <a href="">
+                                  <i class="fas fa-step-forward"></i>
+                                </a>
+                                <li>
                                   <a href="">
                                     <i class="fas fa-step-forward"></i>
                                   </a>
-                                  <li>
-                                    <a href="">
-                                      <i class="fas fa-step-forward"></i>
-                                    </a>
-                                  </li>
-                                </ul>
+                                </li>
+                                <li>
+                                <a href="">
+                                  <i class="fas fa-ban fa-sm" aria-hidden="true"></i>
+                                </a>
+                                </li>
+                               </ul>
                               </div>
                             </div>
 
@@ -502,13 +524,8 @@
                           <td width="5%">
                             <div class="popup" onclick="myFunction3()"><i class='fas fa-ellipsis-v'></i>
                               <div class="popuptext"  id="myPopup3">
-                                <ul style="list-style-type:none;">
-                                  <li>
-                                    <a href="">
-                                      <i class="fas fa-ban fa-sm" aria-hidden="true"></i>
-                                    </a>
-                                  </li>
-                                  <li> 
+                                  <ul style="list-style-type:none;">
+                                    <li> 
                                     <a href="">
                                       <i class="fas fa-step-forward"></i>
                                     </a>
@@ -516,6 +533,11 @@
                                       <a href="">
                                         <i class="fas fa-step-forward"></i>
                                       </a>
+                                    </li>
+                                    <li>
+                                    <a href="">
+                                      <i class="fas fa-ban fa-sm" aria-hidden="true"></i>
+                                    </a>
                                     </li>
                                   </ul>
                                 </div>
@@ -544,12 +566,7 @@
                               <div class="popup" onclick="myFunction4()"><i class='fas fa-ellipsis-v'></i>
                                 <div class="popuptext"  id="myPopup4">
                                   <ul style="list-style-type:none;">
-                                    <li>
-                                      <a href="">
-                                        <i class="fas fa-ban fa-sm" aria-hidden="true"></i>
-                                      </a>
-                                    </li>
-                                    <li> 
+                                      <li> 
                                       <a href="">
                                         <i class="fas fa-step-forward"></i>
                                       </a>
@@ -558,7 +575,12 @@
                                           <i class="fas fa-step-forward"></i>
                                         </a>
                                       </li>
-                                    </ul>
+                                      <li>
+                                      <a href="">
+                                        <i class="fas fa-ban fa-sm" aria-hidden="true"></i>
+                                      </a>
+                                      </li>
+                                  </ul>
                                   </div>
                                 </div>
                               </td>
@@ -571,49 +593,6 @@
                       </div> 
                     </div>
                   </div>     
-                </div>
-
-
-                <div class="row">
-                  <div class="col-5">
-                    <div class="card">
-                      <img class="card-img" src="images/singer/5.jpg" alt="Card image cap">
-                    </div>
-                  </div>
-                  <div class="col-5">
-                    <div class="details">
-
-                      <div class="now-playing"></div>
-                      <div class="track-art"></div>
-                      <div class="track-name"><b>DJ Khalid</b></div>
-                      <div class="track-artist">Views</div>
-                    </div>
-
-                    <div class="media-progress">
-                      <div class="progress-bar-wrapper progress">
-                        <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
-                      </div>
-                      <div class="current-time">
-                        00:00
-                      </div>
-                      <div class="total-duration">
-                        00:00
-                      </div>
-                    </div>
-
-                  </div>
-                  <div class="col-2">
-                    <div class="likepopup" onclick="like()"> 
-                      <i class="fas fa-thumbs-up" aria-hidden="true"></i>
-                      <span class="likepopuptext" id="myPopup">
-                        <ol>
-                          <li><i class="fas fa-thumbs-up" aria-hidden="true" onclick="upthumb()"></i></li>
-                          <li><i class="fas fa-thumbs-down" aria-hidden="true" onclick="downthumb()"></i></li>
-                        </ol>
-                      </span>
-                    </div>
-                  </div>
-
                 </div>
 
                 <!--------------Bottom buttons to manage songs----------------------------->
@@ -666,36 +645,84 @@
                 </div>
 
                 <!--------------Bottom buttons to manage songs----------------------------->
+                 
+                   <div class="row">
+                  <div class="col-5">
+                    <div class="card">
+                      <img class="card-img" src="images/singer/5.jpg" alt="Card image cap">
+                    </div>
+                  </div>
+                  <div class="col-5" style="background-color: #000;">
+                    <div class="details">
+
+                      <div class="now-playing"></div>
+                      <div class="track-art"></div>
+                      <div class="track-name"><b>DJ Khalid</b></div>
+                      <div class="track-artist">Views</div>
+                    </div>
+
+                    <div class="media-progress">
+                      <div class="progress-bar-wrapper progress">
+                        <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+                      </div>
+                      <div class="current-time">
+                        00:00
+                      </div>
+                      <div class="total-duration">
+                        00:00
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="col-2">
+                    <div class="likepopup" onclick="like()"> 
+                      <i class="fas fa-thumbs-up" aria-hidden="true"></i>
+                      <span class="likepopuptext" id="myPopup">
+                        <ol>
+                          <li><i class="fas fa-thumbs-up" aria-hidden="true" onclick="upthumb()"></i></li>
+                          <li><i class="fas fa-thumbs-down" aria-hidden="true" onclick="downthumb()"></i></li>
+                        </ol>
+                      </span>
+                    </div>
+                  </div>
+
+                </div>
+
+
               </div>
             </div>
 
 
-          </main>
-          <script src="https://kit.fontawesome.com/7d35781f0a.js" crossorigin="anonymous"></script> 
-          <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
-          <script type="text/javascript" src="main.js"></script>
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-          <script>
+</main>
+<script src="https://kit.fontawesome.com/7d35781f0a.js" crossorigin="anonymous"></script> 
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+<script type="text/javascript" src="main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
 
-            $('.channel-img').click(function(){
-              $("#album-list").hide();
-              $("#song-list").show();
-            });
+$('.channel-img').click(function(){
+      $("#album-list").hide();
+      $("#song-list").show();
+});
+$('.image-class').click(function(){
+      $("#img-modal").hide();
+      $("#list-modal").show();
+});
 
-            $('#custom-tabs-four-home-tab').click(function(){
-              $("#album-list").show();
-              $("#song-list").hide();
-            });
+$('#custom-tabs-four-home-tab').click(function(){
+      $("#album-list").show();
+      $("#song-list").hide();
+});
 
-            $('#custom-tabs-four-profile-tab').click(function(){
-              $("#album-list").show();
-              $("#song-list").hide();
-            });
+$('#custom-tabs-four-profile-tab').click(function(){
+      $("#album-list").show();
+      $("#song-list").hide();
+});
 
-            $('#custom-tabs-four-messages-tab').click(function(){
-              $("#album-list").show();
-              $("#song-list").hide();
-            });
+$('#custom-tabs-four-messages-tab').click(function(){
+      $("#album-list").show();
+      $("#song-list").hide();
+});
 
 
 // When the user clicks on div, open the popup
