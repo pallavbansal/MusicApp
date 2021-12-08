@@ -110,164 +110,161 @@
         </div>
       </div>
 
-      <div class="container" style="padding: 4%;display:none;overflow-y: auto; scrollbar-width: none;" id="list-modal">
-        <div class="card img-fluid" style="height: 505px;border-radius: 6%;overflow-y: auto;overflow-x: auto; scrollbar-width: none;">
+      <div class="container" style="border-radius:6%;padding: 18px;display:none;overflow-y: auto; scrollbar-width: none;" id="list-modal">
+        <div class="card img-fluid" style="height: 505px;border-radius: 6%;overflow-y: auto;overflow-x: auto; scrollbar-width: none;padding: 10px;">
         <div class="container-fluid p-2">
           <div class="row">
             <div class="col-1">
-              <a href="index.html">
-                <i aria-hidden="true" class="fas fa-angle-left"></i>
-              </a>
+                <i aria-hidden="true" class="fas fa-angle-left" onclick="front()"></i>
             </div>
             <div class="col-10 text-center">Chilled Bits</div>
           </div>
         </div>
         <table class="table">
-                  <tbody>
-                    <tr>
-                      <th width="5%">
-                        <img src="images/singer/6.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
-                      </th>
-                      <td width="35%">
-                        <div style="line-height: 4px;margin-top:15px">
-                          <p>Noga Erez</p>
-                          <p>Views</p>
-                        </div>
-                      </td>
-                      <td width="5%">
-                        <div class="song-duration">
-                          <i class='fas fa-heart'></i>
-                        </div>
-                      </td>
-                      <td width="5%">
-                        <div class="popup" onclick="()"><i class='fas fa-ellipsis-v'></i>
-                          <div class="popuptext"  id="">
-                              <ul style="list-style-type:none;">
-                                <li><a href=""><i class="fas fa-step-forward"></i></a></li>
-                                <li><a href=""><i class="fas fa-step-forward"></i></a></li>
-                                <li><a href=""><i class="fas fa-ban fa-sm" aria-hidden="true"></i></a></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
+          <tbody>
+            <tr>
+              <th width="5%">
+                <img src="images/singer/6.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
+              </th>
+              <td width="35%">
+                <div style="line-height: 4px;margin-top:15px">
+                  <p>Noga Erez</p>
+                  <p>Views</p>
+                </div>
+              </td>
+              <td width="5%">
+                <div class="song-duration">
+                  <i class='fas fa-heart'></i>
+                </div>
+              </td>
+              <td width="5%">
+                <div class="popup" onclick="()"><i class='fas fa-ellipsis-v'></i>
+                  <div class="popuptext"  id="">
+                      <ul style="list-style-type:none;">
+                        <li><a href=""><i class="fas fa-step-forward"></i></a></li>
+                        <li><a href=""><i class="fas fa-step-forward"></i></a></li>
+                        <li><a href=""><i class="fas fa-ban fa-sm" aria-hidden="true"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+              </td>
+            </tr>
 
-                      <tr>
-                        <th width="5%">
-                          <img src="images/singer/2.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
-                        </th>
-                        <td width="50%">
-                          <div style="line-height: 4px;margin-top:15px">
-                            <p>DJ Snake</p>
-                            <p>Views</p>
-                          </div>
-                        </td>
-                        <td width="5%">
-                          <div class="song-duration">
-                            <i class='fas fa-heart'></i>
-                          </div>
-                        </td>
-                        <td width="5%">
-                          <div class="popup" onclick="()"><i class='fas fa-ellipsis-v'></i>
-                            <div class="popuptext"  id="">
-                              <ul style="list-style-type:none;">
-                                <li><a href=""><i class="fas fa-step-forward"></i></a></li>
-                                <li><a href=""><i class="fas fa-step-forward"></i></a></li>
-                                <li><a href=""><i class="fas fa-ban fa-sm" aria-hidden="true"></i></a></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
+            <tr>
+              <th width="5%">
+                <img src="images/singer/2.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
+              </th>
+              <td width="50%">
+                <div style="line-height: 4px;margin-top:15px">
+                  <p>DJ Snake</p>
+                  <p>Views</p>
+                </div>
+              </td>
+              <td width="5%">
+                <div class="song-duration">
+                  <i class='fas fa-heart'></i>
+                </div>
+              </td>
+              <td width="5%">
+                <div class="popup" onclick="()"><i class='fas fa-ellipsis-v'></i>
+                  <div class="popuptext"  id="">
+                    <ul style="list-style-type:none;">
+                      <li><a href=""><i class="fas fa-step-forward"></i></a></li>
+                      <li><a href=""><i class="fas fa-step-forward"></i></a></li>
+                      <li><a href=""><i class="fas fa-ban fa-sm" aria-hidden="true"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </td>
+            </tr>
 
-                      <tr>
-                          <th width="5%">
-                            <img src="images/singer/3.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
-                          </th>
-                          <td width="35%">
-                            <div style="line-height: 4px;margin-top:15px">
-                              <p>Noga Erez</p>
-                              <p>Views</p>
-                            </div>
-                          </td>
-                          <td width="5%">
-                            <div class="song-duration">
-                              <i class='fas fa-heart'></i>
-                            </div>
-                          </td>
-                          <td width="5%">
-                            <div class="popup" onclick="()"><i class='fas fa-ellipsis-v'></i>
-                              <div class="popuptext"  id="">
-                                <ul style="list-style-type:none;">
-                                  <li><a href=""><i class="fas fa-step-forward"></i></a></li>
-                                  <li><a href=""><i class="fas fa-step-forward"></i></a></li>
-                                  <li><a href=""><i class="fas fa-ban fa-sm" aria-hidden="true"></i></a></li>
-                                </ul>
-                                </div>
-                              </div>
-                          </td>
-                        </tr>
+            <tr>
+              <th width="5%">
+                <img src="images/singer/3.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
+              </th>
+              <td width="35%">
+                <div style="line-height: 4px;margin-top:15px">
+                  <p>Noga Erez</p>
+                  <p>Views</p>
+                </div>
+              </td>
+              <td width="5%">
+                <div class="song-duration">
+                  <i class='fas fa-heart'></i>
+                </div>
+              </td>
+              <td width="5%">
+                <div class="popup" onclick="()"><i class='fas fa-ellipsis-v'></i>
+                  <div class="popuptext"  id="">
+                    <ul style="list-style-type:none;">
+                      <li><a href=""><i class="fas fa-step-forward"></i></a></li>
+                      <li><a href=""><i class="fas fa-step-forward"></i></a></li>
+                      <li><a href=""><i class="fas fa-ban fa-sm" aria-hidden="true"></i></a></li>
+                    </ul>
+                    </div>
+                  </div>
+              </td>
+            </tr>  
 
-                        <tr>
-                          <th width="5%">
-                            <img src="images/singer/4.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
-                          </th>
-                          <td width="35%">
-                            <div style="line-height: 4px;margin-top:15px">
-                              <p>Noga Erez</p>
-                              <p>Views</p>
-                            </div>
-                          </td>
-                          <td width="5%">
-                            <div class="song-duration">
-                              <i class='fas fa-heart'></i>
-                            </div>
-                          </td>
-                          <td width="5%">
-                            <div class="popup" onclick="()"><i class='fas fa-ellipsis-v'></i>
-                              <div class="popuptext"  id="">
-                                <ul style="list-style-type:none;">
-                                  <li><a href=""><i class="fas fa-step-forward"></i></a></li>
-                                  <li><a href=""><i class="fas fa-step-forward"></i></a></li>
-                                  <li><a href=""><i class="fas fa-ban fa-sm" aria-hidden="true"></i></a></li>
-                                </ul>
-                              </div>
-                            </div>
-                            </td>
-                        </tr>
+            <tr>
+              <th width="5%">
+                <img src="images/singer/4.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
+              </th>
+              <td width="35%">
+                <div style="line-height: 4px;margin-top:15px">
+                  <p>Noga Erez</p>
+                  <p>Views</p>
+                </div>
+              </td>
+              <td width="5%">
+                <div class="song-duration">
+                  <i class='fas fa-heart'></i>
+                </div>
+              </td>
+              <td width="5%">
+                <div class="popup" onclick="()"><i class='fas fa-ellipsis-v'></i>
+                  <div class="popuptext"  id="">
+                    <ul style="list-style-type:none;">
+                      <li><a href=""><i class="fas fa-step-forward"></i></a></li>
+                      <li><a href=""><i class="fas fa-step-forward"></i></a></li>
+                      <li><a href=""><i class="fas fa-ban fa-sm" aria-hidden="true"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+                </td>
+            </tr>
 
-                        <tr>
-                          <th width="5%">
-                            <img src="images/singer/5.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
-                          </th>
-                          <td width="35%">
-                            <div style="line-height: 4px;margin-top:15px">
-                              <p>Noga Erez</p>
-                              <p>Views</p>
-                            </div>
-                          </td>
-                          <td width="5%">
-                            <div class="song-duration">
-                              <i class='fas fa-heart'></i>
-                            </div>
-                          </td>
-                          <td width="5%">
-                            <div class="popup" onclick="()"><i class='fas fa-ellipsis-v'></i>
-                              <div class="popuptext"  id="">
-                                <ul style="list-style-type:none;">
-                                 <li><a href=""><i class="fas fa-step-forward"></i></a></li>
-                                 <li><a href=""><i class="fas fa-step-forward"></i></a></li>
-                                 <li><a href=""><i class="fas fa-ban fa-sm" aria-hidden="true"></i></a></li>
-                                </ul>
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
-
-                  </tbody>
-                </table>
-        </div>
+            <tr>
+              <th width="5%">
+                <img src="images/singer/5.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
+              </th>
+              <td width="35%">
+                <div style="line-height: 4px;margin-top:15px">
+                  <p>Noga Erez</p>
+                  <p>Views</p>
+                </div>
+              </td>
+              <td width="5%">
+                <div class="song-duration">
+                  <i class='fas fa-heart'></i>
+                </div>
+              </td>
+              <td width="5%">
+                <div class="popup" onclick="()"><i class='fas fa-ellipsis-v'></i>
+                  <div class="popuptext"  id="">
+                    <ul style="list-style-type:none;">
+                      <li><a href=""><i class="fas fa-step-forward"></i></a></li>
+                      <li><a href=""><i class="fas fa-step-forward"></i></a></li>
+                      <li><a href=""><i class="fas fa-ban fa-sm" aria-hidden="true"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
+    </div>
 
     </div>
 
@@ -380,14 +377,12 @@
       <!--------------List of channels---------------------->
 
       <!--------------Album list to be displayed on click channel---------------------->
-      <div class="container-fluid" style="height: 505px; overflow-y: auto; scrollbar-width: none;margin-top: 10px;border-radius:6%" id="album-inside-list">
-        <div class="card img-fluid" style="height: 505px;border-radius: 6%; scrollbar-width: none;padding: 5px;">
+      <div class="container-fluid" style="height: 505px; overflow-y: auto; scrollbar-width: none;border-radius:6%;padding: 18px;" id="album-inside-list">
+        <div class="card img-fluid" style="height: 505px;border-radius: 6%; scrollbar-width: none;padding: 10px;">
          <div class="container-fluid p-2">
             <div class="row">
               <div class="col-1">
-                  <a href="index.html">
-                    <i aria-hidden="true" class="fas fa-angle-left"></i>
-                  </a>
+                    <i aria-hidden="true" class="fas fa-angle-left" onclick="back1()"></i>
                 </div>
               <div class="col-10 text-center">Chilled Bits</div>
             </div>
@@ -499,23 +494,77 @@
 
       <!--------------Songs list to be displayed on click channel---------------------->
 
-      <div class="container-fluid" style="height: 505px; overflow-y: auto; scrollbar-width: none;margin-top: 10px;display: none;" id="song-list">
-        <div class="card img-fluid" style="height: 505px;border-radius: 6%; scrollbar-width: none;">
+    <div class="container-fluid" style="height: 505px; overflow-y: auto; scrollbar-width: none;display: none;padding: 18px;" id="song-list">
+        <div class="card img-fluid" style="height: 505px;border-radius: 6%; scrollbar-width: none;padding: 10px;">
             <div class="container-fluid p-2">
               <div class="row">
                 <div class="col-1" style="text-align: right;">
-                  <a href="index.html">
-                    <i aria-hidden="true" class="fas fa-angle-left"></i>
-                  </a>
+                    <i aria-hidden="true" class="fas fa-angle-left" onclick="back2()"></i>
                 </div>
                 <div class="col-10 text-center">Chilled Bits</div>
               </div>
             </div>
             <table class="table">
-                  <tbody>
-                    <tr>
+              <tbody>
+                <tr>
+                  <th width="5%">
+                    <img src="images/singer/6.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
+                  </th>
+                  <td width="35%">
+                    <div style="line-height: 4px;margin-top:15px">
+                      <p>Noga Erez</p>
+                      <p>Views</p>
+                    </div>
+                  </td>
+                  <td width="5%">
+                    <div class="song-duration">
+                      <i class='fas fa-heart'></i>
+                    </div>
+                  </td>
+                  <td width="5%">
+                    <div class="popup" onclick="myFunction1()"><i class='fas fa-ellipsis-v'></i>
+                      <div class="popuptext"  id="myPopup1">
+                          <ul style="list-style-type:none;">
+                            <li><a href=""><i class="fas fa-step-forward"></i></a></li>
+                            <li><a href=""><i class="fas fa-step-forward"></i></a></li>
+                            <li><a href=""><i class="fas fa-ban fa-sm" aria-hidden="true"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th width="5%">
+                      <img src="images/singer/2.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
+                    </th>
+                    <td width="50%">
+                      <div style="line-height: 4px;margin-top:15px">
+                        <p>DJ Snake</p>
+                        <p>Views</p>
+                      </div>
+                    </td>
+                    <td width="5%">
+                      <div class="song-duration">
+                        <i class='fas fa-heart'></i>
+                      </div>
+                    </td>
+                    <td width="5%">
+                      <div class="popup" onclick="myFunction2()"><i class='fas fa-ellipsis-v'></i>
+                        <div class="popuptext"  id="myPopup2">
+                          <ul style="list-style-type:none;">
+                            <li><a href=""><i class="fas fa-step-forward"></i></a></li>
+                            <li><a href=""><i class="fas fa-step-forward"></i></a></li>
+                            <li><a href=""><i class="fas fa-ban fa-sm" aria-hidden="true"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
                       <th width="5%">
-                        <img src="images/singer/6.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
+                        <img src="images/singer/3.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
                       </th>
                       <td width="35%">
                         <div style="line-height: 4px;margin-top:15px">
@@ -529,316 +578,253 @@
                         </div>
                       </td>
                       <td width="5%">
-                        <div class="popup" onclick="myFunction1()"><i class='fas fa-ellipsis-v'></i>
-                          <div class="popuptext"  id="myPopup1">
-                              <ul style="list-style-type:none;">
-                                <li><a href=""><i class="fas fa-step-forward"></i></a></li>
-                                <li><a href=""><i class="fas fa-step-forward"></i></a></li>
-                                <li><a href=""><i class="fas fa-ban fa-sm" aria-hidden="true"></i></a></li>
-                              </ul>
+                        <div class="popup" onclick="myFunction3()"><i class='fas fa-ellipsis-v'></i>
+                          <div class="popuptext"  id="myPopup3">
+                            <ul style="list-style-type:none;">
+                              <li><a href=""><i class="fas fa-step-forward"></i></a></li>
+                              <li><a href=""><i class="fas fa-step-forward"></i></a></li>
+                              <li><a href=""><i class="fas fa-ban fa-sm" aria-hidden="true"></i></a></li>
+                            </ul>
                             </div>
                           </div>
-                        </td>
-                      </tr>
+                      </td>
+                    </tr>
 
-                      <tr>
-                        <th width="5%">
-                          <img src="images/singer/2.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
-                        </th>
-                        <td width="50%">
-                          <div style="line-height: 4px;margin-top:15px">
-                            <p>DJ Snake</p>
-                            <p>Views</p>
+                    <tr>
+                      <th width="5%">
+                        <img src="images/singer/4.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
+                      </th>
+                      <td width="35%">
+                        <div style="line-height: 4px;margin-top:15px">
+                          <p>Noga Erez</p>
+                          <p>Views</p>
+                        </div>
+                      </td>
+                      <td width="5%">
+                        <div class="song-duration">
+                          <i class='fas fa-heart'></i>
+                        </div>
+                      </td>
+                      <td width="5%">
+                        <div class="popup" onclick="myFunction4()"><i class='fas fa-ellipsis-v'></i>
+                          <div class="popuptext"  id="myPopup4">
+                            <ul style="list-style-type:none;">
+                              <li><a href=""><i class="fas fa-step-forward"></i></a></li>
+                              <li><a href=""><i class="fas fa-step-forward"></i></a></li>
+                              <li><a href=""><i class="fas fa-ban fa-sm" aria-hidden="true"></i></a></li>
+                            </ul>
                           </div>
+                        </div>
                         </td>
-                        <td width="5%">
-                          <div class="song-duration">
-                            <i class='fas fa-heart'></i>
+                    </tr>
+
+                    <tr>
+                      <th width="5%">
+                        <img src="images/singer/5.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
+                      </th>
+                      <td width="35%">
+                        <div style="line-height: 4px;margin-top:15px">
+                          <p>Noga Erez</p>
+                          <p>Views</p>
+                        </div>
+                      </td>
+                      <td width="5%">
+                        <div class="song-duration">
+                          <i class='fas fa-heart'></i>
+                        </div>
+                      </td>
+                      <td width="5%">
+                        <div class="popup" onclick="myFunction5()"><i class='fas fa-ellipsis-v'></i>
+                          <div class="popuptext"  id="myPopup5">
+                            <ul style="list-style-type:none;">
+                              <li><a href=""><i class="fas fa-step-forward"></i></a></li>
+                              <li><a href=""><i class="fas fa-step-forward"></i></a></li>
+                              <li><a href=""><i class="fas fa-ban fa-sm" aria-hidden="true"></i></a></li>
+                            </ul>
                           </div>
-                        </td>
-                        <td width="5%">
-                          <div class="popup" onclick="myFunction2()"><i class='fas fa-ellipsis-v'></i>
-                            <div class="popuptext"  id="myPopup2">
-                              <ul style="list-style-type:none;">
-                                <li><a href=""><i class="fas fa-step-forward"></i></a></li>
-                                <li><a href=""><i class="fas fa-step-forward"></i></a></li>
-                                <li><a href=""><i class="fas fa-ban fa-sm" aria-hidden="true"></i></a></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-
-                      <tr>
-                          <th width="5%">
-                            <img src="images/singer/3.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
-                          </th>
-                          <td width="35%">
-                            <div style="line-height: 4px;margin-top:15px">
-                              <p>Noga Erez</p>
-                              <p>Views</p>
-                            </div>
-                          </td>
-                          <td width="5%">
-                            <div class="song-duration">
-                              <i class='fas fa-heart'></i>
-                            </div>
-                          </td>
-                          <td width="5%">
-                            <div class="popup" onclick="myFunction3()"><i class='fas fa-ellipsis-v'></i>
-                              <div class="popuptext"  id="myPopup3">
-                                <ul style="list-style-type:none;">
-                                  <li><a href=""><i class="fas fa-step-forward"></i></a></li>
-                                  <li><a href=""><i class="fas fa-step-forward"></i></a></li>
-                                  <li><a href=""><i class="fas fa-ban fa-sm" aria-hidden="true"></i></a></li>
-                                </ul>
-                                </div>
-                              </div>
-                          </td>
-                        </tr>
-
-                        <tr>
-                          <th width="5%">
-                            <img src="images/singer/4.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
-                          </th>
-                          <td width="35%">
-                            <div style="line-height: 4px;margin-top:15px">
-                              <p>Noga Erez</p>
-                              <p>Views</p>
-                            </div>
-                          </td>
-                          <td width="5%">
-                            <div class="song-duration">
-                              <i class='fas fa-heart'></i>
-                            </div>
-                          </td>
-                          <td width="5%">
-                            <div class="popup" onclick="myFunction4()"><i class='fas fa-ellipsis-v'></i>
-                              <div class="popuptext"  id="myPopup4">
-                                <ul style="list-style-type:none;">
-                                  <li><a href=""><i class="fas fa-step-forward"></i></a></li>
-                                  <li><a href=""><i class="fas fa-step-forward"></i></a></li>
-                                  <li><a href=""><i class="fas fa-ban fa-sm" aria-hidden="true"></i></a></li>
-                                </ul>
-                              </div>
-                            </div>
-                            </td>
-                        </tr>
-
-                        <tr>
-                          <th width="5%">
-                            <img src="images/singer/5.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
-                          </th>
-                          <td width="35%">
-                            <div style="line-height: 4px;margin-top:15px">
-                              <p>Noga Erez</p>
-                              <p>Views</p>
-                            </div>
-                          </td>
-                          <td width="5%">
-                            <div class="song-duration">
-                              <i class='fas fa-heart'></i>
-                            </div>
-                          </td>
-                          <td width="5%">
-                            <div class="popup" onclick="myFunction5()"><i class='fas fa-ellipsis-v'></i>
-                              <div class="popuptext"  id="myPopup5">
-                                <ul style="list-style-type:none;">
-                                 <li><a href=""><i class="fas fa-step-forward"></i></a></li>
-                                 <li><a href=""><i class="fas fa-step-forward"></i></a></li>
-                                 <li><a href=""><i class="fas fa-ban fa-sm" aria-hidden="true"></i></a></li>
-                                </ul>
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
-
+                        </div>
+                      </td>
+                    </tr>
                   </tbody>
                 </table>              
               </div>
-        </div>   
+    </div>   
 
-        <div class="tab-pane fade" id="custom-tabs-four-messages" role="tabpanel" aria-labelledby="custom-tabs-four-messages-tab">
-          <div class="container-fluid" style="height: 505px; overflow-y: auto; scrollbar-width: none;margin-top: 10px;">
-                <div class="container-fluid p-2">
-                  <div class="row">
-                    <div class="col-8" style="line-height: 2px;font-weight: bold;">
-                      <p>Active schedule</p>
-                      <p>1.6.2021 | 14.33</p>
-                    </div>
-                    <div class="col-4 text-center">
-                      <label class="switch">
-                        <input type="checkbox" checked>
-                        <span class="slider round"></span>
-                      </label>
-                    </div>
-                  </div>
+    <div class="tab-pane fade" id="custom-tabs-four-messages" role="tabpanel" aria-labelledby="custom-tabs-four-messages-tab">
+      <div class="container-fluid" style="height: 505px; overflow-y: auto; scrollbar-width: none;margin-top: 10px;">
+            <div class="container-fluid p-2">
+              <div class="row">
+                <div class="col-8" style="line-height: 2px;font-weight: bold;">
+                  <p>Active schedule</p>
+                  <p>1.6.2021 | 14.33</p>
                 </div>
-                <table class="table">
-                  <tbody>
-                          <tr>
-                            <th width="5%">
-                              <img src="images/singer/6.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
-                            </th>
-                            <td width="35%">
-                            <div style="line-height: 4px;margin-top:15px">
-                              <p>Noga Erez</p>
-                              <p>1.6.2021 | 14.33</p>
-                            </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <th width="5%">
-                              <img src="images/singer/2.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
-                            </th>
-                            <td width="35%">
-                              <div style="line-height: 4px;margin-top:15px">
-                               <p>Noga Erez</p>
-                               <p>1.6.2021 | 14.33</p>
-                              </div>
-                            </td>
-                          </tr>
-
-                            <tr>
-                              <th width="5%">
-                                <img src="images/singer/3.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
-                              </th>
-                              <td width="35%">
-                                <div style="line-height: 4px;margin-top:15px">
-                                 <p>Noga Erez</p>
-                                 <p>1.6.2021 | 14.33</p>
-                                </div>
-                              </td>
-                            </tr>
-
-                            <tr>
-                              <th width="5%">
-                                <img src="images/singer/4.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
-                              </th>
-                              <td width="35%">
-                                <div style="line-height: 4px;margin-top:15px">
-                                  <p>Noga Erez</p>
-                                  <p>1.6.2021 | 14.33</p>
-                                </div>
-                              </td>
-                            </tr>
-
-                             <tr>
-                              <th width="5%">
-                                <img src="images/singer/4.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
-                              </th>
-                              <td width="35%">
-                                <div style="line-height: 4px;margin-top:15px">
-                                  <p>Noga Erez</p>
-                                  <p>1.6.2021 | 14.33</p>
-                                </div>
-                              </td>
-                            </tr>
-
-                          </tbody>
-                        </table>
-                      </div> 
-                    </div>
-                  </div>     
+                <div class="col-4 text-center">
+                  <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                  </label>
                 </div>
-
-                <!--------------Bottom buttons to manage songs----------------------------->
-
-                <div class="container-fluid mt-3">
-                  <div class="d-flex justify-content-between">
-                    <div class="p-1">
-                      <div class="button button-lg">
-                        <i class="fas fa-ban fa-lg" aria-hidden="true"></i>
-                        <span class="sr-only">Ban</span>
-                      </div>
-                    </div>
-                    <div class="container" style="display: flex;justify-content: center;">
-                      <div class="d-inline-flex">  
-                        <div class="p-1">
-                          <div class="button-heart button-lg">
-                            <i class="fas fa-heart fa-lg"></i>
-                            <span class="sr-only">Repeat Song</span>
-                          </div>
-                        </div>
-                        <div class="p-1">
-                          <div class=" button-pause playpause-track" onclick="playpauseTrack()">
-                            <i class="fas fa-pause fa-lg" aria-hidden="true" aria-hidden="true"></i>
-                            <span class="sr-only">Pause</span>
-                          </div>
-                        </div>
-                        <div class="p-1">
-                          <div class="button button-lg next-track" onclick="nextTrack()">
-                            <i class="fas fa-step-forward fa-lg"></i>
-                            <span class="sr-only">Next Music</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="p-1">
-                      <div class="container">
-                        <div class="button button-lg volumepopup" onclick="volumeclick()">
-                          <i class="fas fa-volume-up fa-lg" aria-hidden="true" style=""></i>
-                          <div class="volumepopuptext" id="volumePopup">
-                            <ol>
-                              <li><i class="fas fa-volume-down" aria-hidden="true" style=""></i></li>
-                              <li><input type="range" id="range" min="0" max="9" step="1" value="3" /></li>
-                            </ol>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!--------------Bottom buttons to manage songs----------------------------->
-                 
-                <div class="container" style="padding-left: 0px;padding-bottom: 0px;">
-                  <div class="row  ">
-                  <div class="col-5" style="padding: 0px;width: 106px;">
-                    
-                      <img class="card-img" src="images/singer/5.jpg" alt="Card image cap" height="106px">
-                    
-                  </div>
-
-                  <div class="col-7"  style="padding: 0px;background: #000;width: 269px;">
-                    <div class="details"  style="padding: 8px;">
-                      <div class="now-playing"></div>
-                      <div class="track-art"></div>
-                      <div class="track-name"><b>DJ Khalid</b></div>
-                      <div class="track-artist">Views</div>
-                    </div>
-
-                    <div class="media-progress" style="padding: 8px;">
-                      <div class="progress-bar-wrapper progress">
-                        <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
-                      </div>
-                      <div class="current-time">
-                        00:00
-                      </div>
-                      <div class="total-duration">
-                        00:00
-                      </div>
-                    </div>
-
-                  </div>
-                 <!--  <div class="col-2">
-                    <div class="likepopup" onclick="like()"> 
-                      <i class="fas fa-thumbs-up" aria-hidden="true"></i>
-                      <span class="likepopuptext" id="myPopup">
-                        <ol>
-                          <li><i class="fas fa-thumbs-up" aria-hidden="true" onclick="upthumb()"></i></li>
-                          <li><i class="fas fa-thumbs-down" aria-hidden="true" onclick="downthumb()"></i></li>
-                        </ol>
-                      </span>
-                    </div>
-                  </div> -->
-
-                </div>
-               </div>
-
               </div>
             </div>
+            <table class="table">
+              <tbody>
+                <tr>
+                  <th width="5%">
+                    <img src="images/singer/6.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
+                  </th>
+                  <td width="35%">
+                  <div style="line-height: 4px;margin-top:15px">
+                    <p>Noga Erez</p>
+                    <p>1.6.2021 | 14.33</p>
+                  </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th width="5%">
+                    <img src="images/singer/2.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
+                  </th>
+                  <td width="35%">
+                    <div style="line-height: 4px;margin-top:15px">
+                      <p>Noga Erez</p>
+                      <p>1.6.2021 | 14.33</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th width="5%">
+                    <img src="images/singer/3.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
+                  </th>
+                  <td width="35%">
+                    <div style="line-height: 4px;margin-top:15px">
+                      <p>Noga Erez</p>
+                      <p>1.6.2021 | 14.33</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th width="5%">
+                    <img src="images/singer/4.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
+                  </th>
+                  <td width="35%">
+                    <div style="line-height: 4px;margin-top:15px">
+                      <p>Noga Erez</p>
+                      <p>1.6.2021 | 14.33</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th width="5%">
+                    <img src="images/singer/4.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
+                  </th>
+                  <td width="35%">
+                    <div style="line-height: 4px;margin-top:15px">
+                      <p>Noga Erez</p>
+                      <p>1.6.2021 | 14.33</p>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div> 
+    </div>
+    </div>     
+  </div>
+
+  <!--------------Bottom buttons to manage songs----------------------------->
+
+      <div class="container-fluid mt-3">
+        <div class="d-flex justify-content-between">
+          <div class="p-1">
+            <div class="button button-lg">
+              <i class="fas fa-ban fa-lg" aria-hidden="true"></i>
+              <span class="sr-only">Ban</span>
+            </div>
+          </div>
+          <div class="container" style="display: flex;justify-content: center;">
+            <div class="d-inline-flex">  
+              <div class="p-1">
+                <div class="button-heart button-lg">
+                  <i class="fas fa-heart fa-lg"></i>
+                  <span class="sr-only">Repeat Song</span>
+                </div>
+              </div>
+              <div class="p-1">
+                <div class=" button-pause playpause-track" onclick="playpauseTrack()">
+                  <i class="fas fa-pause fa-lg" aria-hidden="true" aria-hidden="true"></i>
+                  <span class="sr-only">Pause</span>
+                </div>
+              </div>
+              <div class="p-1">
+                <div class="button button-lg next-track" onclick="nextTrack()">
+                  <i class="fas fa-step-forward fa-lg"></i>
+                  <span class="sr-only">Next Music</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-1">
+            <div class="container">
+              <div class="button button-lg volumepopup" onclick="volumeclick()">
+                <i class="fas fa-volume-up fa-lg" aria-hidden="true" style=""></i>
+                <div class="volumepopuptext" id="volumePopup">
+                  <ol>
+                    <li><i class="fas fa-volume-down" aria-hidden="true" style=""></i></li>
+                    <li><input type="range" id="range" min="0" max="9" step="1" value="3" /></li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!--------------Bottom buttons to manage songs----------------------------->
+                 
+      <div class="container" style="padding-left: 0px;padding-bottom: 0px;">
+        <div class="row  ">
+        <div class="col-5" style="padding: 0px;width: 106px;">
+            <img class="card-img" src="images/singer/5.jpg" alt="Card image cap" height="106px">
+        </div>
+
+        <div class="col-7"  style="padding: 0px;background: #000;width: 269px;">
+          <div class="details"  style="padding: 8px;">
+            <div class="now-playing"></div>
+            <div class="track-art"></div>
+            <div class="track-name"><b>DJ Khalid</b></div>
+            <div class="track-artist">Views</div>
+          </div>
+
+          <div class="media-progress" style="padding: 8px;">
+            <div class="progress-bar-wrapper progress">
+              <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+            </div>
+            <div class="current-time">
+              00:00
+            </div>
+            <div class="total-duration">
+              00:00
+            </div>
+          </div>
+
+        </div>
+        <!--<div class="col-2">
+          <div class="likepopup" onclick="like()"> 
+            <i class="fas fa-thumbs-up" aria-hidden="true"></i>
+            <span class="likepopuptext" id="myPopup">
+              <ol>
+                <li><i class="fas fa-thumbs-up" aria-hidden="true" onclick="upthumb()"></i></li>
+                <li><i class="fas fa-thumbs-down" aria-hidden="true" onclick="downthumb()"></i></li>
+              </ol>
+            </span>
+          </div>
+        </div> -->
+
+      </div>
+      </div>
+
+  </div>
+</div>
 
 
 </main>
@@ -865,6 +851,11 @@ $('.image-class').click(function(){
       // alert('hi');
 });
 
+function front() {
+    $("#img-modal").show();
+    $("#list-modal").hide();
+}
+
 $('#custom-tabs-four-home-tab').click(function(){
       $("#album-list").show();
       $("#album-inside-list").hide();
@@ -882,7 +873,14 @@ $('#custom-tabs-four-messages-tab').click(function(){
       $("#album-inside-list").hide();
       $("#song-list").hide();
 });
-
+function back1() {
+  $("#album-list").show();
+  $("#album-inside-list").hide();
+}
+function back2() {
+  $("#song-list").hide();
+  $("#album-inside-list").show();
+}
 
 // When the user clicks on div, open the popup
 function myFunction1() {

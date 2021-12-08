@@ -60,8 +60,8 @@ ol li{
 .centerDiv
   {
     width: 80%;
-    max-width: 350px;
-    min-height: 400px;
+    max-width: 375px;
+    min-height: 600px;
     margin: 2rem auto;
     background: #42ddf5;
     box-shadow: 20px 20px 60px #c8c8c8, 
@@ -362,10 +362,10 @@ ol li{
   
 }
 
-/*.search-container:hover > .search-input{
+.search-container:hover > .search-input{
     width: 200px;
     color: #fff;
-}*/
+}
 
 .search-container .search-input{
     background: transparent;
@@ -383,9 +383,9 @@ ol li{
     color: #fff;
 }
 
-/*.search-container:hover{
+.search-container:hover{
   animation: hoverShake 0.15s linear 3;
-}*/
+}
 
 .alert {
     position: relative;
