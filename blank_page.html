@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
- <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"></head>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <title>ME.J Songs</title> 
-  <style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"></head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>ME.J Songs</title> 
+<style>
 
 .blank_input {
 width: 100%;
@@ -27,15 +27,7 @@ background: #29d5ef;
 }
 </style>
 <body>
-  <main class="player" style="background: #42ddf5;height:600px">
-     
-     <!----------------------logo------------------------>
-     <!--      <div class="row">
-          <div class="ml-auto mr-3">
-             <img src="images/logo1.png" alt="" style="width:100px; height:70;padding: 5px;float: right;">
-          </div>
-        </div> -->
-
+<main class="player" style="background: #42ddf5;height:600px">
     <div class="row">
       <div class="col-md-12 text-center">
         <a href="index.html">
@@ -46,129 +38,125 @@ background: #29d5ef;
 
     <!----------------------logo ---------------------------->    
 
-        <div class="alert" role="alert" style="text-align: center;">
-         <div class="row">
-          <div class="col-1"> 
-            <a href="index.html">
-            <!-- <img src="images/bakward.png" height="20px" width="20px"> -->
-            <i class="fas fa-angle-left" aria-hidden="true" style="margin-left: 5px;height: 25px; color: white;"></i>
-            </a>
-          </div>
-          <div class="col-10">
-            <div class="input-group">
-                <i class="fas fa-search" aria-hidden="true" style="position: absolute;margin-left: 5px;height: 25px;display: flex;align-items: center; color: white;"></i>
-            <input type="text" placeholder="Search For Song" class="blank_input">
-          </div>
-          </div>
-         </div>
-        </div>
-
-      <div id="myModal" style="text-align: center;">
-        <div class="search-content" style="margin-top:200px;">
-            <img src="images/search.png" alt="" style="width:100px; height:70;">
-            <h5 class="text-color">Play What You Love</h5>
-            <p  class="text-color">Search For Artist & Songs</p>
-        </div>
+    <div class="alert" role="alert" style="text-align: center;">
+      <div class="row">
+      <div class="col-1"> 
+        <a href="index.html">
+        <!-- <img src="images/bakward.png" height="20px" width="20px"> -->
+        <i class="fas fa-angle-left" aria-hidden="true" style="margin-left: 5px;height: 25px; color: white;"></i>
+        </a>
       </div>
-      <section style="background: #fff;">
-        
-                <!--------------Bottom buttons to manage songs----------------------------->
+      <div class="col-10">
+        <div class="input-group">
+            <i class="fas fa-search" aria-hidden="true" style="position: absolute;margin-left: 5px;height: 25px;display: flex;align-items: center; color: white;"></i>
+        <input type="text" placeholder="Search For Song" class="blank_input">
+      </div>
+      </div>
+      </div>
+    </div>
 
-                <div class="container-fluid mt-3">
-                  <div class="d-flex justify-content-between">
-                    <div class="p-1">
-                      <div class="button button-lg">
-                        <i class="fas fa-ban fa-lg" aria-hidden="true"></i>
-                        <span class="sr-only">Ban</span>
-                      </div>
-                    </div>
-                    <div class="container" style="display: flex;justify-content: center;">
-                      <div class="d-inline-flex">  
-                        <div class="p-1">
-                          <div class="button-heart button-lg">
-                            <i class="fas fa-heart fa-lg"></i>
-                            <span class="sr-only">Repeat Song</span>
-                          </div>
-                        </div>
-                        <div class="p-1">
-                          <div class=" button-pause playpause-track" onclick="playpauseTrack()">
-                            <i class="fas fa-pause fa-lg" aria-hidden="true" aria-hidden="true"></i>
-                            <span class="sr-only">Pause</span>
-                          </div>
-                        </div>
-                        <div class="p-1">
-                          <div class="button button-lg next-track" onclick="nextTrack()">
-                            <i class="fas fa-step-forward fa-lg"></i>
-                            <span class="sr-only">Next Music</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="p-1">
-                      <div class="container">
-                        <div class="button button-lg volumepopup" onclick="volumeclick()">
-                          <i class="fas fa-volume-up fa-lg" aria-hidden="true" style=""></i>
-                          <div class="volumepopuptext" id="volumePopup">
-                            <ol>
-                              <li><i class="fas fa-volume-down" aria-hidden="true" style=""></i></li>
-                              <li><input type="range" id="range" min="0" max="9" step="1" value="3" /></li>
-                            </ol>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-            <!--------------Bottom buttons to manage songs----------------------------->
-
-              <div>
-                <div class="row">
-                  <div class="col-5">
-                    <div class="card">
-                      <img class="card-img" src="images/singer/5.jpg" alt="Card image cap">
-                    </div>
-                  </div>
-                  <div class="col-5">
-                    <div class="details">
-                      
-                      <div class="now-playing"></div>
-                      <div class="track-art"></div>
-                      <div class="track-name"><b>DJ Khalid</b></div>
-                      <div class="track-artist">Views</div>
-                    </div>
-
-                    <div class="media-progress">
-                      <div class="progress-bar-wrapper progress">
-                        <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
-                      </div>
-                      <div class="current-time">
-                        00:00
-                      </div>
-                      <div class="total-duration">
-                        00:00
-                      </div>
-                    </div>
-
-                  </div>
-                  <div class="col-2">
-                    <div class="likepopup" onclick="like()"> 
-                      <i class="fas fa-thumbs-up" aria-hidden="true"></i>
-                      <span class="likepopuptext" id="myPopup">
-                        <ol>
-                            <li><i class="fas fa-thumbs-up" aria-hidden="true" onclick="upthumb()"></i></li>
-                            <li><i class="fas fa-thumbs-down" aria-hidden="true" onclick="downthumb()"></i></li>
-                        </ol>
-                      </span>
-                    </div>
-                  </div>
-                  
+    <div id="myModal" style="text-align: center;">
+      <div class="search-content" style="margin-top:200px;">
+          <img src="images/search.png" alt="" style="width:100px; height:70;">
+          <h5 class="text-color">Play What You Love</h5>
+          <p  class="text-color">Search For Artist & Songs</p>
+      </div>
+    </div>
+    <section style="background: #fff;">
+      <!--------------Bottom buttons to manage songs----------------------------->
+      <div class="container-fluid mt-3">
+        <div class="d-flex justify-content-between">
+          <div class="p-1">
+            <div class="button button-lg">
+              <i class="fas fa-ban fa-lg" aria-hidden="true"></i>
+              <span class="sr-only">Ban</span>
+            </div>
+          </div>
+          <div class="container" style="display: flex;justify-content: center;">
+            <div class="d-inline-flex">  
+              <div class="p-1">
+                <div class="button-heart button-lg">
+                  <i class="fas fa-heart fa-lg"></i>
+                  <span class="sr-only">Repeat Song</span>
                 </div>
               </div>
-      </section>
+              <div class="p-1">
+                <div class=" button-pause playpause-track" onclick="playpauseTrack()">
+                  <i class="fas fa-pause fa-lg" aria-hidden="true" aria-hidden="true"></i>
+                  <span class="sr-only">Pause</span>
+                </div>
+              </div>
+              <div class="p-1">
+                <div class="button button-lg next-track" onclick="nextTrack()">
+                  <i class="fas fa-step-forward fa-lg"></i>
+                  <span class="sr-only">Next Music</span>
+                </div>
+              </div>
+            </div>
+          </div>
 
-  </main>
+          <div class="p-1">
+            <div class="container">
+              <div class="button button-lg volumepopup" onclick="volumeclick()">
+                <i class="fas fa-volume-up fa-lg" aria-hidden="true" style=""></i>
+                <div class="volumepopuptext" id="volumePopup">
+                  <ol>
+                    <li><i class="fas fa-volume-down" aria-hidden="true" style=""></i></li>
+                    <li><input type="range" id="range" min="0" max="9" step="1" value="3" /></li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--------------Bottom buttons to manage songs----------------------------->
+      <div>
+        <div class="row">
+          <div class="col-5">
+            <div class="card">
+              <img class="card-img" src="images/singer/5.jpg" alt="Card image cap">
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="details">
+              
+              <div class="now-playing"></div>
+              <div class="track-art"></div>
+              <div class="track-name"><b>DJ Khalid</b></div>
+              <div class="track-artist">Views</div>
+            </div>
+
+            <div class="media-progress">
+              <div class="progress-bar-wrapper progress">
+                <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+              </div>
+              <div class="current-time">
+                00:00
+              </div>
+              <div class="total-duration">
+                00:00
+              </div>
+            </div>
+
+          </div>
+          <div class="col-2">
+            <div class="likepopup" onclick="like()"> 
+              <i class="fas fa-thumbs-up" aria-hidden="true"></i>
+              <span class="likepopuptext" id="myPopup">
+                <ol>
+                    <li><i class="fas fa-thumbs-up" aria-hidden="true" onclick="upthumb()"></i></li>
+                    <li><i class="fas fa-thumbs-down" aria-hidden="true" onclick="downthumb()"></i></li>
+                </ol>
+              </span>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+</main>
 <script type="text/javascript" src="main.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
