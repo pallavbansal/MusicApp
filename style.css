@@ -403,6 +403,7 @@ ol li{
   width: 100%;
   -webkit-transition: .2s;
   transition: opacity .2s;
+  margin-top: 6px;
 }
 
 /* Modify the appearance of the slider thumb */
@@ -455,6 +456,10 @@ ol li{
   box-shadow: none;
   height: 2px;
   width: 44%;
+}
+
+.progress{
+    height: 1.5rem;
 }
 
 /* Popup container - can be anything you want */
@@ -884,7 +889,12 @@ input:checked + .slider:before {
 input::placeholder {
   color: #000;
 }
-
+.current-time{
+    margin-top: 10px;
+}
+.total-duration{
+    margin-top: 10px;
+}
 .text-center{
     font-weight: bold;
 }
@@ -897,7 +907,7 @@ input::placeholder {
   background:transparent;
   width:100%;
   padding:8px 0 5px 20px;
-  font-size:13px;
+  font-size:16px;
   color:#fff;
 }
 
