@@ -18,6 +18,11 @@ h4{
     font-weight: bold;
 
 }
+h5{
+   color:#e05131; 
+   font-family: fantasy;
+   font-size: 18px;
+}
 body {
     background: var(--bg);
     color: var(--black);
@@ -73,7 +78,25 @@ ol li{
     vertical-align: top;
     border-top: none;
 }
-
+.fa-home{
+    font-size: 29px;
+}
+.ml-auto{
+    font-size: 29px;
+}
+.login-logo{
+     margin-top: 50px;
+     justify-content: center;
+     align-items: center; 
+     display: flex;
+}
+.login-logo h4{
+   font-size: 33px;
+}
+.account-logo h4{
+   margin:20px;
+   font-size: 33px;
+}
 
 /*Profile Card 1*/
 .profile-card-1 {
@@ -555,7 +578,7 @@ border-radius: 0.25rem;
     background: transparent;
     width: 100%;
     padding: 0px 0 5px 24px;
-    font-size: 13px;
+    font-size: 16px;
 }
 
 .input-container input:focus{ 
@@ -585,7 +608,7 @@ border-radius: 0.25rem;
     background: transparent;
     width: 100%;
     padding: 0px 0 0px 0;
-    font-size: 13px;
+    font-size: 16px;
     color: #000;
 }
 
