@@ -773,9 +773,8 @@
                 <i class="fas fa-volume-up fa-lg" aria-hidden="true" style=""></i>
                 <div class="volumepopuptext" id="volumePopup">
                   <ol>
-                    <li><i class="fas fa-volume-up" aria-hidden="true" style=""></i></li>
-                    <li><input type="range" id="range" class="volume_slider" min="0" max="9" step="1" value="3" onchange="setVolume()"/></li>
                     <li><i class="fas fa-volume-down" aria-hidden="true" style=""></i></li>
+                    <li><input type="range" id="range" min="0" max="9" step="1" value="3" /></li>
                   </ol>
                 </div>
               </div>
@@ -787,44 +786,54 @@
 
 <!--------------Bottom buttons to manage songs----------------------------->
 
+                 
+
       <div class="container-fluid mt-3">
-        <div class="d-flex justify-content-between" style="margin: -5px;background: black;">
+        <div class="row">
+        <div class="col-5" style="padding: 0px;width: 105px;">
 
-          <div>
-            <img src="images/singer/5.jpg" alt="song image" style="width: 106px; height: 109px;">
-          </div>
-
-          <div class="container-fluid">
-
-              <div class="p-1">
-                <div class="details"  style="padding: 5px;">
-                  <div class="now-playing"></div>
-                  <div class="track-art"></div>
-                  <div class="track-name text-white"><b>DJ Khalid</b></div>
-                  <div class="track-artist text-white">Views</div>
-                </div>
-              </div>
-
-              <div class="p-1">
-                <div class="media-progress">
-                  <div class="progress-bar-wrapper progress">
-                    <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
-                    <!-- <input type="range" id="myRange" max="1000" min="0" style="width:80%"> -->
-                  </div>
-                  <div class="current-time text-white">
-                    00:00
-                  </div>
-                  <div class="total-duration text-white">
-                    00:00
-                  </div>
-                </div>
-              </div>
-              
-          </div>
-          
+      <div class="container-fluid">
+        <div class="row">
+        <div class="col-5" style="padding: 0px;width: 106px;">
+            <img class="card-img" src="images/singer/5.jpg" alt="Card image cap" height="106px">
         </div>
+
+        <div class="col-7"  style="padding: 0px;background: #000;width: 269px;">
+          <div class="details"  style="padding: 8px;">
+            <div class="now-playing"></div>
+            <div class="track-art"></div>
+            <div class="track-name"><b>DJ Khalid</b></div>
+            <div class="track-artist">Views</div>
+          </div>
+
+          <div class="media-progress" style="padding: 8px;">
+            <div class="progress-bar-wrapper progress">
+              <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+            </div>
+            <div class="current-time">
+              00:00
+            </div>
+            <div class="total-duration">
+              00:00
+            </div>
+          </div>
+
+        </div>
+        
+        <!--<div class="col-2">
+          <div class="likepopup" onclick="like()"> 
+            <i class="fas fa-thumbs-up" aria-hidden="true"></i>
+            <span class="likepopuptext" id="myPopup">
+              <ol>
+                <li><i class="fas fa-thumbs-up" aria-hidden="true" onclick="upthumb()"></i></li>
+                <li><i class="fas fa-thumbs-down" aria-hidden="true" onclick="downthumb()"></i></li>
+              </ol>
+            </span>
+          </div>
+        </div> -->
+
       </div>
-                
+      </div>
 
   </div>
 </div>
