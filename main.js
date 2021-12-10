@@ -153,7 +153,9 @@ function seekUpdate() {
 }
 
 
-
+function downclick() {
+  curr_track.volume = volume_slider.value / 100;
+}
 // Extra JS
 
 

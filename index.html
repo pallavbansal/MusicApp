@@ -11,6 +11,11 @@
 <title>ME.J Songs</title> 
 <head>
 </head>
+<style>
+  .color-class{
+    color: red;
+  }
+</style>
 <body>
   <main class="player" >
 
@@ -79,7 +84,7 @@
       <a class="nav-link" id="custom-tabs-four-profile-tab" data-toggle="pill" href="#custom-tabs-four-profile" role="tab" aria-controls="custom-tabs-four-profile" aria-selected="false" style="font-size:12px; font-weight: normal;">Channels</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" id="custom-tabs-four-messages-tab" data-toggle="pill" href="#custom-tabs-four-messages" role="tab" aria-controls="custom-tabs-four-messages" aria-selected="false" style="font-size:12px; font-weight: normal;">Schedule <i class="fa fa-circle" style="font-size: 8px;color:green"></i></a>
+      <a class="nav-link" id="custom-tabs-four-messages-tab" data-toggle="pill" href="#custom-tabs-four-messages" role="tab" aria-controls="custom-tabs-four-messages" aria-selected="false" style="font-size:12px; font-weight: normal;">Schedule <i class="fa fa-circle green-dot" style="font-size: 8px;color:green"></i> <i class="fa fa-circle red-dot" style="display: none;font-size: 8px;color:red"></i></a>
     </li>
   </ul>
   <div class="card card-primary card-outline card-outline-tabs"> 
@@ -120,13 +125,13 @@
             <div class="col-10 text-center">Chilled Bits</div>
           </div>
         </div>
-        <table class="table">
+        <table class="table" id="myTable">
           <tbody>
             <tr>
               <th width="5%">
                 <img src="images/singer/6.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
               </th>
-              <td width="35%">
+              <td width="50%">
                 <div style="margin-top:15px">
                   <p class="padding-zero">Noga Erez</p>
                   <p class="padding-zero">Views</p>
@@ -134,19 +139,20 @@
               </td>
               <td width="5%">
                 <div class="song-duration">
-                  <i class='fas fa-heart'></i>
+                  <i class="fa fa-heart-o whiteheart" aria-hidden="true"></i>
+                  <i class='fas fa-heart redheart'style="display:none;color:red"></i>
                 </div>
               </td>
               <td width="5%">
-                <div class="popup" onclick="()"><i class='fas fa-ellipsis-v'></i>
-                  <div class="popuptext"  id="">
-                      <ul style="list-style-type:none;">
-                        <li><a href=""><i class="fas fa-step-forward"></i></a></li>
-                        <li><a href=""><i class="fas fa-step-forward"></i></a></li>
-                        <li><a href=""><i class="fas fa-ban fa-sm" aria-hidden="true"></i></a></li>
-                      </ul>
-                    </div>
-                  </div>
+                <div class="popup" onclick="myFunction10()"><i class='fas fa-ellipsis-v'></i>
+                      <div class="popuptext"  id="myPopup10">
+                          <ul style="list-style-type:none;">
+                            <li><a href=""><i class="fas fa-step-forward"></i></a></li>
+                            <li><a href=""><i class="fas fa-step-forward"></i></a></li>
+                            <li><a href=""><i class="fas fa-ban fa-sm" aria-hidden="true"></i></a></li>
+                          </ul>
+                      </div>
+                </div>
               </td>
             </tr>
 
@@ -162,7 +168,8 @@
               </td>
               <td width="5%">
                 <div class="song-duration">
-                  <i class='fas fa-heart'></i>
+                  <i class="fa fa-heart-o" aria-hidden="true"></i>
+                  <i class='fas fa-heart'style="display:none;color:red"></i>
                 </div>
               </td>
               <td width="5%">
@@ -182,7 +189,7 @@
               <th width="5%">
                 <img src="images/singer/3.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
               </th>
-              <td width="35%">
+              <td width="50%">
                 <div style="margin-top:15px">
                   <p class="padding-zero">Noga Erez</p>
                   <p class="padding-zero">Views</p>
@@ -190,7 +197,8 @@
               </td>
               <td width="5%">
                 <div class="song-duration">
-                  <i class='fas fa-heart'></i>
+                  <i class="fa fa-heart-o" aria-hidden="true"></i>
+                  <i class='fas fa-heart'style="display:none;color:red"></i>
                 </div>
               </td>
               <td width="5%">
@@ -210,7 +218,7 @@
               <th width="5%">
                 <img src="images/singer/4.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
               </th>
-              <td width="35%">
+              <td width="50%">
                 <div style="margin-top:15px">
                   <p class="padding-zero">Noga Erez</p>
                   <p class="padding-zero">Views</p>
@@ -218,7 +226,8 @@
               </td>
               <td width="5%">
                 <div class="song-duration">
-                  <i class='fas fa-heart'></i>
+                  <i class="fa fa-heart-o" aria-hidden="true"></i>
+                  <i class='fas fa-heart'style="display:none;color:red"></i>
                 </div>
               </td>
               <td width="5%">
@@ -238,7 +247,7 @@
               <th width="5%">
                 <img src="images/singer/5.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
               </th>
-              <td width="35%">
+              <td width="50%">
                 <div style="margin-top:15px">
                   <p class="padding-zero">Noga Erez</p>
                   <p class="padding-zero">Views</p>
@@ -246,7 +255,8 @@
               </td>
               <td width="5%">
                 <div class="song-duration">
-                  <i class='fas fa-heart'></i>
+                  <i class="fa fa-heart-o" aria-hidden="true"></i>
+                  <i class='fas fa-heart'style="display:none;color:red"></i>
                 </div>
               </td>
               <td width="5%">
@@ -504,7 +514,7 @@
                 <div class="col-10 text-center">Chilled Bits</div>
               </div>
             </div>
-            <table class="table">
+            <table class="table" id="inside-table">
               <tbody>
                 <tr>
                   <th width="5%">
@@ -518,7 +528,8 @@
                   </td>
                   <td width="5%">
                     <div class="song-duration">
-                      <i class='fas fa-heart'></i>
+                      <i class="fa fa-heart-o" aria-hidden="true"></i>
+                      <i class='fas fa-heart'style="display:none;color:red"></i>
                     </div>
                   </td>
                   <td width="5%">
@@ -546,7 +557,8 @@
                     </td>
                     <td width="5%">
                       <div class="song-duration">
-                        <i class='fas fa-heart'></i>
+                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        <i class='fas fa-heart'style="display:none;color:red"></i>
                       </div>
                     </td>
                     <td width="5%">
@@ -574,7 +586,8 @@
                       </td>
                       <td width="5%">
                         <div class="song-duration">
-                          <i class='fas fa-heart'></i>
+                          <i class="fa fa-heart-o whiteheart" aria-hidden="true"></i>
+                          <i class='fas fa-heart redheart'style="display:none;color:red"></i>
                         </div>
                       </td>
                       <td width="5%">
@@ -602,7 +615,8 @@
                       </td>
                       <td width="5%">
                         <div class="song-duration">
-                          <i class='fas fa-heart'></i>
+                          <i class="fa fa-heart-o" aria-hidden="true"></i>
+                          <i class='fas fa-heart'style="display:none;color:red"></i>
                         </div>
                       </td>
                       <td width="5%">
@@ -630,7 +644,8 @@
                       </td>
                       <td width="5%">
                         <div class="song-duration">
-                          <i class='fas fa-heart'></i>
+                          <i class="fa fa-heart-o" aria-hidden="true" id=""></i>
+                          <i class='fas fa-heart'style="display:none;color:red"></i>
                         </div>
                       </td>
                       <td width="5%">
@@ -661,7 +676,7 @@
                 </div>
                 <div class="col-4 text-center">
                   <label class="switch">
-                    <input type="checkbox" checked>
+                    <input type="checkbox" id="schedule" checked>
                     <span class="slider round"></span>
                   </label>
                 </div>
@@ -673,7 +688,7 @@
                   <th width="5%">
                     <img src="images/singer/6.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
                   </th>
-                  <td width="35%">
+                  <td width="50%">
                   <div class="pt-1">
                     <p class="padding-zero">Noga Erez</p>
                     <p class="padding-zero">1.6.2021 | 14.33</p>
@@ -684,7 +699,7 @@
                   <th width="5%">
                     <img src="images/singer/2.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
                   </th>
-                  <td width="35%">
+                  <td width="50%">
                     <div class="pt-1">
                       <p class="padding-zero">Noga Erez</p>
                       <p class="padding-zero">1.6.2021 | 14.33</p>
@@ -695,7 +710,7 @@
                   <th width="5%">
                     <img src="images/singer/3.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
                   </th>
-                  <td width="35%">
+                  <td width="50%">
                     <div class="pt-1">
                       <p class="padding-zero">Noga Erez</p>
                       <p class="padding-zero">1.6.2021 | 14.33</p>
@@ -706,7 +721,7 @@
                   <th width="5%">
                     <img src="images/singer/4.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
                   </th>
-                  <td width="35%">
+                  <td width="50%">
                     <div class="pt-1">
                       <p class="padding-zero">Noga Erez</p>
                       <p class="padding-zero">1.6.2021 | 14.33</p>
@@ -717,7 +732,7 @@
                   <th width="5%">
                     <img src="images/singer/4.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
                   </th>
-                  <td width="35%">
+                  <td width="50%">
                     <div class="pt-1">
                       <p class="padding-zero">Noga Erez</p>
                       <p class="padding-zero">1.6.2021 | 14.33</p>
@@ -775,7 +790,7 @@
                   <ol>
                     <li><i class="fas fa-volume-up" aria-hidden="true" style=""></i></li>
                     <li><input type="range" id="range" class="volume_slider" min="0" max="9" step="1" value="3" onchange="setVolume()"/></li>
-                    <li><i class="fas fa-volume-down" aria-hidden="true" style=""></i></li>
+                    <li><i class="fas fa-volume-down"  onclick="downclick()" aria-hidden="true" style=""></i></li>
                   </ol>
                 </div>
               </div>
@@ -905,6 +920,10 @@ function myFunction4() {
   var popup = document.getElementById("myPopup4");
   popup.classList.toggle("show");
 }
+function myFunction10() {
+  var popup = document.getElementById("myPopup10");
+  popup.classList.toggle("show");
+}
 
 function volumeclick() {
   var popup = document.getElementById("volumePopup");
@@ -921,8 +940,42 @@ function upthumb() {
 function downthumb() {
  alert('you disliked the song');
 }
+$("#inside-table tbody tr div i").click(function() {
+   $(this).addClass('color-class').siblings().removeClass("color-class");
+});
 
+$("#myTable tbody tr td div i").click(function() {
+   $(this).addClass('color-class').siblings().removeClass("color-class");
+});
+
+$("#myTable").on('click','.whiteheart',function(){
+         $(".whiteheart").hide();
+         $(".redheart").show();
+      
+});
+
+ $("#myTable").on('click','.redheart',function(){
+         $(".whiteheart").show();
+         $(".redheart").hide();
+         
+});
+
+
+$('#schedule').on( 'change', function() {
+
+  var checkbox = $('input[type="checkbox"]');
+  if ($(checkbox).prop('checked')) {
+
+    $(".green-dot").show();
+    $(".red-dot").hide();
+   
+  } else {
+    $(".green-dot").hide();
+    $(".red-dot").show();
+  }
+  
+});
 </script>
-</script>
+
 </body>
 </html>
