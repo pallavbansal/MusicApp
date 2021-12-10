@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html>
+<head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"></head>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
 <link rel="stylesheet" type="text/css" href="style.css"> 
 <title>ME.J Songs</title> 
-<head>
 </head>
 <body>
   <main class="player" >
@@ -505,11 +504,11 @@
               </div>
             </div>
             <table class="table">
-              <tbody>
+              <tbody class="connectedSortable">
                 <tr>
-                  <th width="5%">
+                  <td width="5%">
                     <img src="images/singer/6.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
-                  </th>
+                  </td>
                   <td width="50%">
                     <div class="pt-1">
                       <p class="padding-zero">Noga Erez</p>
@@ -535,9 +534,9 @@
                   </tr>
 
                   <tr>
-                    <th width="5%">
+                    <td width="5%">
                       <img src="images/singer/2.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
-                    </th>
+                    </td>
                     <td width="50%">
                       <div class="pt-1">
                         <p class="padding-zero">DJ Snake</p>
@@ -563,9 +562,9 @@
                   </tr>
 
                   <tr>
-                      <th width="5%">
+                      <td width="5%">
                         <img src="images/singer/3.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
-                      </th>
+                      </td>
                       <td width="50%">
                         <div class="pt-1">
                           <p class="padding-zero">Noga Erez</p>
@@ -591,9 +590,9 @@
                     </tr>
 
                     <tr>
-                      <th width="5%">
+                      <td width="5%">
                         <img src="images/singer/4.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
-                      </th>
+                      </td>
                       <td width="50%">
                         <div class="pt-1">
                           <p class="padding-zero">Noga Erez</p>
@@ -619,9 +618,9 @@
                     </tr>
 
                     <tr>
-                      <th width="5%">
+                      <td width="5%">
                         <img src="images/singer/5.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
-                      </th>
+                      </td>
                       <td width="50%">
                         <div class="pt-1">
                           <p class="padding-zero">Noga Erez</p>
@@ -832,9 +831,12 @@
 
 </main>
 <script src="https://kit.fontawesome.com/7d35781f0a.js" crossorigin="anonymous"></script> 
-<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
-<script type="text/javascript" src="main.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="main.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" ></script>
 <script>
 
 $('.channel-img').click(function(){
@@ -921,6 +923,21 @@ function upthumb() {
 function downthumb() {
  alert('you disliked the song');
 }
+// for dragging list items
+$(document).ready(function () {
+    $("tbody.connectedSortable")
+        .sortable({
+        connectWith: ".connectedSortable",
+        items: "> tr",
+        appendTo: "parent",
+        helper: "clone",
+        cursor: "move",
+        zIndex: 999990,
+        // receive: function () {
+        //     alert("The ajax should be called");
+        // }
+    });
+});
 
 </script>
 </script>
