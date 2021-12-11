@@ -927,3 +927,7 @@ input::placeholder {
   border-radius: 5%;
   padding: 10px;
 }
+
+.color-class{
+    color: red;
+}

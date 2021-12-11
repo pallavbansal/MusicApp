@@ -134,7 +134,8 @@
               </td>
               <td width="5%">
                 <div class="song-duration">
-                  <i class='fas fa-heart'></i>
+                  <i class="fa fa-heart-o whiteheart" aria-hidden="true"></i>
+                  <i class='fas fa-heart redheart'style="display:none;color:red"></i>
                 </div>
               </td>
               <td width="5%">
@@ -921,6 +922,18 @@ function upthumb() {
 function downthumb() {
  alert('you disliked the song');
 }
+
+$("#myTable").on('click','.whiteheart',function(){
+         $(".whiteheart").hide();
+         $(".redheart").show();
+      
+});
+
+ $("#myTable").on('click','.redheart',function(){
+         $(".whiteheart").show();
+         $(".redheart").hide();
+         
+});
 
 </script>
 </script>
