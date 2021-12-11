@@ -18,6 +18,7 @@ let seek_slider = document.querySelector(".seek_slider");
 let volume_slider = document.querySelector(".volume_slider");
 let curr_time = document.querySelector(".current-time");
 let total_duration = document.querySelector(".total-duration");
+let total = document.querySelector(".total");
 
 let track_index = 0;
 let isPlaying = false;
@@ -95,14 +96,15 @@ function playpauseTrack() {
 function playTrack() {
   curr_track.play();
   isPlaying = true;
-  playpause_btn.innerHTML = '<i class="fa fa-pause-circle fa-3x"></i>';
+  playpause_btn.innerHTML = '<i class="fa fa-pause fa-lg"></i>';
 }
 
 function pauseTrack() {
   curr_track.pause();
   isPlaying = false;
-  playpause_btn.innerHTML = '<i class="fa fa-play-circle fa-3x"></i>';;
+  playpause_btn.innerHTML = '<i class="fa fa-play fa-lg"></i>';;
 }
+
 
 function nextTrack() {
   if (track_index < track_list.length - 1)
@@ -131,6 +133,7 @@ function setVolume() {
 
 function seekUpdate() {
   let seekPosition = 0;
+  let final_total = 0;
 
   if (!isNaN(curr_track.duration)) {
     seekPosition = curr_track.currentTime * (100 / curr_track.duration);
@@ -148,7 +151,21 @@ function seekUpdate() {
     if (durationMinutes < 10) { durationMinutes = "0" + durationMinutes; }
 
     curr_time.textContent = currentMinutes + ":" + currentSeconds;
-    total_duration.textContent = durationMinutes + ":" + durationSeconds;
+    // total_duration.textContent = durationMinutes + ":" + durationSeconds;
+    // total1=durationSeconds-currentSeconds;
+    // total2=durationMinutes-currentMinutes;
+    let remaining_seconds = durationSeconds-currentSeconds;
+    let remaining_minutes = durationMinutes-currentMinutes
+
+    if (remaining_seconds < 0) {
+      remaining_seconds = remaining_seconds+60;
+      remaining_minutes=remaining_minutes-1
+    }
+    total_duration.textContent = remaining_minutes + ":" + remaining_seconds;
+    // console.log(remaining_seconds);
+    // console.log(remaining_minutes);
+   
+
   }
 }
 
@@ -164,3 +181,8 @@ const clearInput = () => {
 
 const clearBtn = document.getElementById("clear-btn");
 clearBtn.addEventListener("click", clearInput);
+
+
+
+
+
