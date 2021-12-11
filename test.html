@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest compiled and minified CSS -->
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" ></script>
+  
+<script>
+$(document).ready(function () {
+    $("tbody.connectedSortable")
+        .sortable({
+        connectWith: ".connectedSortable",
+        items: "> tr",
+        appendTo: "parent",
+        helper: "clone",
+        cursor: "move",
+        zIndex: 999990,
+        // receive: function () {
+        //     alert("The ajax should be called");
+        // }
+    });
+});
+</script>
+<style type="text/css">
+.mytable a:link {
+    color: #fff;
+    font-weight: bold;
+    text-decoration:none;
+}
+.mytable a:visited {
+    color: #fff;
+    font-weight:bold;
+    text-decoration:none;
+}
+.mytable a:active, .mytable a:hover {
+    color: #bd5a35;
+    text-decoration:underline;
+}
+table.mytable {
+    width:90%;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#666;
+    margin-left:auto;
+    margin-right:auto;
+    font-size:12px;
+    background:#eaebec;
+    border:#ccc 1px solid;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+    -moz-box-shadow: 10px 10px 5px #888;
+    -webkit-box-shadow: 10px 10px 5px #888;
+    box-shadow: 10px 10px 5px #888;
+}
+.mytable th {
+    color:#fff;
+    padding:21px 25px 22px 25px;
+    border-top:1px solid #fafafa;
+    border-bottom:1px solid #e0e0e0;
+    background:#191970;
+}
+.mytable th:first-child {
+    text-align: center;
+    padding-left:20px;
+}
+.mytable tr {
+    text-align: center;
+    padding-left:20px;
+}
+.mytable tr td:first-child {
+    text-align: center;
+    padding-left:20px;
+    border-left: 0;
+}
+.mytable tr td {
+    padding:18px;
+    border-top: 1px solid #ffffff;
+    border-bottom:1px solid #e0e0e0;
+    border-left: 1px solid #e0e0e0;
+    background: #fafafa;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#fafa fa));
+    background: -moz-linear-gradient(top, #fbfbfb, #fafafa);
+}
+.mytable tr.even td {
+    background: #f6f6f6;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#f6f6 f6));
+    background: -moz-linear-gradient(top, #f8f8f8, #f6f6f6);
+}
+.mytable tr:last-child td {
+    border-bottom:0;
+}
+.mytable tr:last-child td:first-child {
+    -moz-border-radius-bottomleft:3px;
+    -webkit-border-bottom-left-radius:3px;
+    border-bottom-left-radius:3px;
+}
+.mytable tr:last-child td:last-child {
+    -moz-border-radius-bottomright:3px;
+    -webkit-border-bottom-right-radius:3px;
+    border-bottom-right-radius:3px;
+}
+.mytable tr:hover td {
+    background: #f2f2f2;
+    transform:scale(1.01);
+    padding-left:20px;
+    outline:1px solid #191970;
+    -moz-box-shadow: 10px 10px 5px #888;
+    -webkit-box-shadow: 10px 10px 5px #888;
+    box-shadow: 10px 10px 5px #888;
+}
+</style>
+</head>
+<body>
+      <div class="container-fluid" >
+        <div class="card img-fluid curve-container">
+            <div class="container-fluid p-2">
+              <div class="row">
+                <div class="col-1" style="text-align: right;">
+                    <i aria-hidden="true" class="fas fa-angle-left" onclick="back2()"></i>
+                </div>
+                <div class="col-10 text-center">Chilled Bits</div>
+              </div>
+            </div>
+            <table class="table">
+              <tbody class="connectedSortable">
+                <tr>
+                  <td width="5%">
+                    <img src="images/singer/6.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
+                  </td>
+                  <td width="50%">
+                    <div class="pt-1">
+                      <p class="padding-zero">Nogz</p>
+                      <p class="padding-zero">Views</p>
+                    </div>
+                  </td>
+                  <td width="5%">
+                    <div class="song-duration">
+                      <i class='fas fa-heart'></i>
+                    </div>
+                  </td>
+                  <td width="5%">
+                    <div class="popup" onclick="myFunction1()"><i class='fas fa-ellipsis-v'></i>
+                      <div class="popuptext"  id="myPopup1">
+                          <ul style="list-style-type:none;">
+                            <li><a href=""><i class="fas fa-step-forward"></i></a></li>
+                            <li><a href=""><i class="fas fa-step-forward"></i></a></li>
+                            <li><a href=""><i class="fas fa-ban fa-sm" aria-hidden="true"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td width="5%">
+                      <img src="images/singer/2.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
+                    </td>
+                    <td width="50%">
+                      <div class="pt-1">
+                        <p class="padding-zero">DJ Snake</p>
+                        <p class="padding-zero">Views</p>
+                      </div>
+                    </td>
+                    <td width="5%">
+                      <div class="song-duration">
+                        <i class='fas fa-heart'></i>
+                      </div>
+                    </td>
+                    <td width="5%">
+                      <div class="popup" onclick="myFunction2()"><i class='fas fa-ellipsis-v'></i>
+                        <div class="popuptext"  id="myPopup2">
+                          <ul style="list-style-type:none;">
+                            <li><a href=""><i class="fas fa-step-forward"></i></a></li>
+                            <li><a href=""><i class="fas fa-step-forward"></i></a></li>
+                            <li><a href=""><i class="fas fa-ban fa-sm" aria-hidden="true"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                      <td width="5%">
+                        <img src="images/singer/3.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
+                      </td>
+                      <td width="50%">
+                        <div class="pt-1">
+                          <p class="padding-zero">Noga Erez</p>
+                          <p class="padding-zero">Views</p>
+                        </div>
+                      </td>
+                      <td width="5%">
+                        <div class="song-duration">
+                          <i class='fas fa-heart'></i>
+                        </div>
+                      </td>
+                      <td width="5%">
+                        <div class="popup" onclick="myFunction3()"><i class='fas fa-ellipsis-v'></i>
+                          <div class="popuptext"  id="myPopup3">
+                            <ul style="list-style-type:none;">
+                              <li><a href=""><i class="fas fa-step-forward"></i></a></li>
+                              <li><a href=""><i class="fas fa-step-forward"></i></a></li>
+                              <li><a href=""><i class="fas fa-ban fa-sm" aria-hidden="true"></i></a></li>
+                            </ul>
+                            </div>
+                          </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td width="5%">
+                        <img src="images/singer/4.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
+                      </td>
+                      <td width="50%">
+                        <div class="pt-1">
+                          <p class="padding-zero">Noga Erez</p>
+                          <p class="padding-zero">Views</p>
+                        </div>
+                      </td>
+                      <td width="5%">
+                        <div class="song-duration">
+                          <i class='fas fa-heart'></i>
+                        </div>
+                      </td>
+                      <td width="5%">
+                        <div class="popup" onclick="myFunction4()"><i class='fas fa-ellipsis-v'></i>
+                          <div class="popuptext"  id="myPopup4">
+                            <ul style="list-style-type:none;">
+                              <li><a href=""><i class="fas fa-step-forward"></i></a></li>
+                              <li><a href=""><i class="fas fa-step-forward"></i></a></li>
+                              <li><a href=""><i class="fas fa-ban fa-sm" aria-hidden="true"></i></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                      <td width="5%">
+                        <img src="images/singer/5.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
+                      </td>
+                      <td width="50%">
+                        <div class="pt-1">
+                          <p class="padding-zero">Noga Erez</p>
+                          <p class="padding-zero">Views</p>
+                        </div>
+                      </td>
+                      <td width="5%">
+                        <div class="song-duration">
+                          <i class='fas fa-heart'></i>
+                        </div>
+                      </td>
+                      <td width="5%">
+                        <div class="popup" onclick="myFunction5()"><i class='fas fa-ellipsis-v'></i>
+                          <div class="popuptext"  id="myPopup5">
+                            <ul style="list-style-type:none;">
+                              <li><a href=""><i class="fas fa-step-forward"></i></a></li>
+                              <li><a href=""><i class="fas fa-step-forward"></i></a></li>
+                              <li><a href=""><i class="fas fa-ban fa-sm" aria-hidden="true"></i></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>              
+              </div>
+    </div>  
+<table class="mytable">
+    <tbody class="connectedSortable">
+        <tr>
+            <th>col1</th>
+            <th>col2</th>
+            <th>col3</th>
+            <th>col4</th>
+        </tr>
+        <tr >
+            <td>a</td>
+            <td>b</td>
+            <td>c</td>
+            <td>d</td>
+        </tr>
+        <tr >
+            <td>e</td>
+            <td>f</td>
+            <td>g</td>
+            <td>h</td>
+        </tr>
+         <tr >
+            <td>e</td>
+            <td>f</td>
+            <td>g</td>
+            <td>h</td>
+        </tr>
+         <tr >
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+        </tr>
+         <tr >
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>
