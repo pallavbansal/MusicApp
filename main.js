@@ -142,6 +142,15 @@ function seekUpdate() {
     let durationMinutes = Math.floor(curr_track.duration / 60);
     let durationSeconds = Math.floor(curr_track.duration - durationMinutes * 60);
 
+    // let remaining_seconds = durationSeconds-currentSeconds;
+    // let remaining_minutes = durationMinutes-currentMinutes
+    // if (remaining_seconds < 0) {
+    //   remaining_seconds = remaining_seconds+60;
+    // }
+
+    // console.log(remaining_seconds);
+    // console.log(remaining_minutes);
+
     if (currentSeconds < 10) { currentSeconds = "0" + currentSeconds; }
     if (durationSeconds < 10) { durationSeconds = "0" + durationSeconds; }
     if (currentMinutes < 10) { currentMinutes = "0" + currentMinutes; }
@@ -149,6 +158,8 @@ function seekUpdate() {
 
     curr_time.textContent = currentMinutes + ":" + currentSeconds;
     total_duration.textContent = durationMinutes + ":" + durationSeconds;
+
+
   }
 }
 
