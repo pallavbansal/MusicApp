@@ -799,24 +799,17 @@
           </div>
 
           <div class="p-1">
-            <div class="container volumepopup">
-              <div id="divShowHide" style="display:none;" class="volumepopuptext">
-                <ol>
-                    <li><i class="fas fa-volume-up" aria-hidden="true" style="" class="btn"></i></li>
-                    <li><input type="range" id="range" class="volume_slider" min="0" max="9" step="1" value="3" onchange="setVolume()"/></li>
-                    <li><i class="fas fa-volume-down" aria-hidden="true" style=""></i></li>
-                </ol>
-              </div>
-              <div class="button button-lg" id="btnShowHide">
+            <div class="container">
+              <div class="button button-lg volumepopup" onclick="volumeclick()">
                 <i class="fas fa-volume-up fa-lg" aria-hidden="true" style=""></i>
-              </div>
-              <!-- <div class="volumepopuptext" id="volumePopup">
+                <div class="volumepopuptext" id="volumePopup">
                   <ol>
                     <li><i class="fas fa-volume-up" aria-hidden="true" style="" class="btn"></i></li>
                     <li><input type="range" id="range" class="volume_slider" min="0" max="9" step="1" value="3" onchange="setVolume()"/></li>
                     <li><i class="fas fa-volume-down" aria-hidden="true" style=""></i></li>
                   </ol>
-              </div> -->
+                </div>
+              </div>
             </div>
           </div>
 
@@ -951,10 +944,10 @@ function myFunction10() {
   popup.classList.toggle("show");
 }
 
-// function volumeclick() {
-//   var popup = document.getElementById("volumePopup");
-//   popup.classList.toggle("show");
-// }
+function volumeclick() {
+  var popup = document.getElementById("volumePopup");
+  popup.classList.toggle("show");
+}
 
 
 
@@ -1034,12 +1027,5 @@ $('.btn').click(function() {
         }
     }
 </script>
-<script type="text/javascript">
-      $(document).ready(function(){
-        $("#btnShowHide").click(function(){
-          $("#divShowHide").toggle();
-        });
-      });
-    </script>
 </body>
 </html>
