@@ -145,12 +145,22 @@ function seekUpdate() {
     let durationMinutes = Math.floor(curr_track.duration / 60);
     let durationSeconds = Math.floor(curr_track.duration - durationMinutes * 60);
 
+    // let remaining_seconds = durationSeconds-currentSeconds;
+    // let remaining_minutes = durationMinutes-currentMinutes
+    // if (remaining_seconds < 0) {
+    //   remaining_seconds = remaining_seconds+60;
+    // }
+
+    // console.log(remaining_seconds);
+    // console.log(remaining_minutes);
+
     if (currentSeconds < 10) { currentSeconds = "0" + currentSeconds; }
     if (durationSeconds < 10) { durationSeconds = "0" + durationSeconds; }
     if (currentMinutes < 10) { currentMinutes = "0" + currentMinutes; }
     if (durationMinutes < 10) { durationMinutes = "0" + durationMinutes; }
 
     curr_time.textContent = currentMinutes + ":" + currentSeconds;
+
     // total_duration.textContent = durationMinutes + ":" + durationSeconds;
     // total1=durationSeconds-currentSeconds;
     // total2=durationMinutes-currentMinutes;
@@ -164,7 +174,6 @@ function seekUpdate() {
     total_duration.textContent = remaining_minutes + ":" + remaining_seconds;
     // console.log(remaining_seconds);
     // console.log(remaining_minutes);
-   
 
   }
 }
