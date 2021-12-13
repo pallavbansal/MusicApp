@@ -38,8 +38,8 @@ $("#custom-tabs-four-home").swipe({
   },
   // threshold: 50,
   // triggerOnTouchEnd: false,
-  // allowPageScroll: "vertical",
-  // excludedElements: "button, input, select, textarea, .noSwipe"
+   allowPageScroll: "vertical",
+   excludedElements: "button, input, select, textarea, .noSwipe"
 });
 
 
@@ -80,8 +80,8 @@ $("#custom-tabs-four-profile").swipe({
     },
     // threshold: 50,
     // triggerOnTouchEnd: false,
-    // allowPageScroll: "vertical",
-    // excludedElements: "button, input, select, textarea, .noSwipe"
+    allowPageScroll: "vertical",
+    excludedElements: "button, input, select, textarea, .noSwipe"
   });
   
 
@@ -123,6 +123,6 @@ $("#custom-tabs-four-profile").swipe({
     },
     // threshold: 50,
     // triggerOnTouchEnd: false,
-    // allowPageScroll: "vertical",
-    // excludedElements: "button, input, select, textarea, .noSwipe"
+     allowPageScroll: "vertical",
+     excludedElements: "button, input, select, textarea, .noSwipe"
   });
