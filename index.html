@@ -521,9 +521,9 @@
             </div>
             <table class="table">
               <tbody class="connectedSortable">
-                <tr onmousedown="Drag()">
+                <tr>
                   <!-- <td><button class="drag">a</button></td> -->
-                  <td width="5%">
+                  <td width="5%" onmousedown="Drag()">
                     <img src="images/singer/6.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
                   </td>
                   <td width="50%">
@@ -554,8 +554,8 @@
                     </td>
                   </tr>
 
-                  <tr onmousedown="Drag()">
-                    <td width="5%">
+                  <tr>
+                    <td width="5%" onmousedown="Drag()">
                       <img src="images/singer/2.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
                     </td>
                     <td width="50%">
@@ -585,8 +585,8 @@
                     </td>
                   </tr>
 
-                  <tr onmousedown="Drag()">
-                      <td width="5%">
+                  <tr>
+                      <td width="5%" onmousedown="Drag()">
                         <img src="images/singer/3.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
                       </td>
                       <td width="50%">
@@ -616,8 +616,8 @@
                       </td>
                     </tr>
 
-                    <tr onmousedown="Drag()">
-                      <td width="5%">
+                    <tr>
+                      <td width="5%" onmousedown="Drag()">
                         <img src="images/singer/4.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
                       </td>
                       <td width="50%">
@@ -647,8 +647,8 @@
                         </td>
                     </tr>
 
-                    <tr onmousedown="Drag()">
-                      <td width="5%">
+                    <tr>
+                      <td width="5%" onmousedown="Drag()">
                         <img src="images/singer/5.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
                       </td>
                       <td width="50%">
@@ -958,13 +958,8 @@ function downthumb() {
  alert('you disliked the song');
 }
 
-var mouseTimer;
 function Drag(){
 
-  mouseTimer = window.setTimeout(execMouseDown,5000);
-}
-
-function execMouseDown() { 
       $("tbody.connectedSortable")
         .sortable({
         connectWith: ".connectedSortable",
@@ -978,7 +973,8 @@ function execMouseDown() {
         //     alert("The ajax should be called");
         // }
     });
-  }
+}
+
 
 // for dragging list items
 // $(document).ready(function () {
