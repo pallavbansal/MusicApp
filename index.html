@@ -114,7 +114,7 @@
         <div class="container-fluid p-2">
           <div class="row">
             <div class="col-1">
-                <i aria-hidden="true" class="fas fa-angle-left" onclick="front()"></i>
+                <i aria-hidden="true" class="fas fa-angle-left noSwipe" onclick="front()"></i>
             </div>
             <div class="col-10 text-center">Chilled Bits</div>
           </div>
@@ -694,7 +694,7 @@
                 <div class="col-4 text-center">
                   <label class="switch">
                     <input id="schedule" type="checkbox" checked>
-                    <span class="slider round"></span>
+                    <span class="slider round noSwipe"></span>
                   </label>
                 </div>
               </div>
@@ -891,7 +891,6 @@ $('.album-img').click(function(){
 
 
 function show_list_of_songs_in_now_playing() {
-    alert('Somebody me');
     $("#img-modal").hide();
     $("#list-modal").show();
 }
