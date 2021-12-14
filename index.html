@@ -521,9 +521,9 @@
             </div>
             <table class="table">
               <tbody class="connectedSortable">
-                <tr>
+                <tr >
                   <!-- <td><button class="drag">a</button></td> -->
-                  <td width="5%" onclick="Drag()">
+                  <td width="5%">
                     <img src="images/singer/6.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
                   </td>
                   <td width="50%">
@@ -554,8 +554,8 @@
                     </td>
                   </tr>
 
-                  <tr>
-                    <td width="5%" onclick="Drag()">
+                  <tr >
+                    <td width="5%">
                       <img src="images/singer/2.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
                     </td>
                     <td width="50%">
@@ -586,7 +586,7 @@
                   </tr>
 
                   <tr>
-                      <td width="5%" onclick="Drag()">
+                      <td width="5%">
                         <img src="images/singer/3.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
                       </td>
                       <td width="50%">
@@ -617,7 +617,7 @@
                     </tr>
 
                     <tr>
-                      <td width="5%" onclick="Drag()">
+                      <td width="5%">
                         <img src="images/singer/4.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
                       </td>
                       <td width="50%">
@@ -648,7 +648,7 @@
                     </tr>
 
                     <tr>
-                      <td width="5%" onclick="Drag()">
+                      <td width="5%">
                         <img src="images/singer/5.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
                       </td>
                       <td width="50%">
@@ -958,9 +958,10 @@ function downthumb() {
  alert('you disliked the song');
 }
 
-function Drag(){
 
-      $("tbody.connectedSortable")
+// for dragging list items
+$(document).ready(function () {
+    $("tbody.connectedSortable")
         .sortable({
         connectWith: ".connectedSortable",
         items: "> tr",
@@ -973,25 +974,7 @@ function Drag(){
         //     alert("The ajax should be called");
         // }
     });
-}
-
-
-// for dragging list items
-// $(document).ready(function () {
-//     $("tbody.connectedSortable")
-//         .sortable({
-//         connectWith: ".connectedSortable",
-//         items: "> tr",
-//         appendTo: "parent",
-//         helper: "clone",
-//         cursor: "move",
-//         zIndex: 999990,
-//         delay:100,
-//         // receive: function () {
-//         //     alert("The ajax should be called");
-//         // }
-//     });
-// });
+});
 
 
 // $("table connectedSortable").sortable({
