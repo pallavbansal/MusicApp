@@ -521,7 +521,8 @@
             </div>
             <table class="table">
               <tbody class="connectedSortable">
-                <tr>
+                <tr onmousedown="Drag()">
+                  <!-- <td><button class="drag">a</button></td> -->
                   <td width="5%">
                     <img src="images/singer/6.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
                   </td>
@@ -553,7 +554,7 @@
                     </td>
                   </tr>
 
-                  <tr>
+                  <tr onmousedown="Drag()">
                     <td width="5%">
                       <img src="images/singer/2.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
                     </td>
@@ -584,7 +585,7 @@
                     </td>
                   </tr>
 
-                  <tr>
+                  <tr onmousedown="Drag()">
                       <td width="5%">
                         <img src="images/singer/3.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
                       </td>
@@ -615,7 +616,7 @@
                       </td>
                     </tr>
 
-                    <tr>
+                    <tr onmousedown="Drag()">
                       <td width="5%">
                         <img src="images/singer/4.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
                       </td>
@@ -646,7 +647,7 @@
                         </td>
                     </tr>
 
-                    <tr>
+                    <tr onmousedown="Drag()">
                       <td width="5%">
                         <img src="images/singer/5.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
                       </td>
@@ -956,9 +957,15 @@ function upthumb() {
 function downthumb() {
  alert('you disliked the song');
 }
-// for dragging list items
-$(document).ready(function () {
-    $("tbody.connectedSortable")
+
+var mouseTimer;
+function Drag(){
+
+  mouseTimer = window.setTimeout(execMouseDown,5000);
+}
+
+function execMouseDown() { 
+      $("tbody.connectedSortable")
         .sortable({
         connectWith: ".connectedSortable",
         items: "> tr",
@@ -966,11 +973,36 @@ $(document).ready(function () {
         helper: "clone",
         cursor: "move",
         zIndex: 999990,
+        delay:100,
         // receive: function () {
         //     alert("The ajax should be called");
         // }
     });
-});
+  }
+
+// for dragging list items
+// $(document).ready(function () {
+//     $("tbody.connectedSortable")
+//         .sortable({
+//         connectWith: ".connectedSortable",
+//         items: "> tr",
+//         appendTo: "parent",
+//         helper: "clone",
+//         cursor: "move",
+//         zIndex: 999990,
+//         delay:100,
+//         // receive: function () {
+//         //     alert("The ajax should be called");
+//         // }
+//     });
+// });
+
+
+// $("table connectedSortable").sortable({
+//     handle: '.drag',
+//     cancel: ''
+// }).disableSelection();
+
 
 $(".table").on('click','.whiteheart',function(){
 
