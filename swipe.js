@@ -27,9 +27,9 @@ $("#custom-tabs-four-home").swipe({
   swipeLeft:function(event, direction, distance, duration, fingerCount) {
  
     
-    //$("#custom-tabs-four-profile").removeClass("animate_animated animate_slideInRight");
-    $("#custom-tabs-four-profile").removeClass("slideRight slideLeft animate_animated animate_slideInLeft");
-    $("#custom-tabs-four-profile").addClass(" slideRight animate_animated animate_slideInRight");
+    //$("#custom-tabs-four-profile").removeClass(" ");
+    $("#custom-tabs-four-profile").removeClass("slideRight slideLeft  ");
+    $("#custom-tabs-four-profile").addClass(" slideRight  ");
     document.getElementById('custom-tabs-four-profile-tab').click();
 
 
@@ -73,16 +73,16 @@ $("#custom-tabs-four-profile").swipe({
     swipeLeft:function(event, direction, distance, duration, fingerCount) {
    
       
-      $("#custom-tabs-four-home").removeClass("slideLeft slideRight animate_animated animate_slideInLeft");
-      $("#custom-tabs-four-messages").addClass(" slideRight animate_animated animate_slideInRight");
+      $("#custom-tabs-four-home").removeClass("slideLeft slideRight  ");
+      $("#custom-tabs-four-messages").addClass(" slideRight  ");
       document.getElementById('custom-tabs-four-messages-tab').click();
   
     },
     swipeRight:function(event, direction, distance, duration, fingerCount) {
         
-       // $("#custom-tabs-four-home").removeClass("animate_animated animate_slideInRight");
-        $("#custom-tabs-four-home").removeClass("slideLeft slideRight animate_animated animate_slideInLeft");
-        $("#custom-tabs-four-home").addClass("slideLeft animate_animated animate_slideInLeft");
+       // $("#custom-tabs-four-home").removeClass(" ");
+        $("#custom-tabs-four-home").removeClass("slideLeft slideRight  ");
+        $("#custom-tabs-four-home").addClass("slideLeft  ");
         document.getElementById('custom-tabs-four-home-tab').click();
     },
     // threshold: 50,
@@ -124,9 +124,9 @@ $("#custom-tabs-four-profile").swipe({
     },
     swipeRight:function(event, direction, distance, duration, fingerCount) {
         
-        //$("#custom-tabs-four-profile").removeClass("animate_animated animate_slideInRight");
-        $("#custom-tabs-four-profile").removeClass("slideLeft slideRight animate_animated animate_slideInLeft");
-        $("#custom-tabs-four-profile").addClass(" slideLeft animate_animated animate_slideInLeft");
+        //$("#custom-tabs-four-profile").removeClass(" ");
+        $("#custom-tabs-four-profile").removeClass("slideLeft slideRight  ");
+        $("#custom-tabs-four-profile").addClass(" slideLeft  ");
         document.getElementById('custom-tabs-four-profile-tab').click();
         
     },
