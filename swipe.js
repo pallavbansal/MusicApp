@@ -33,9 +33,9 @@ $("#custom-tabs-four-home").swipe({
 
 
   },
-  tap:function(event, target) {
-   alert('Hat be');
- },
+//   tap:function(event, target) {
+//    alert('Hat be');
+//  },
   swipeRight:function(event, direction, distance, duration, fingerCount) {
     console.log("Right Swipe2");
   },
