@@ -935,4 +935,32 @@ input::placeholder {
 {
     100%      {color:red;}
 }
-
+.slideRight {
+  -webkit-animation: slideIn .22s forwards;
+  -moz-animation: slideIn .22s forwards;
+  animation: slideIn .22s forwards;
+}
+@-webkit-keyframes slideIn {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@-moz-keyframes slideIn {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

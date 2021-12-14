@@ -29,7 +29,7 @@ $("#custom-tabs-four-home").swipe({
     document.getElementById('custom-tabs-four-profile-tab').click();
     $("#custom-tabs-four-profile").removeClass("animate_animated animate_slideInRight");
     $("#custom-tabs-four-profile").removeClass("animate_animated animate_slideInLeft");
-    $("#custom-tabs-four-profile").addClass("animate_animated animate_slideInRight");
+    $("#custom-tabs-four-profile").addClass(" slideRight animate_animated animate_slideInRight");
 
 
   },
@@ -72,7 +72,7 @@ $("#custom-tabs-four-profile").swipe({
     swipeLeft:function(event, direction, distance, duration, fingerCount) {
    
       document.getElementById('custom-tabs-four-messages-tab').click();
-      $("#custom-tabs-four-messages").addClass("animate_animated animate_slideInRight");
+      $("#custom-tabs-four-messages").addClass(" slideRight animate_animated animate_slideInRight");
   
     },
     swipeRight:function(event, direction, distance, duration, fingerCount) {
@@ -87,46 +87,6 @@ $("#custom-tabs-four-profile").swipe({
     //excludedElements: "button, input, select, textarea, .noSwipe"
   });
   
-  $("#song-list").swipe({
-    swipeStatus:function(event, phase, direction, distance, duration, fingerCount) {    
-     
-      
-      if(phase == 'move') {
-        speed = '0ms';      
-        if(direction == 'left') {
-            console.log("Left Swipe");
-     
-            //$(".tab-pane").addClass('slide-in');
-            
-            document.getElementById("mySidenav").style.width = "0";
-  
-        }
-        else if(direction == 'right') {
-          console.log("Right Swipe");
-  
-        }
-      }
-      else if (phase == 'end') {
-  
-      }
-    },
-    swipeLeft:function(event, direction, distance, duration, fingerCount) {
-   
-      document.getElementById('custom-tabs-four-messages-tab').click();
-      $("#custom-tabs-four-messages").addClass("animate_animated animate_slideInRight");
-  
-    },
-    swipeRight:function(event, direction, distance, duration, fingerCount) {
-        document.getElementById('custom-tabs-four-home-tab').click();
-        $("#custom-tabs-four-home").removeClass("animate_animated animate_slideInRight");
-        $("#custom-tabs-four-home").removeClass("animate_animated animate_slideInLeft");
-        $("#custom-tabs-four-home").addClass("animate_animated animate_slideInLeft");
-    },
-    // threshold: 50,
-    // triggerOnTouchEnd: false,
-    allowPageScroll: "vertical",
-    //excludedElements: "button, input, select, textarea, .noSwipe"
-  });
   
 
   $("#custom-tabs-four-messages").swipe({
