@@ -936,6 +936,11 @@ input::placeholder {
     100%      {color:red;}
 }
 .slideRight {
+  -webkit-animation: slideOut .22s forwards;
+  -moz-animation: slideOut .22s forwards;
+  animation: slideOut .22s forwards;
+}
+.slideLeft {
   -webkit-animation: slideIn .22s forwards;
   -moz-animation: slideIn .22s forwards;
   animation: slideIn .22s forwards;
@@ -959,6 +964,30 @@ input::placeholder {
 @keyframes slideIn {
   0% {
     transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes slideOut {
+  0% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@-moz-keyframes slideOut {
+  0% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideOut {
+  0% {
+    transform: translateX(100px);
   }
   100% {
     transform: translateX(0);
