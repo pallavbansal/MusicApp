@@ -38,6 +38,12 @@ ol li{
     line-height: 30px;
 }
 
+
+.col-padding{
+  padding-right: 6px;
+padding-left: 6px;
+}
+
 .tab{
     font-size: 20px;
 }
@@ -96,6 +102,14 @@ ol li{
 .account-logo h4{
    margin:20px;
    font-size: 33px;
+}
+
+
+.BMOLOGO {
+width: 70px;
+height: 24px;
+margin: 20px 30px 20px 30px;
+object-fit: contain;
 }
 
 /*Profile Card 1*/
@@ -216,7 +230,7 @@ ol li{
     background-color: #42ddf5;
     color: #fff;
     border-radius: 50%;
-    margin: 10px 3px;
+    margin: 5px 3px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -225,10 +239,9 @@ ol li{
 .button-heart{
     width: 3.25rem;
     height: 3.25rem;
-  
     color: #42ddf5;
     border-radius: 50%;
-    margin: 10px 3px;
+    margin: 5px 3px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -236,24 +249,16 @@ ol li{
 .button {
     color: #000;
     border-radius: 50%;
-    margin: 10px 0px;
+    margin: 5px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
    
 }
 
-/*.button-sm {
-    width: 2rem;
-    height: 2rem;
-    opacity: 0.75;
+.tab-container-size{
+height: 547px;
 }
-.button-md {
-    width: 2.5rem;
-    height: 2.5rem;
-    opacity: 0.85;
-}*/
-
 
 
 /* css for side navbar */
@@ -737,13 +742,41 @@ border-radius: 0.25rem;
 }
 
 .card-overlay-bottom{
-  position: absolute;
-top: 400x;
+position: absolute;
 right: 0;
-bottom: 0;
-left: 0;
-padding: 1.25rem;
-border-radius: calc(.25rem - 1px);
+bottom: 40px;
+left: -5px;
+padding: 1rem;
+width: 301px;
+height: 82px;
+margin: auto;
+}
+
+.Next-song {
+  font-family: Assistant;
+  font-size: 12px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #1fcadf;
+}
+
+.Artist-name{
+  color: white;
+  margin-bottom: 0rem;
+  font-size: 13px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+}
+
+.Song-name{
+  color: white;
+  margin-bottom: 0rem;
+  font-size: 13px;
+  font-stretch: normal;
+  font-style: normal;
 }
 
 /*----------------------Toggle Button CSSS--------------------------*/
@@ -840,8 +873,13 @@ input:checked + .slider:before {
 
 .channel-img{
    border: none;
-   border-radius: 30%;
 }
+
+.channel-image-size{
+  border-radius: 10px;
+  height: 122px;
+}
+
 .text-block{
         
         top:-80px;"      
