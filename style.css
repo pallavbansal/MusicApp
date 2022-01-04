@@ -55,12 +55,28 @@ padding-left: 6px;
     object-fit: cover;
 }
 
+.themecolor{
+  background: #1FCADF;
+}
+
+.card-title{
+  font-family: Anton;
+font-size: 18px;
+font-weight: normal;
+font-stretch: normal;
+font-style: normal;
+line-height: 1.67;
+letter-spacing: normal;
+text-align: center;
+color: #fdfdfd;
+}
+
 .player {
     width: 80%;
     max-width: 375px;
     min-height: 600px;
     margin: 2rem auto;
-    background: #42ddf5;
+    background: #1FCADF;
     box-shadow: 20px 20px 60px #c8c8c8, 
                 -20px -20px 60px #ffffff;
     border: 1px solid rgb(223, 223, 223);
@@ -104,12 +120,25 @@ padding-left: 6px;
    font-size: 33px;
 }
 
+.table-image{
+  width:62px; 
+  height:62px;
+  border-radius: 10px;
+}
 
 .BMOLOGO {
 width: 70px;
 height: 24px;
 margin: 20px 30px 20px 30px;
 object-fit: contain;
+}
+
+.tab-text{
+  font-weight: bold;
+  font-size: 12px !important;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
 }
 
 /*Profile Card 1*/
@@ -227,7 +256,7 @@ object-fit: contain;
 .button-pause {
     width: 3.25rem;
     height: 3.25rem;
-    background-color: #42ddf5;
+    background-color: #1FCADF;
     color: #fff;
     border-radius: 50%;
     margin: 5px 3px;
@@ -239,7 +268,7 @@ object-fit: contain;
 .button-heart{
     width: 3.25rem;
     height: 3.25rem;
-    color: #42ddf5;
+    color: #1FCADF;
     border-radius: 50%;
     margin: 5px 3px;
     display: flex;
@@ -753,7 +782,7 @@ margin: auto;
 }
 
 .Next-song {
-  font-family: Assistant;
+ 
   font-size: 12px;
   font-weight: bold;
   font-stretch: normal;
@@ -765,7 +794,7 @@ margin: auto;
 .Artist-name{
   color: white;
   margin-bottom: 0rem;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -774,9 +803,10 @@ margin: auto;
 .Song-name{
   color: white;
   margin-bottom: 0rem;
-  font-size: 13px;
+  font-size: 16px;
   font-stretch: normal;
   font-style: normal;
+  font-weight: lighter;
 }
 
 /*----------------------Toggle Button CSSS--------------------------*/
