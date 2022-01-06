@@ -23,10 +23,10 @@ h5{
    font-family: fantasy;
    font-size: 18px;
 }
-body {
+/*body {
     background: var(--bg);
     color: var(--black);
-}
+}*/
 
 a {
     text-decoration: none;
@@ -381,43 +381,28 @@ height: 547px;
     justify-content: left;
     align-items: left;
     cursor: pointer;
-    transition: 0.8s;
-    /*box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-    inset -7px -7px 10px 0px rgba(0,0,0,.1),
-   7px 7px 20px 0px rgba(0,0,0,.1),
-   4px 4px 5px 0px rgba(0,0,0,.1);
-   text-shadow:  0px 0px 6px rgba(255,255,255,.3),
-              -4px -4px 6px rgba(116, 125, 136, .2);
-    text-shadow: 2px 2px 3px rgba(255,255,255,0.5);*/
-  
-}
-
-.search-container:hover > .search-input{
-    width: 200px;
-    color: #fff;
-}
-
-.search-container .search-input{
-    background: transparent;
-    border: none;
-    outline:none;
-    width: 0px;
-    font-weight: 500;
-    font-size: 16px;
-    transition: 0.8s;
-    color: #fff;
-
-}
-
-.search-container .search-btn .fas{
-    color: #fff;
-}
-
-.search-container:hover{
-  animation: hoverShake 0.15s linear 3;
+    transition: 0.8s;  
 }
 
 
+
+.search-input{
+  background: rgba(255,255,255,0);
+  border: none;
+  display: block;
+  outline: none;
+  color: #fff;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #FFFFFF !important;
+  opacity: .8; /* Firefox */
+  font-family: Quicksand;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+}
 
 .slider_container {
   width: 75%;
