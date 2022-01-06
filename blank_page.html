@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"></head>
-<link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css"> 
 <title>ME.J Songs</title> 
 <style>
 
@@ -164,25 +163,72 @@
   </div>
 
 </div>
-<script type="text/javascript" src="main.js"></script>
+<script src="https://kit.fontawesome.com/7d35781f0a.js" crossorigin="anonymous"></script> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/eruda"></script> -->
+<script type="text/javascript" src="main.js"></script>
+<script src="swipe.js"></script>
+
+<!-- <script>eruda.init();</script> -->
+
 <script>
+
+// When the user clicks on div, open the popup
+function myFunction1() {
+  var popup = document.getElementById("myPopup1");
+  popup.classList.toggle("show");
+}
+
+function myFunction2() {
+  var popup = document.getElementById("myPopup2");
+  popup.classList.toggle("show");
+}
+
+function myFunction3() {
+  var popup = document.getElementById("myPopup3");
+  popup.classList.toggle("show");
+}
+
+function myFunction4() {
+  var popup = document.getElementById("myPopup4");
+  popup.classList.toggle("show");
+}
+function myFunction10() {
+  var popup = document.getElementById("myPopup10");
+  popup.classList.toggle("show");
+}
+
 function volumeclick() {
   var popup = document.getElementById("volumePopup");
   popup.classList.toggle("show");
 }
 
-function like() {
-  var popup = document.getElementById("myPopup");
-  popup.classList.toggle("show");
-}
-function upthumb() {
- alert('you liked the song');
-}
-function downthumb() {
- alert('you disliked the song');
-}
-</script>
+
+$('.btn').click(function() {
+               //if value < max
+               $("#range").val(parseInt($("#range").val())+9);  
+               $("#range").trigger('change');
+             });
+           </script>
+           <script>
+            var count = 1;
+            function setColor(btn, color) {
+              var property = document.getElementById(btn);
+              if (count == 0) {
+                property.style.backgroundColor = "#FFFFFF"
+                count = 1;        
+              }
+              else {
+                property.style.backgroundColor = "#7FFF00"
+                count = 0;
+              }
+            }
+          </script>
 </body>
 </html>
 
