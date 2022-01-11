@@ -408,6 +408,14 @@ height: 547px;
   color: #fff;
 }
 
+.input-range{
+    writing-mode: bt-lr; /* IE */
+    -webkit-appearance: slider-vertical; /* WebKit */
+    width: 8px;
+    height: 175px;
+    padding: 0 5px;
+}
+
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #FFFFFF !important;
   opacity: .8; /* Firefox */
