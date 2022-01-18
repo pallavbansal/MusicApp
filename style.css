@@ -262,9 +262,8 @@ object-fit: contain;
     height: 3.25rem;
 }
 .button-pause {
-    width: 3.25rem;
+    width: 5.5rem;
     height: 3.25rem;
-    background-color: #1FCADF;
     color: #fff;
     border-radius: 50%;
     margin: 5px 3px;
