@@ -7,6 +7,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Assistant' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
   <link rel="stylesheet" type="text/css" href="style.css"> 
   <title>ME.J Songs</title> 
 </head>
@@ -35,7 +38,7 @@
 
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <div class="sidebar">
+    <div class="sidebar" style="margin-top: 180px;">
       <div class="row">
        <a href="#">About</a>
        <i class="fas fa-angle-right"></i>
@@ -76,7 +79,7 @@
       <a class="nav-link tab-text" id="custom-tabs-four-messages-tab" data-toggle="pill" href="#custom-tabs-four-messages" role="tab" aria-controls="custom-tabs-four-messages" aria-selected="false">Schedule <i class="fa fa-circle green-dot" style="font-size: 8px;color:#42ff1d"></i> <i class="fa fa-circle red-dot" style="display: none;font-size: 8px;color:red"></i></a>
     </li>
   </ul>
-  <div class="card card-primary card-outline card-outline-tabs"> 
+  <div > 
     <div class="tab-content" id="custom-tabs-four-tabContent">
 
       <div class="tab-pane fade show active" id="custom-tabs-four-home" role="tabpanel" aria-labelledby="custom-tabs-four-home-tab">
@@ -110,7 +113,8 @@
         <div class="container-fluid p-2">
           <div class="row">
             <div class="col-1">
-              <i aria-hidden="true" class="fas fa-angle-left noSwipe" onclick="front()"></i>
+              <!-- <i aria-hidden="true" class="fas fa-angle-left noSwipe" ></i> -->
+              <img src="images/back_icon.png" width="10px;" onclick="front()" />
             </div>
             <div class="col-10 text-center">Chilled Bits</div>
           </div>
@@ -119,7 +123,7 @@
           <tbody>
             <tr>
               <th width="5%">
-                <img src="images/singer/6.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
+                <img src="images/singer/6.jpg" class="table-image">
               </th>
               <td width="35%">
                 <div style="margin-top:15px">
@@ -151,7 +155,7 @@
 
             <tr>
               <th width="5%">
-                <img src="images/singer/2.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
+                <img src="images/singer/2.jpg" class="table-image">
               </th>
               <td width="50%">
                 <div style="margin-top:15px">
@@ -182,7 +186,7 @@
 
             <tr>
               <th width="5%">
-                <img src="images/singer/3.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
+                <img src="images/singer/3.jpg" class="table-image"/>
               </th>
               <td width="35%">
                 <div style="margin-top:15px">
@@ -213,7 +217,7 @@
 
             <tr>
               <th width="5%">
-                <img src="images/singer/4.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
+                <img src="images/singer/4.jpg" class="table-image"/>
               </th>
               <td width="35%">
                 <div style="margin-top:15px">
@@ -244,7 +248,7 @@
 
             <tr>
               <th width="5%">
-                <img src="images/singer/5.jpg" alt="" style="width:100px; height:100;border-radius: 10px;">
+                <img src="images/singer/5.jpg" class="table-image"/>
               </th>
               <td width="35%">
                 <div style="margin-top:15px">
@@ -282,7 +286,7 @@
   <div class="tab-pane fade" id="custom-tabs-four-profile" role="tabpanel" aria-labelledby="custom-tabs-four-profile-tab">
     <!--------------List of channels---------------------->
     <div class="container-fluid tab-container-size" style="overflow-y: auto; scrollbar-width: none;padding: 18px;" id="album-list">
-      <div class="row">
+      <div class="row p-1">
         <div class="col col-padding">
           <div class="card channel-img">
             <img class="card-img channel-image-size" src="images/singer/7.jpg" alt="Card image">
@@ -302,7 +306,7 @@
           <p class="text-center"><b>Watson Shane</b></p>
         </div>
       </div>
-      <div class="row">
+      <div class="row p-1">
         <div class="col col-padding">
           <div class="card channel-img">
             <img class="card-img channel-image-size" src="images/singer/3.jpg" alt="Card image">
@@ -322,7 +326,7 @@
           <p class="text-center"><b>Zyan Malik</b></p>
         </div>
       </div>
-      <div class="row">
+      <div class="row p-1">
         <div class="col col-padding">
           <div class="card channel-img">
             <img class="card-img channel-image-size" src="images/singer/5.jpg" alt="Card image">
@@ -343,7 +347,7 @@
         </div>
       </div>
 
-      <div class="row">
+      <div class="row p-1">
         <div class="col col-padding">
           <div class="card channel-img">
             <img class="card-img channel-image-size" src="images/singer/5.jpg" alt="Card image">
@@ -363,7 +367,7 @@
           <p class="text-center"><b>DJ Khalid</b></p>
         </div>
       </div>
-      <div class="row">
+      <div class="row p-1">
         <div class="col col-padding">
           <div class="card channel-img">
             <img class="card-img channel-image-size" src="images/singer/5.jpg" alt="Card image">
@@ -403,7 +407,7 @@
       </div>
       <div class="row">
         <div class="col">
-          <div class="card channel-img album-img">
+          <div class="card album-img">
             <img class="card-img" src="images/singer/7.jpg" alt="Card image" style="border-radius: 10px;">
             <div class="card-img-overlay">
               <a href="#" style="color:white"><i class="fas fa-play"></i></a>
@@ -412,7 +416,7 @@
           <p class="text-center"><b>DJ Khalid</b></p>
         </div>
         <div class="col">
-          <div class="card channel-img album-img">
+          <div class="card">
             <img class="card-img" src="images/singer/2.jpg" alt="Card image" style="border-radius: 10px;">
             <div class="card-img-overlay">
               <a href="#" style="color:white"><i class="fas fa-play"></i></a>
@@ -423,7 +427,7 @@
       </div>
       <div class="row">
         <div class="col">
-          <div class="card channel-img album-img">
+          <div class="card album-img">
             <img class="card-img" src="images/singer/3.jpg" alt="Card image" style="border-radius: 10px;">
             <div class="card-img-overlay">
               <a href="#" style="color:white"><i class="fas fa-play"></i></a>
@@ -432,7 +436,7 @@
           <p class="text-center"><b>Emma Bantai</b></p>
         </div>
         <div class="col">
-          <div class="card channel-img album-img">
+          <div class="card album-img">
             <img class="card-img" src="images/singer/4.jpg" alt="Card image" style="border-radius: 10px;">
             <div class="card-img-overlay">
               <a href="#" style="color:white"><i class="fas fa-play"></i></a>
@@ -443,7 +447,7 @@
       </div>
       <div class="row">
         <div class="col">
-          <div class="card channel-img album-img">
+          <div class="card album-img">
             <img class="card-img" src="images/singer/5.jpg" alt="Card image" style="border-radius: 10px;">
             <div class="card-img-overlay">
               <a href="#" style="color:white"><i class="fas fa-play"></i></a>
@@ -452,7 +456,7 @@
           <p class="text-center"><b>ED Sheren</b></p>
         </div>
         <div class="col">
-          <div class="card channel-img album-img">
+          <div class="card album-img">
             <img class="card-img" src="images/singer/6.jpg" alt="Card image" style="border-radius: 10px;">
             <div class="card-img-overlay">
               <a href="#" style="color:white"><i class="fas fa-play"></i></a>
@@ -464,7 +468,7 @@
 
       <div class="row">
         <div class="col">
-          <div class="card channel-img album-img">
+          <div class="card album-img">
             <img class="card-img" src="images/singer/5.jpg" alt="Card image" style="border-radius: 10px;">
             <div class="card-img-overlay">
               <a href="#" style="color:white"><i class="fas fa-play"></i></a>
@@ -473,7 +477,7 @@
           <p class="text-center"><b>ED Sheren</b></p>
         </div>
         <div class="col">
-          <div class="card channel-img album-img">
+          <div class="card album-img">
             <img class="card-img" src="images/singer/6.jpg" alt="Card image" style="border-radius: 10px;">
             <div class="card-img-overlay">
               <a href="#" style="color:white"><i class="fas fa-play"></i></a>
@@ -484,7 +488,7 @@
       </div>
       <div class="row">
         <div class="col">
-          <div class="card channel-img album-img">
+          <div class="card album-img">
             <img class="card-img" src="images/singer/5.jpg" alt="Card image" style="border-radius: 10px;">
             <div class="card-img-overlay">
               <a href="#" style="color:white"><i class="fas fa-play"></i></a>
@@ -493,7 +497,7 @@
           <p class="text-center"><b>ED Sheren</b></p>
         </div>
         <div class="col">
-          <div class="card channel-img album-img">
+          <div class="card album-img">
             <img class="card-img" src="images/singer/6.jpg" alt="Card image" style="border-radius: 10px;">
             <div class="card-img-overlay">
               <a href="#" style="color:white"><i class="fas fa-play"></i></a>
@@ -688,8 +692,8 @@
       <div class="container-fluid p-2">
         <div class="row">
           <div class="col-8" style="line-height: 2px;font-weight: bold;">
-            <p>Active schedule</p>
             <p>1.6.2021 | 14.33</p>
+            <p>Active schedule</p>
           </div>
           <div class="col-4 text-center">
             <label class="switch">
@@ -766,7 +770,7 @@
 
 <!--------------Bottom buttons to manage songs----------------------------->
 
-<div class="container-fluid" style="height: 63px;">
+<div class="container-fluid shadow-add" style="height: 63px;">
   <div class="d-flex justify-content-between">
 
     <div class="p-0">
@@ -806,9 +810,9 @@
           <img src="images/volume_icon.png" width="24px;" />
           <div class="volumepopuptext" id="volumePopup">
             <ol>
-              <li><i class="fas fa-volume-up" aria-hidden="true" style="" class="btn"></i></li>
+              <li><img src="images/Volumeup_icon.png" width="14px;" /></li>
               <li><input class="input-range" orient="vertical" type="range" step="1" value="3" onchange="setVolume()"/></li>
-              <li><i class="fas fa-volume-down" aria-hidden="true" style=""></i></li>
+              <li><img src="images/mute_icon.png" width="8px;" /></li>
             </ol>
           </div>
         </div>

@@ -97,13 +97,13 @@ function playpauseTrack() {
 function playTrack() {
   curr_track.play();
   isPlaying = true;
-  playpause_btn.innerHTML = '<i class="fa fa-pause fa-lg"></i>';
+  playpause_btn.innerHTML = '<img src="images/pause_blue.png" width="38px;" />';
 }
 
 function pauseTrack() {
   curr_track.pause();
   isPlaying = false;
-  playpause_btn.innerHTML = '<i class="fa fa-play fa-lg"></i>';;
+  playpause_btn.innerHTML = '<img src="images/pause_blue.png" width="38px;" />';;
 }
 
 

@@ -59,6 +59,12 @@ padding-left: 6px;
   background: #1FCADF;
 }
 
+.shadow-add{
+  -moz-box-shadow: 0 0 2px 0px #888;
+-webkit-box-shadow: 0 0 2px 0px #888;
+box-shadow: 0 0 2px 0px #888;
+}
+
 .card-title{
   font-family: Anton;
 font-size: 18px;
@@ -122,8 +128,8 @@ color: #fdfdfd;
 }
 
 .table-image{
-  width:62px; 
-  height:62px;
+  width:85px; 
+  height:75px;
   border-radius: 10px;
 }
 
@@ -311,7 +317,7 @@ height: 547px;
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #42ddf5;
+    background-color: #1FCADF;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -636,17 +642,14 @@ border-radius: 0.25rem;
           
 .input-btn {
     position: absolute;
-    top: 0;
-    border-radius: 5px;
     right: 0px;
     z-index: 2;
     border: none;
     top: -10px;
-    height: 27px;
-    cursor: pointer;
-    color: white;
     transform: translateX(2px);
+    border-radius: 20px;
 }
+
 .input-field {
     border: 0;
     border-bottom: 1px solid #555;
@@ -795,6 +798,7 @@ margin: auto;
   font-style: normal;
   letter-spacing: normal;
   color: #1fcadf;
+  font-family: 'Assistant'
 }
 
 .Artist-name{
@@ -804,6 +808,7 @@ margin: auto;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
+  font-family: 'Assistant'
 }
 
 .Song-name{
@@ -813,7 +818,25 @@ margin: auto;
   font-stretch: normal;
   font-style: normal;
   font-weight: lighter;
+  font-family: 'Assistant'
 }
+
+
+.track-name{
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+}
+
+.track-artist{
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    }
 
 /*----------------------Toggle Button CSSS--------------------------*/
 .switch {
@@ -894,8 +917,10 @@ input:checked + .slider:before {
 .footer {
     width:100%;
     position:absolute;
-    bottom:50px;
+    bottom: 31px;
+    left: 30px;
 }
+
 .right{
     margin-top: 25px;
 }
@@ -909,6 +934,11 @@ input:checked + .slider:before {
 
 .channel-img{
    border: none;
+   width: 162px;
+}
+
+.album-img{
+  border: none;
 }
 
 .channel-image-size{
