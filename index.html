@@ -88,7 +88,9 @@
         <div class="card img-fluid" style="border-radius: 6%;">
           <img class="card-img-top" src="images/singer/9.jpg" alt="Card image" style="height: 505px; border-radius: 6%;">
           <div class="card-img-overlay image-class">
-            <h4 class="card-title mt-3">Chilled Bits <img src="images/down-arrow.png" width="14px;" onclick="show_list_of_songs_in_now_playing()"/></h4>
+            <h4 class="card-title mt-3">Chilled Bits 
+              <img src="images/down-arrow.png" width="14px;" class="noSwipe" onclick="show_list_of_songs_in_now_playing()"/>
+            </h4>
           </div>
           <div class="card-overlay-bottom">
             <div class="container-fluid" style="border: solid 1px #474747;
@@ -114,7 +116,7 @@
           <div class="row">
             <div class="col-1">
               <!-- <i aria-hidden="true" class="fas fa-angle-left noSwipe" ></i> -->
-              <img src="images/back_icon.png" width="10px;" onclick="front()" />
+              <img src="images/back_icon.png" width="10px;" class="noSwipe" onclick="front()" />
             </div>
             <div class="col-10 text-center">Chilled Bits</div>
           </div>
@@ -397,7 +399,8 @@
        <div class="container-fluid p-2">
         <div class="row">
           <div class="col-1" style="text-align: right;">
-            <i aria-hidden="true" class="fas fa-lg fa-angle-left noSwipe" onclick="back1()"></i>
+            <!-- <i aria-hidden="true" class="fas fa-lg fa-angle-left noSwipe" onclick="back1()"></i> -->
+            <img src="images/back_icon.png" class="noSwipe" onclick="back1()" width="10px;">
           </div>
           <div class="col-10" style="font-size: 18px;font-weight: bold;font-stretch: normal;font-style: normal;
           letter-spacing: normal;text-align: center;color: #314051;">
@@ -416,7 +419,7 @@
           <p class="text-center"><b>DJ Khalid</b></p>
         </div>
         <div class="col">
-          <div class="card">
+          <div class="card album-img">
             <img class="card-img" src="images/singer/2.jpg" alt="Card image" style="border-radius: 10px;">
             <div class="card-img-overlay">
               <a href="#" style="color:white"><i class="fas fa-play"></i></a>
@@ -517,7 +520,8 @@
     <div class="container-fluid p-2">
       <div class="row">
         <div class="col-1" style="text-align: right;">
-          <i aria-hidden="true" class="fas fa-lg fa-angle-left noSwipe" onclick="back2()"></i>
+         <!--  <i aria-hidden="true" class="fas fa-lg fa-angle-left noSwipe" onclick="back2()"></i> -->
+          <img src="images/back_icon.png" class="noSwipe" onclick="back2()" width="10px;">
         </div>
         <div class="col-10" style="font-size: 18px;font-weight: bold;font-stretch: normal;font-style: normal;
         letter-spacing: normal;text-align: center;color: #314051;">Chilled Bits</div>
