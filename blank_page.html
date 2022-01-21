@@ -34,7 +34,7 @@
       <div class="row">
         <div class="col-md-12 text-center">
           <a href="index.html">
-         <h4>BMO</h4>
+            <img src="images/logo.webp" class="BMOLOGO">
          </a>
         </div>
       </div>
@@ -43,10 +43,11 @@
 
       <div class="alert" role="alert" style="text-align: center;">
         <div class="row">
-          <div class="col-1"> 
+          <div class="col-1 p-1"> 
             <a href="index.html">
             <!-- <img src="images/bakward.png" height="20px" width="20px"> -->
-            <i class="fas fa-angle-left fa-2x" aria-hidden="true" style="margin-top: 3px;color: white;"></i>
+            <img src="images/left_back.png" class="noSwipe"width="20px;">
+            <!-- <i class="fas fa-angle-left fa-2x" aria-hidden="true" style="margin-top: 3px;color: white;"></i> -->
             </a>
           </div>
           <div class="col-10">
@@ -68,61 +69,61 @@
 
   </div>
 
+<!--------------Bottom buttons to manage songs----------------------------->
 
-  <!--------------Bottom buttons to manage songs----------------------------->
+<div class="container-fluid shadow-add" style="height: 63px; background-color: white;">
+  <div class="d-flex justify-content-between">
 
-  <div class="container-fluid" style="height: 63px; background-color: white;">
-        <div class="d-flex justify-content-between">
+    <div class="p-0">
+      <div class="button button-lg">
+        <i class="fas fa-ban fa-lg" aria-hidden="true"></i>
+        <span class="sr-only">Ban</span>
+      </div>
+    </div>
 
-          <div class="p-0">
-            <div class="button button-lg">
-              <i class="fas fa-ban fa-lg" aria-hidden="true"></i>
-              <span class="sr-only">Ban</span>
-            </div>
+    <div class="container" style="display: flex;justify-content: center;">
+      <div class="d-inline-flex">  
+        <div class="p-0">
+          <div class="button-heart button-lg">
+            <!-- <i class="fas fa-heart fa-lg"></i> -->
+            <img src="images/heart_blue.png" width="24px;" />
+            <span class="sr-only">Repeat Song</span>
           </div>
-
-          <div class="container" style="display: flex;justify-content: center;">
-            <div class="d-inline-flex">  
-              <div class="p-0">
-                <div class="button-heart button-lg">
-                  <i class="fas fa-heart fa-lg"></i>
-                  <span class="sr-only">Repeat Song</span>
-                </div>
-              </div>
-              <div class="p-0">
-                <div class=" button-pause playpause-track" onclick="playpauseTrack()">
-                  <i class="fas fa-pause fa-lg" aria-hidden="true" aria-hidden="true"></i>
-                  <span class="sr-only">Pause</span>
-                </div>
-              </div>
-              <div class="p-0">
-                <div class="button button-lg next-track" onclick="nextTrack()">
-                  <i class="fas fa-step-forward fa-lg"></i>
-                  <span class="sr-only">Next Music</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="p-0">
-            <div class="container">
-              <div class="button button-lg volumepopup" onclick="volumeclick()">
-                <i class="fas fa-volume-up fa-lg" aria-hidden="true" style=""></i>
-                <div class="volumepopuptext" id="volumePopup">
-                  <ol>
-                    <li><i class="fas fa-volume-up" aria-hidden="true" style="" class="btn"></i></li>
-                    <li><input class="input-range" orient="vertical" type="range" step="1" value="3" onchange="setVolume()"/></li>
-                    <li><i class="fas fa-volume-down" aria-hidden="true" style=""></i></li>
-                  </ol>
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div>
-  </div>
+        <div class="p-0">
+          <div class=" button-pause playpause-track" onclick="playpauseTrack()">
+            <img src="images/pause_blue.png" width="38px;" />
+            <span class="sr-only">Pause</span>
+          </div>
+        </div>
+        <div class="p-0">
+          <div class="button button-lg next-track" onclick="nextTrack()">
+            <img src="images/play-and-pause-button.png" width="18px;" />
+            <span class="sr-only">Next Music</span>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  <!--------------Bottom buttons to manage songs----------------------------->
+    <div class="p-0">
+      <div class="container">
+        <div class="button button-lg volumepopup" onclick="volumeclick()">
+          <img src="images/volume_icon.png" width="24px;" />
+          <div class="volumepopuptext" id="volumePopup">
+            <ol>
+              <li><img src="images/Volumeup_icon.png" width="14px;" /></li>
+              <li><input class="input-range" orient="vertical" type="range" step="1" value="3" onchange="setVolume()"/></li>
+              <li><img src="images/mute_icon.png" width="8px;" /></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!--------------Bottom buttons to manage songs----------------------------->
 
   <div class="container-fluid mt-1">
         <div class="d-flex justify-content-between" style="margin: -5px;background: black;">
