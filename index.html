@@ -29,7 +29,7 @@
         <i class="fas fa-bars" aria-hidden="true"></i>
         <span class="sr-only">menu bar</span>
       </a>
-      <i class="fas fa-search" aria-hidden="true" style="position: absolute;margin-left: 32px;height: 30px;display: flex;align-items: center; color: white;"></i>
+      <i class="fas fa-search" aria-hidden="true" style="position: absolute; margin-left: 32px; height: 30px;display: flex;align-items: center; color: white;"></i>
       <div class="search-container">
         <input type="text" name="search" placeholder=" Hi,Yonatan Tablet" class="search-input" onclick="window.open('blank_page.html','_self')">
       </div>
@@ -52,7 +52,7 @@
        <i class="fas fa-angle-right"></i>
      </div>
      <div class="row">
-       <a href="login.html">Login</a>
+       <a href="login.html">Logout</a>
        <i class="fas fa-angle-right"></i>
      </div>
    </div>
@@ -101,7 +101,7 @@
                 <p class="Artist-name">Viexe farka tour</p>
                 <p class="Song-name">Its Alright</p>
               </div>
-              <div class="col-4">
+              <div class="col-4 mt-2">
                 <img src="images/singer/1.jpg" class="float-right" style="border-radius: 1rem;" width="60" height="60">
               </div>
             </div>
@@ -111,14 +111,14 @@
     </div>
 
     <div class="container" style="border-radius:6%;padding: 18px;display:none;overflow-y: auto; scrollbar-width: none;" id="list-modal">
-      <div class="card img-fluid" style="border-radius: 6%;overflow-y: auto;overflow-x: auto; scrollbar-width: none;padding: 10px;">
+      <div class="card img-fluid shadow" style="border-radius: 6%;overflow-y: auto;overflow-x: auto; scrollbar-width: none;padding: 10px;">
         <div class="container-fluid p-2">
           <div class="row">
             <div class="col-1">
               <!-- <i aria-hidden="true" class="fas fa-angle-left noSwipe" ></i> -->
-              <img src="images/back_icon.png" width="10px;" class="noSwipe" onclick="front()" />
+              <img src="images/back_icon.png" width="15px;" height="15px;" class="noSwipe" onclick="front()" />
             </div>
-            <div class="col-10 text-center">Chilled Bits</div>
+            <div class="col-10 text-center font-16">Chilled Bits</div>
           </div>
         </div>
         <table id="myTable" class="table">
@@ -128,8 +128,8 @@
                 <img src="images/singer/6.jpg" class="table-image">
               </th>
               <td width="35%">
-                <div style="margin-top:15px">
-                  <p class="padding-zero">Noga Erez</p>
+                <div class="pt-2 margin-9">
+                  <p class="padding-zero table-artist-name">Noga Erez</p>
                   <p class="padding-zero">Views</p>
                 </div>
               </td>
@@ -162,8 +162,8 @@
                 <img src="images/singer/2.jpg" class="table-image">
               </th>
               <td width="50%">
-                <div style="margin-top:15px">
-                  <p class="padding-zero">DJ Snake</p>
+                <div class="pt-2 margin-9">
+                  <p class="padding-zero table-artist-name">DJ Snake</p>
                   <p class="padding-zero">Views</p>
                 </div>
               </td>
@@ -193,8 +193,8 @@
                 <img src="images/singer/3.jpg" class="table-image"/>
               </th>
               <td width="35%">
-                <div style="margin-top:15px">
-                  <p class="padding-zero">Noga Erez</p>
+                <div class="pt-2 margin-9">
+                  <p class="padding-zero table-artist-name">Noga Erez</p>
                   <p class="padding-zero">Views</p>
                 </div>
               </td>
@@ -224,8 +224,8 @@
                 <img src="images/singer/4.jpg" class="table-image"/>
               </th>
               <td width="35%">
-                <div style="margin-top:15px">
-                  <p class="padding-zero">Noga Erez</p>
+                <div class="pt-2 margin-9">
+                  <p class="padding-zero table-artist-name">Noga Erez</p>
                   <p class="padding-zero">Views</p>
                 </div>
               </td>
@@ -255,8 +255,8 @@
                 <img src="images/singer/5.jpg" class="table-image"/>
               </th>
               <td width="35%">
-                <div style="margin-top:15px">
-                  <p class="padding-zero">Noga Erez</p>
+                <div class="pt-2 margin-9">
+                  <p class="padding-zero table-artist-name">Noga Erez</p>
                   <p class="padding-zero">Views</p>
                 </div>
               </td>
@@ -294,18 +294,15 @@
         <div class="container">
           <div class="card channel-img">
             <img class="card-img channel-image-size" src="images/singer/7.jpg" alt="Card image">
-            <div class="card-img-overlay">
+            <!-- <div class="card-img-overlay">
               <a href="#" style="color:white"><i class="fas fa-play"></i></a>
-            </div>
+            </div> -->
           </div>
           <p class="text-center"><b>DJ Khalid</b></p>
         </div>
         <div class="container">
           <div class="card channel-img">
             <img class="card-img channel-image-size" src="images/singer/2.jpg" alt="Card image">
-            <div class="card-img-overlay">
-              <a href="#" style="color:white"><i class="fas fa-play"></i></a>
-            </div>
           </div>
           <p class="text-center"><b>Watson Shane</b></p>
         </div>
@@ -314,18 +311,12 @@
         <div class="container">
           <div class="card channel-img">
             <img class="card-img channel-image-size" src="images/singer/3.jpg" alt="Card image">
-            <div class="card-img-overlay">
-              <a href="#" style="color:white"><i class="fas fa-play"></i></a>
-            </div>
           </div>
           <p class="text-center"><b>Emma Bantai</b></p>
         </div>
         <div class="container">
           <div class="card channel-img">
             <img class="card-img channel-image-size" src="images/singer/4.jpg" alt="Card image">
-            <div class="card-img-overlay">
-              <a href="#" style="color:white"><i class="fas fa-play"></i></a>
-            </div>
           </div>
           <p class="text-center"><b>Zyan Malik</b></p>
         </div>
@@ -334,18 +325,12 @@
         <div class="container">
           <div class="card channel-img">
             <img class="card-img channel-image-size" src="images/singer/5.jpg" alt="Card image">
-            <div class="card-img-overlay">
-              <a href="#" style="color:white"><i class="fas fa-play"></i></a>
-            </div>
           </div>
           <p class="text-center"><b>ED Sheren</b></p>
         </div>
         <div class="container">
           <div class="card channel-img">
             <img class="card-img channel-image-size" src="images/singer/6.jpg" alt="Card image">
-            <div class="card-img-overlay">
-              <a href="#" style="color:white"><i class="fas fa-play"></i></a>
-            </div>
           </div>
           <p class="text-center"><b>DJ Khalid</b></p>
         </div>
@@ -355,18 +340,12 @@
         <div class="container">
           <div class="card channel-img">
             <img class="card-img channel-image-size" src="images/singer/5.jpg" alt="Card image">
-            <div class="card-img-overlay">
-              <a href="#" style="color:white"><i class="fas fa-play"></i></a>
-            </div>
           </div>
           <p class="text-center"><b>ED Sheren</b></p>
         </div>
         <div class="container">
           <div class="card channel-img">
             <img class="card-img channel-image-size" src="images/singer/6.jpg" alt="Card image">
-            <div class="card-img-overlay">
-              <a href="#" style="color:white"><i class="fas fa-play"></i></a>
-            </div>
           </div>
           <p class="text-center"><b>DJ Khalid</b></p>
         </div>
@@ -375,18 +354,12 @@
         <div class="container">
           <div class="card channel-img">
             <img class="card-img channel-image-size" src="images/singer/5.jpg" alt="Card image">
-            <div class="card-img-overlay">
-              <a href="#" style="color:white"><i class="fas fa-play"></i></a>
-            </div>
           </div>
           <p class="text-center"><b>ED Sheren</b></p>
         </div>
         <div class="container">
           <div class="card channel-img">
             <img class="card-img channel-image-size" src="images/singer/6.jpg" alt="Card image">
-            <div class="card-img-overlay">
-              <a href="#" style="color:white"><i class="fas fa-play"></i></a>
-            </div>
           </div>
           <p class="text-center"><b>DJ Khalid</b></p>
         </div>
@@ -397,15 +370,14 @@
 
     <!--------------Album list to be displayed on click channel---------------------->
     <div class="container-fluid" style="height: 547px; overflow-y: auto; scrollbar-width: none;border-radius:6%;padding: 18px;" id="album-inside-list">
-      <div class="card img-fluid curve-container" >
+      <div class="card img-fluid curve-container shadow" >
        <div class="container-fluid p-2">
         <div class="row">
           <div class="col-1" style="text-align: right;">
             <!-- <i aria-hidden="true" class="fas fa-lg fa-angle-left noSwipe" onclick="back1()"></i> -->
-            <img src="images/back_icon.png" class="noSwipe" onclick="back1()" width="10px;">
+            <img src="images/back_icon.png" class="noSwipe" onclick="back1()" width="15px;" height="15px;">
           </div>
-          <div class="col-10" style="font-size: 18px;font-weight: bold;font-stretch: normal;font-style: normal;
-          letter-spacing: normal;text-align: center;color: #314051;">
+          <div class="col-10 text-center font-16" style="color: #314051;">
           Chilled Bits
           </div>
         </div>
@@ -518,15 +490,14 @@
 <!--------------Songs list to be displayed on click channel---------------------->
 
 <div class="container-fluid" style="height: 547px; overflow-y: auto; scrollbar-width: none;display: none;padding: 18px;" id="song-list">
-  <div class="card img-fluid curve-container">
+  <div class="card img-fluid curve-container shadow">
     <div class="container-fluid p-2">
       <div class="row">
         <div class="col-1" style="text-align: right;">
          <!--  <i aria-hidden="true" class="fas fa-lg fa-angle-left noSwipe" onclick="back2()"></i> -->
-          <img src="images/back_icon.png" class="noSwipe" onclick="back2()" width="10px;">
+          <img src="images/back_icon.png" class="noSwipe" onclick="back2()" width="15px;" height="15px;">
         </div>
-        <div class="col-10" style="font-size: 18px;font-weight: bold;font-stretch: normal;font-style: normal;
-        letter-spacing: normal;text-align: center;color: #314051;">Chilled Bits</div>
+        <div class="col-10 text-center font-16" style="color: #314051;">Chilled Bits</div>
       </div>
     </div>
     <table class="table">
@@ -537,8 +508,8 @@
             <img src="images/singer/6.jpg" class="table-image" alt="">
           </td>
           <td width="50%">
-            <div class="pt-1">
-              <p class="padding-zero">Noga Erez</p>
+            <div class="pt-2 margin-9">
+              <p class="padding-zero table-artist-name">Noga Erez</p>
               <p class="padding-zero">Views</p>
             </div>
           </td>
@@ -569,8 +540,8 @@
             <img src="images/singer/2.jpg" alt="" class="table-image">
           </td>
           <td width="50%">
-            <div class="pt-1">
-              <p class="padding-zero">DJ Snake</p>
+            <div class="pt-2 margin-9">
+              <p class="padding-zero table-artist-name">DJ Snake</p>
               <p class="padding-zero">Views</p>
             </div>
           </td>
@@ -600,8 +571,8 @@
             <img src="images/singer/3.jpg" alt="" class="table-image">
           </td>
           <td width="50%">
-            <div class="pt-1">
-              <p class="padding-zero">Noga Erez</p>
+            <div class="pt-2 margin-9">
+              <p class="padding-zero table-artist-name">Noga Erez</p>
               <p class="padding-zero">Views</p>
             </div>
           </td>
@@ -631,8 +602,8 @@
           <img src="images/singer/4.jpg" alt="" class="table-image">
         </td>
         <td width="50%">
-          <div class="pt-1">
-            <p class="padding-zero">Noga Erez</p>
+          <div class="pt-2 margin-9">
+            <p class="padding-zero table-artist-name">Noga Erez</p>
             <p class="padding-zero">Views</p>
           </div>
         </td>
@@ -662,8 +633,8 @@
         <img src="images/singer/5.jpg" alt="" class="table-image">
       </td>
       <td width="50%">
-        <div class="pt-1">
-          <p class="padding-zero">Noga Erez</p>
+        <div class="pt-2 margin-9">
+          <p class="padding-zero table-artist-name">Noga Erez</p>
           <p class="padding-zero">Views</p>
         </div>
       </td>
@@ -716,8 +687,8 @@
               <img src="images/singer/6.jpg" alt="" class="table-image">
             </th>
             <td width="35%">
-              <div class="pt-1">
-                <p class="padding-zero">Noga Erez</p>
+              <div class="pt-2 margin-25">
+                <p class="padding-zero table-artist-name">Noga Erez</p>
                 <p class="padding-zero">1.6.2021 | 14.33</p>
               </div>
             </td>
@@ -727,8 +698,8 @@
               <img src="images/singer/2.jpg" alt="" class="table-image">
             </th>
             <td width="35%">
-              <div class="pt-1">
-                <p class="padding-zero">Noga Erez</p>
+              <div class="pt-2 margin-25">
+                <p class="padding-zero table-artist-name">Noga Erez</p>
                 <p class="padding-zero">1.6.2021 | 14.33</p>
               </div>
             </td>
@@ -738,8 +709,8 @@
               <img src="images/singer/3.jpg" alt="" class="table-image">
             </th>
             <td width="35%">
-              <div class="pt-1">
-                <p class="padding-zero">Noga Erez</p>
+              <div class="pt-2 margin-25">
+                <p class="padding-zero table-artist-name">Noga Erez</p>
                 <p class="padding-zero">1.6.2021 | 14.33</p>
               </div>
             </td>
@@ -749,8 +720,8 @@
               <img src="images/singer/4.jpg" alt="" class="table-image">
             </th>
             <td width="35%">
-              <div class="pt-1">
-                <p class="padding-zero">Noga Erez</p>
+              <div class="pt-2 margin-25">
+                <p class="padding-zero table-artist-name">Noga Erez</p>
                 <p class="padding-zero">1.6.2021 | 14.33</p>
               </div>
             </td>
@@ -760,8 +731,8 @@
               <img src="images/singer/4.jpg" alt="" class="table-image">
             </th>
             <td width="35%">
-              <div class="pt-1">
-                <p class="padding-zero">Noga Erez</p>
+              <div class="pt-2 margin-25">
+                <p class="padding-zero table-artist-name">Noga Erez</p>
                 <p class="padding-zero">1.6.2021 | 14.33</p>
               </div>
             </td>
@@ -815,10 +786,10 @@
         <div class="button button-lg volumepopup" onclick="volumeclick()">
           <img src="images/volume_icon.png" width="24px;" />
           <div class="volumepopuptext" id="volumePopup">
-            <ol>
-              <li><img src="images/Volumeup_icon.png" width="14px;" /></li>
+            <ol style="margin-bottom: 0rem !important;">
+              <li><i class="fas fa-plus"></i></li>
               <li><input class="input-range" orient="vertical" type="range" step="1" value="3" onchange="setVolume()"/></li>
-              <li><img src="images/mute_icon.png" width="8px;" /></li>
+              <li><i class="fas fa-minus"></i></li>
             </ol>
           </div>
         </div>
@@ -839,7 +810,7 @@
 
     <div class="container-fluid">
 
-      <div class="p-0">
+      <div class="pt-2">
         <div class="details"  style="padding-left: 5px;">
           <div class="now-playing"></div>
           <div class="track-art"></div>

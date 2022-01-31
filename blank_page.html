@@ -110,10 +110,10 @@
         <div class="button button-lg volumepopup" onclick="volumeclick()">
           <img src="images/volume_icon.png" width="24px;" />
           <div class="volumepopuptext" id="volumePopup">
-            <ol>
-              <li><img src="images/Volumeup_icon.png" width="14px;" /></li>
+            <ol style="margin-bottom: 0rem !important;">
+              <li><i class="fas fa-plus"></i></li>
               <li><input class="input-range" orient="vertical" type="range" step="1" value="3" onchange="setVolume()"/></li>
-              <li><img src="images/mute_icon.png" width="8px;" /></li>
+              <li><i class="fas fa-minus"></i></li>
             </ol>
           </div>
         </div>
@@ -134,7 +134,7 @@
 
           <div class="container-fluid">
 
-            <div class="p-0">
+            <div class="pt-2">
               <div class="details"  style="padding-left: 5px;">
                 <div class="now-playing"></div>
                 <div class="track-art"></div>

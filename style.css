@@ -28,6 +28,10 @@ h5{
     color: var(--black);
 }*/
 
+.font-16{
+  font-size: 16px;
+}
+
 a {
     text-decoration: none;
     color: #000;
@@ -35,7 +39,8 @@ a {
 }
 ol li{
     list-style-type: none;
-    line-height: 30px;
+    line-height: 10px;
+    padding: 5px;
 }
 
 
@@ -61,20 +66,20 @@ padding-left: 6px;
 
 .shadow-add{
   -moz-box-shadow: 0 0 2px 0px #888;
--webkit-box-shadow: 0 0 2px 0px #888;
-box-shadow: 0 0 2px 0px #888;
+  -webkit-box-shadow: 0 0 2px 0px #888;
+  box-shadow: 0 0 15px 0px #888;
 }
 
 .card-title{
   font-family: Anton;
-font-size: 18px;
-font-weight: normal;
-font-stretch: normal;
-font-style: normal;
-line-height: 1.67;
-letter-spacing: normal;
-text-align: center;
-color: #fdfdfd;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fdfdfd;
 }
 
 .player {
@@ -128,8 +133,8 @@ color: #fdfdfd;
 }
 
 .table-image{
-  width:85px; 
-  height:75px;
+  width:62px; 
+  height:62px;
   border-radius: 10px;
 }
 
@@ -141,7 +146,7 @@ object-fit: contain;
 }
 
 .tab-text{
-  font-weight: bold;
+  /*font-weight: bold;*/
   font-size: 12px !important;
   letter-spacing: normal;
   text-align: center;
@@ -231,7 +236,7 @@ object-fit: contain;
 
 .choose-device{
     padding: 30px;
-    margin-bottom: 47px;
+    margin-bottom: 126px;
 }
 
 .info {
@@ -371,7 +376,7 @@ height: 547px;
     display: block;
     padding: -0.5rem 4rem;
     color:#000;
-    font-weight: bold;
+    /*font-weight: bold;*/
 }
 .nav-link a{
     color:#000;
@@ -424,11 +429,11 @@ height: 547px;
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #FFFFFF !important;
   opacity: .8; /* Firefox */
-  font-family: Quicksand;
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
+  font-family: Assistant;
 }
 
 .slider_container {
@@ -935,6 +940,7 @@ input:checked + .slider:before {
 .channel-img{
    border: none;
    width: 140px;
+   margin: auto;
 }
 
 .album-img{
@@ -995,10 +1001,12 @@ input::placeholder {
   color: #000;
 }
 .current-time{
-    margin-top: 10px;
+    margin-top: 3px;
+    font-size: 12px;
 }
 .total-duration{
-    margin-top: 10px;
+    margin-top: 3px;
+    font-size: 12px;
 }
 .text-center{
     font-weight: bold;
@@ -1014,6 +1022,8 @@ input::placeholder {
   padding:8px 0 5px 20px;
   font-size:16px;
   color:#fff;
+  font-family: Assistant;
+
 }
 
 .login-icon{
@@ -1026,6 +1036,19 @@ input::placeholder {
 
 .padding-zero{
   margin-bottom: 0rem !important;
+}
+
+.margin-9{
+  margin-left: -9px;
+}
+
+.margin-25{
+  margin-left: -25px;
+}
+
+.table-artist-name{
+  font-weight: bold;
+  font-size: 13px;
 }
 
 .curve-container{
