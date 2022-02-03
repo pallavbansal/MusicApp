@@ -571,7 +571,7 @@ height: 547px;
     padding: 19px 0px;
     position: absolute;
     z-index: 0;
-    left: -60%;
+    left: -150%;
     top: -452%;
     margin-top: 60px;
     margin-left: -52px;
@@ -579,16 +579,17 @@ height: 547px;
 }
 
 /* Popup arrow */
-/*.popup .popuptext::after {
+.popup .popuptext::after {
   content: "";
   position: absolute;
-  top: 100%;
-  left: 50%;
+  top: 35%;
+  right: -10px;
+  transform: rotate(-90deg);
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: #555 transparent transparent transparent;
-}*/
+  border-color: #f4f3f3 transparent transparent transparent;
+}
 
 /* Toggle this class - hide and show the popup */
 .popup .show {
