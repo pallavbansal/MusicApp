@@ -122,7 +122,7 @@ padding-left: 6px;
     max-width: 375px;
     /*min-height: 600px;*/
     min-height: 80vh;
-    margin: 2rem auto;
+    margin: 1rem auto;
     background: #1FCADF;
     box-shadow: 20px 20px 60px #c8c8c8, 
                 -20px -20px 60px #ffffff;
@@ -341,7 +341,7 @@ object-fit: contain;
 
 .tab-container-size{
 /*height: 547px;*/
-height: 60vh;
+height: 55vh;
 }
 
 
