@@ -120,7 +120,8 @@ padding-left: 6px;
 .player {
     width: 80%;
     max-width: 375px;
-    min-height: 600px;
+    /*min-height: 600px;*/
+    min-height: 80vh;
     margin: 2rem auto;
     background: #1FCADF;
     box-shadow: 20px 20px 60px #c8c8c8, 

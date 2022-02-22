@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Assistant' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+  <link rel="stylesheet" type="text/css" href="style.css"> 
+  <title>ME.J Songs</title> 
+</head>
+<body>
+<main class="player" style="overflow: hidden;">
+
+    <div class="row">
+      <div class="col-md-12 text-center">
+       <!-- <h4>BMO</h4> -->
+       <img src="images/logo.webp" class="BMOLOGO">
+     </div>
+   </div>
+
+   <div class="container">
+    <div class="row ml-4">
+      <a href="#" class="tab" onclick="openNav()" style="color:#fff">
+        <i class="fas fa-bars" aria-hidden="true"></i>
+        <span class="sr-only">menu bar</span>
+      </a>
+      <i class="fas fa-search" aria-hidden="true" style="position: absolute; margin-left: 32px; height: 30px;display: flex;align-items: center; color: white;"></i>
+      <div class="search-container">
+        <input type="text" name="search" placeholder=" Hi,Yonatan Tablet" class="search-input" onclick="window.open('blank_page.html','_self')">
+      </div>
+    </div>
+  </div>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <div class="sidebar" style="margin-top: 180px;">
+      <div class="row">
+       <a href="#">About</a>
+       <i class="fas fa-angle-right" aria-hidden="true"></i>
+     </div>
+     <div class="row">
+       <a href="#">Help</a>
+       <i class="fas fa-angle-right" aria-hidden="true"></i>
+     </div>
+     <div class="row">
+       <a href="#">Sync</a>
+       <i class="fas fa-angle-right" aria-hidden="true"></i>
+     </div>
+     <div class="row">
+       <a href="login.html">Logout</a>
+       <i class="fas fa-angle-right" aria-hidden="true"></i>
+     </div>
+   </div>
+   <div class="footer">
+    <div class="container ml-2">
+      <ul style="list-style:none">
+        <li>All rights reserved 2021</li>
+        <li>BMO Media Solutions Ltd.</li>
+        <li>RC Version 1.1</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div style="background: #fff;/*! height: 541px; */">
+  <ul class="nav nav-tabs nav-justified themecolor" role="tablist" style="margin-top:10px;">
+    <li class="nav-item">
+      <a class="nav-link active tab-text" id="custom-tabs-four-home-tab" data-toggle="pill" href="#custom-tabs-four-home" role="tab" aria-controls="custom-tabs-four-home" aria-selected="true">Now playing</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link tab-text" id="custom-tabs-four-profile-tab" data-toggle="pill" href="#custom-tabs-four-profile" role="tab" aria-controls="custom-tabs-four-profile" aria-selected="false">Channels</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link tab-text" id="custom-tabs-four-messages-tab" data-toggle="pill" href="#custom-tabs-four-messages" role="tab" aria-controls="custom-tabs-four-messages" aria-selected="false">Schedule <i class="fa fa-circle green-dot" style="font-size: 8px;color:#42ff1d" aria-hidden="true"></i> <i class="fa fa-circle red-dot" style="display: none;font-size: 8px;color:red" aria-hidden="true"></i></a>
+    </li>
+  </ul>
+  <div style="max-height: 40vh;"> 
+    <div class="tab-content" id="custom-tabs-four-tabContent" style="/*! overflow: hidden; */">
+
+      <div class="tab-pane fade show active" id="custom-tabs-four-home" role="tabpanel" aria-labelledby="custom-tabs-four-home-tab">
+
+         <div class="container tab-container-size" style="padding: 17px;" id="img-modal">
+            <div class="card img-fluid" style="border-radius: 6%;height: 35vh;">
+                <a class="img-shadow">
+                  <img class="card-img-top" src="images/singer/9.jpg" alt="Card image" style="height: 35vh; border-radius: 6%;">
+                </a>
+                <div class="card-img-overlay image-class">
+                  <h4 class="card-title mt-3">Chilled Bits 
+                    <img src="images/down-arrow.png" class="noSwipe" onclick="show_list_of_songs_in_now_playing()" width="14px;">
+                  </h4>
+                </div>
+                <div class="card-overlay-bottom">
+                    <div class="container-fluid" style="border: solid 1px #474747;
+                    background-color: #000000b5; padding: 11px 11px 11px 13px; border-radius :10px;">
+                      <div class="row">
+                        <div class="col-8">
+                          <span class="Next-song"> Next song:</span>
+                          <p class="Artist-name">Viexe farka tour</p>
+                          <p class="Song-name">Its Alright</p>
+                        </div>
+                        <div class="col-4 mt-2">
+                          <img src="images/singer/1.jpg" class="float-right" style="border-radius: 1rem;" width="60" height="60">
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+
+         <div class="container hide-scrollbars" style="border-radius:6%;padding: 18px;display:none;" id="list-modal">
+            <div class="card img-fluid shadow hide-scrollbars" style="border-radius: 6%;padding: 10px;">
+              <div class="container-fluid p-2">
+                <div class="row">
+                  <div class="col-1">
+                    <!-- <i aria-hidden="true" class="fas fa-angle-left noSwipe" ></i> -->
+                    <img src="images/back_icon.png" class="noSwipe" onclick="front()" width="15px;" height="15px;">
+                  </div>
+                  <div class="col-10 text-center font-16">Chilled Bits</div>
+                </div>
+              </div>
+              <table id="myTable" class="table">
+                <tbody>
+                  <tr>
+                    <th width="5%">
+                      <img src="images/singer/6.jpg" class="table-image">
+                    </th>
+                    <td width="35%">
+                      <div class="pt-2 margin-9">
+                        <p class="padding-zero table-artist-name">Noga Erez</p>
+                        <p class="padding-zero">Views</p>
+                      </div>
+                    </td>
+                    <td width="5%">
+                      <div class="song-duration">
+                        <!-- <i class="fa fa-heart-o whiteheart" aria-hidden="true"></i> -->
+                        <!-- <i class='fas fa-heart redheart'style="display:none;color:red"></i> -->
+                        <img src="images/holo_heart.png" class="whiteheart" width="23px;">
+                        <img src="images/filled_heart.png" class="redheart" style="display:none;" width="23px;">
+                      </div>
+                    </td>
+                    <td width="5%">
+                      <div class="popup" onclick="myFunction10()">
+                        <div>
+                          <i class="fas fa-ellipsis-v fa-lg" aria-hidden="true"></i>
+                        </div>
+                        <div class="popuptext" id="myPopup10">
+                          <ul style="list-style-type:none;">
+                            <li class="p-2"><a href=""><i class="fas fa-play fa-lg" aria-hidden="true"></i></a></li>
+                            <li class="p-2"><a href=""><i class="fas fa-play fa-lg" style="position: relative;" aria-hidden="true"></i><i class="fas fa-plus fa-lg" style="position: absolute;left: 30px;bottom: 60px;-webkit-text-stroke-width: 1px;-webkit-text-stroke-color: white;" aria-hidden="true"></i></a></li>
+                            <li class="p-2"><a href=""><i class="fas fa-ban fa-lg" aria-hidden="true"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th width="5%">
+                      <img src="images/singer/2.jpg" class="table-image">
+                    </th>
+                    <td width="50%">
+                      <div class="pt-2 margin-9">
+                        <p class="padding-zero table-artist-name">DJ Snake</p>
+                        <p class="padding-zero">Views</p>
+                      </div>
+                    </td>
+                    <td width="5%">
+                      <div class="song-duration">
+                        <img src="images/filled_heart.png" width="23px;">
+                      </div>
+                    </td>
+                    <td width="5%">
+                      <div class="popup" onclick="()">
+                        <div>
+                          <i class="fas fa-ellipsis-v fa-lg" aria-hidden="true"></i>
+                        </div>
+                        <div class="popuptext" id="">
+                          <ul style="list-style-type:none;">
+                            <li class="p-2"><a href=""><i class="fas fa-play fa-lg" aria-hidden="true"></i></a></li>
+                            <li class="p-2"><a href=""><i class="fas fa-play fa-lg" style="position: relative;" aria-hidden="true"></i><i class="fas fa-plus fa-lg" style="position: absolute;left: 30px;bottom: 60px;-webkit-text-stroke-width: 1px;-webkit-text-stroke-color: white;" aria-hidden="true"></i></a></li>
+                            <li class="p-2"><a href=""><i class="fas fa-ban fa-lg" aria-hidden="true"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th width="5%">
+                      <img src="images/singer/3.jpg" class="table-image">
+                    </th>
+                    <td width="35%">
+                      <div class="pt-2 margin-9">
+                        <p class="padding-zero table-artist-name">Noga Erez</p>
+                        <p class="padding-zero">Views</p>
+                      </div>
+                    </td>
+                    <td width="5%">
+                      <div class="song-duration">
+                        <img src="images/filled_heart.png" width="23px;">
+                      </div>
+                    </td>
+                    <td width="5%">
+                      <div class="popup" onclick="()">
+                        <div>
+                          <i class="fas fa-ellipsis-v fa-lg" aria-hidden="true"></i>
+                        </div>
+                        <div class="popuptext" id="">
+                          <ul style="list-style-type:none;">
+                            <li class="p-2"><a href=""><i class="fas fa-play fa-lg" aria-hidden="true"></i></a></li>
+                            <li class="p-2"><a href=""><i class="fas fa-play fa-lg" style="position: relative;" aria-hidden="true"></i><i class="fas fa-plus fa-lg" style="position: absolute;left: 30px;bottom: 60px;-webkit-text-stroke-width: 1px;-webkit-text-stroke-color: white;" aria-hidden="true"></i></a></li>
+                            <li class="p-2"><a href=""><i class="fas fa-ban fa-lg" aria-hidden="true"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>  
+
+                  <tr>
+                    <th width="5%">
+                      <img src="images/singer/4.jpg" class="table-image">
+                    </th>
+                    <td width="35%">
+                      <div class="pt-2 margin-9">
+                        <p class="padding-zero table-artist-name">Noga Erez</p>
+                        <p class="padding-zero">Views</p>
+                      </div>
+                    </td>
+                    <td width="5%">
+                      <div class="song-duration">
+                        <img src="images/filled_heart.png" width="23px;">
+                      </div>
+                    </td>
+                    <td width="5%">
+                      <div class="popup" onclick="()">
+                        <div>
+                          <i class="fas fa-ellipsis-v fa-lg" aria-hidden="true"></i>
+                        </div>
+                        <div class="popuptext" id="">
+                          <ul style="list-style-type:none;">
+                            <li class="p-2"><a href=""><i class="fas fa-play fa-lg" aria-hidden="true"></i></a></li>
+                            <li class="p-2"><a href=""><i class="fas fa-play fa-lg" style="position: relative;" aria-hidden="true"></i><i class="fas fa-plus fa-lg" style="position: absolute;left: 30px;bottom: 60px;-webkit-text-stroke-width: 1px;-webkit-text-stroke-color: white;" aria-hidden="true"></i></a></li>
+                            <li class="p-2"><a href=""><i class="fas fa-ban fa-lg" aria-hidden="true"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th width="5%">
+                      <img src="images/singer/5.jpg" class="table-image">
+                    </th>
+                    <td width="35%">
+                      <div class="pt-2 margin-9">
+                        <p class="padding-zero table-artist-name">Noga Erez</p>
+                        <p class="padding-zero">Views</p>
+                      </div>
+                    </td>
+                    <td width="5%">
+                      <div class="song-duration">
+                        <img src="images/filled_heart.png" width="23px;">
+                      </div>
+                    </td>
+                    <td width="5%">
+                      <div class="popup" onclick="()">
+                        <div>
+                          <i class="fas fa-ellipsis-v fa-lg" aria-hidden="true"></i>
+                        </div>
+                        <div class="popuptext" id="">
+                          <ul style="list-style-type:none;">
+                            <li class="p-2"><a href=""><i class="fas fa-play fa-lg" aria-hidden="true"></i></a></li>
+                            <li class="p-2"><a href=""><i class="fas fa-play fa-lg" style="position: relative;" aria-hidden="true"></i><i class="fas fa-plus fa-lg" style="position: absolute;left: 30px;bottom: 60px;-webkit-text-stroke-width: 1px;-webkit-text-stroke-color: white;" aria-hidden="true"></i></a></li>
+                            <li class="p-2"><a href=""><i class="fas fa-ban fa-lg" aria-hidden="true"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+         </div>
+      </div>
+
+      <div class="tab-pane fade" id="custom-tabs-four-profile" role="tabpanel" aria-labelledby="custom-tabs-four-profile-tab">
+        <!--------------List of channels---------------------->
+        <div class="container-fluid tab-container-size hide-scrollbars" style="padding-top: 18px;" id="album-list">
+          <div class="d-flex justify-content-between">
+            <div class="container">
+              <a href="#">
+                <div class="card channel-img">
+                  <img class="card-img channel-image-size" src="images/singer/7.jpg" alt="Card image">
+                  <!-- <div class="card-img-overlay">
+                    <a href="#" style="color:white"><i class="fas fa-play"></i></a>
+                  </div> -->
+                </div>
+              </a>
+              <p class="text-center"><b>DJ Khalid</b></p>
+            </div>
+            <div class="container">
+              <a href="#">
+                <div class="card channel-img">
+                  <img class="card-img channel-image-size" src="images/singer/2.jpg" alt="Card image">
+                </div>
+              </a>
+              <p class="text-center"><b>Watson Shane</b></p>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between">
+            <div class="container">
+              <a href="#">
+                <div class="card channel-img">
+                  <img class="card-img channel-image-size" src="images/singer/3.jpg" alt="Card image">
+                </div>
+              </a>
+              <p class="text-center"><b>Emma Bantai</b></p>
+            </div>
+            <div class="container">
+              <a href="#">
+                <div class="card channel-img">
+                  <img class="card-img channel-image-size" src="images/singer/4.jpg" alt="Card image">
+                </div>
+              </a>
+              <p class="text-center"><b>Zyan Malik</b></p>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between">
+            <div class="container">
+              <a href="#">
+                <div class="card channel-img">
+                  <img class="card-img channel-image-size" src="images/singer/5.jpg" alt="Card image">
+                </div>
+              </a>
+              <p class="text-center"><b>ED Sheren</b></p>
+            </div>
+            <div class="container">
+              <a href="#">
+                <div class="card channel-img">
+                  <img class="card-img channel-image-size" src="images/singer/6.jpg" alt="Card image">
+                </div>
+              </a>
+              <p class="text-center"><b>DJ Khalid</b></p>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-between">
+            <div class="container">
+              <a href="#">
+                <div class="card channel-img">
+                  <img class="card-img channel-image-size" src="images/singer/5.jpg" alt="Card image">
+                </div>
+              </a>
+              <p class="text-center"><b>ED Sheren</b></p>
+            </div>
+            <div class="container">
+              <div class="card channel-img">
+                <img class="card-img channel-image-size" src="images/singer/6.jpg" alt="Card image">
+              </div>
+              <p class="text-center"><b>DJ Khalid</b></p>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between">
+            <div class="container">
+              <a href="#">
+                <div class="card channel-img">
+                  <img class="card-img channel-image-size" src="images/singer/5.jpg" alt="Card image">
+                </div>
+              </a>
+              <p class="text-center"><b>ED Sheren</b></p>
+            </div>
+            <div class="container">
+              <a href="#">
+                <div class="card channel-img">
+                  <img class="card-img channel-image-size" src="images/singer/6.jpg" alt="Card image">
+                </div>
+              </a>
+              <p class="text-center"><b>DJ Khalid</b></p>
+            </div>
+          </div>
+
+        </div>
+        <!--------------List of channels---------------------->
+
+        <!--------------Album list to be displayed on click channel---------------------->
+        <div class="container-fluid hide-scrollbars" style="height: 547px; border-radius:6%;padding: 18px;" id="album-inside-list">
+          <div class="card img-fluid curve-container shadow">
+           <div class="container-fluid p-2">
+            <div class="row">
+              <div class="col-1" style="text-align: right;">
+                <!-- <i aria-hidden="true" class="fas fa-lg fa-angle-left noSwipe" onclick="back1()"></i> -->
+                <img src="images/back_icon.png" class="noSwipe" onclick="back1()" width="15px;" height="15px;">
+              </div>
+              <div class="col-10 text-center font-16" style="color: #314051;">
+                Chilled Bits
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="card album-img">
+                <img class="card-img channel-image-size" src="images/singer/7.jpg" alt="Card image" style="border-radius: 10px;">
+                <div class="card-img-overlay">
+                  <a href="#" style="color:white"><i class="fas fa-play" aria-hidden="true"></i></a>
+                </div>
+              </div>
+              <p class="text-center"><b>DJ Khalid</b></p>
+            </div>
+            <div class="col">
+              <div class="card album-img">
+                <img class="card-img channel-image-size" src="images/singer/2.jpg" alt="Card image" style="border-radius: 10px;">
+                <div class="card-img-overlay">
+                  <a href="#" style="color:white"><i class="fas fa-play" aria-hidden="true"></i></a>
+                </div>
+              </div>
+              <p class="text-center"><b>Watson Shane</b></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="card album-img">
+                <img class="card-img channel-image-size" src="images/singer/3.jpg" alt="Card image" style="border-radius: 10px;">
+                <div class="card-img-overlay">
+                  <a href="#" style="color:white"><i class="fas fa-play" aria-hidden="true"></i></a>
+                </div>
+              </div>
+              <p class="text-center"><b>Emma Bantai</b></p>
+            </div>
+            <div class="col">
+              <div class="card album-img">
+                <img class="card-img channel-image-size" src="images/singer/4.jpg" alt="Card image" style="border-radius: 10px;">
+                <div class="card-img-overlay">
+                  <a href="#" style="color:white"><i class="fas fa-play" aria-hidden="true"></i></a>
+                </div>
+              </div>
+              <p class="text-center"><b>Zyan Malik</b></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="card album-img">
+                <img class="card-img channel-image-size" src="images/singer/5.jpg" alt="Card image" style="border-radius: 10px;">
+                <div class="card-img-overlay">
+                  <a href="#" style="color:white"><i class="fas fa-play" aria-hidden="true"></i></a>
+                </div>
+              </div>
+              <p class="text-center"><b>ED Sheren</b></p>
+            </div>
+            <div class="col">
+              <div class="card album-img">
+                <img class="card-img channel-image-size" src="images/singer/6.jpg" alt="Card image" style="border-radius: 10px;">
+                <div class="card-img-overlay">
+                  <a href="#" style="color:white"><i class="fas fa-play" aria-hidden="true"></i></a>
+                </div>
+              </div>
+              <p class="text-center"><b>DJ Khalid</b></p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <div class="card album-img">
+                <img class="card-img channel-image-size" src="images/singer/5.jpg" alt="Card image" style="border-radius: 10px;">
+                <div class="card-img-overlay">
+                  <a href="#" style="color:white"><i class="fas fa-play" aria-hidden="true"></i></a>
+                </div>
+              </div>
+              <p class="text-center"><b>ED Sheren</b></p>
+            </div>
+            <div class="col">
+              <div class="card album-img">
+                <img class="card-img channel-image-size" src="images/singer/6.jpg" alt="Card image" style="border-radius: 10px;">
+                <div class="card-img-overlay">
+                  <a href="#" style="color:white"><i class="fas fa-play" aria-hidden="true"></i></a>
+                </div>
+              </div>
+              <p class="text-center"><b>DJ Khalid</b></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="card album-img">
+                <img class="card-img channel-image-size" src="images/singer/5.jpg" alt="Card image" style="border-radius: 10px;">
+                <div class="card-img-overlay">
+                  <a href="#" style="color:white"><i class="fas fa-play" aria-hidden="true"></i></a>
+                </div>
+              </div>
+              <p class="text-center"><b>ED Sheren</b></p>
+            </div>
+            <div class="col">
+              <div class="card album-img">
+                <img class="card-img channel-image-size" src="images/singer/6.jpg" alt="Card image" style="border-radius: 10px;">
+                <div class="card-img-overlay">
+                  <a href="#" style="color:white"><i class="fas fa-play" aria-hidden="true"></i></a>
+                </div>
+              </div>
+              <p class="text-center"><b>DJ Khalid</b></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+<!--------------Songs list to be displayed on click channel---------------------->
+
+      <div class="container-fluid hide-scrollbars" style="height: 547px; display: none;padding: 18px;" id="song-list">
+        <div class="card img-fluid curve-container shadow">
+          <div class="container-fluid p-2">
+            <div class="row">
+              <div class="col-1" style="text-align: right;">
+               <!--  <i aria-hidden="true" class="fas fa-lg fa-angle-left noSwipe" onclick="back2()"></i> -->
+               <img src="images/back_icon.png" class="noSwipe" onclick="back2()" width="15px;" height="15px;">
+             </div>
+             <div class="col-10 text-center font-16" style="color: #314051;">Chilled Bits</div>
+           </div>
+         </div>
+         <table class="table">
+          <tbody class="connectedSortable ui-sortable" style="">
+            <tr class="ui-sortable-handle" style="">
+              <!-- <td><button class="drag">a</button></td> -->
+              <td width="5%">
+                <img src="images/singer/6.jpg" class="table-image" alt="">
+              </td>
+              <td width="50%">
+                <div class="pt-2 margin-9">
+                  <p class="padding-zero table-artist-name">Noga Erez</p>
+                  <p class="padding-zero">Views</p>
+                </div>
+              </td>
+              <td width="5%">
+                <div class="song-duration">
+                  <img src="images/holo_heart.png" class="whiteheart" width="23px;">
+                  <img src="images/filled_heart.png" class="redheart" style="display:none;" width="23px;">
+                </div>
+              </td>
+              <td width="5%">
+                <div class="popup" onclick="myFunction1()">
+                  <div>
+                    <i class="fas fa-ellipsis-v fa-lg" aria-hidden="true"></i>
+                  </div>
+                  <div class="popuptext" id="myPopup1">
+                    <ul style="list-style-type:none;">
+                      <li class="p-2"><a href=""><i class="fas fa-play fa-lg" aria-hidden="true"></i></a></li>
+                      <li class="p-2"><a href=""><i class="fas fa-play fa-lg" style="position: relative;" aria-hidden="true"></i><i class="fas fa-plus fa-lg" style="position: absolute;left: 30px;bottom: 60px;-webkit-text-stroke-width: 1px;-webkit-text-stroke-color: white;" aria-hidden="true"></i></a></li>
+                      <li class="p-2"><a href=""><i class="fas fa-ban fa-lg" aria-hidden="true"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+            <tr class="ui-sortable-handle" style="">
+              <td width="5%">
+                <img src="images/singer/2.jpg" alt="" class="table-image">
+              </td>
+              <td width="50%">
+                <div class="pt-2 margin-9">
+                  <p class="padding-zero table-artist-name">DJ Snake</p>
+                  <p class="padding-zero">Views</p>
+                </div>
+              </td>
+              <td width="5%">
+                <div class="song-duration">
+                  <img src="images/filled_heart.png" width="23px;">
+                </div>
+              </td>
+              <td width="5%">
+                <div class="popup" onclick="myFunction2()">
+                  <div>
+                    <i class="fas fa-ellipsis-v fa-lg" aria-hidden="true"></i>
+                  </div>
+                  <div class="popuptext" id="myPopup2">
+                    <ul style="list-style-type:none;">
+                      <li class="p-2"><a href=""><i class="fas fa-play fa-lg" aria-hidden="true"></i></a></li>
+                      <li class="p-2"><a href=""><i class="fas fa-play fa-lg" style="position: relative;" aria-hidden="true"></i><i class="fas fa-plus fa-lg" style="position: absolute;left: 30px;bottom: 60px;-webkit-text-stroke-width: 1px;-webkit-text-stroke-color: white;" aria-hidden="true"></i></a></li>
+                      <li class="p-2"><a href=""><i class="fas fa-ban fa-lg" aria-hidden="true"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+            <tr class="ui-sortable-handle" style="">
+              <td width="5%">
+                <img src="images/singer/3.jpg" alt="" class="table-image">
+              </td>
+              <td width="50%">
+                <div class="pt-2 margin-9">
+                  <p class="padding-zero table-artist-name">Noga Erez</p>
+                  <p class="padding-zero">Views</p>
+                </div>
+              </td>
+              <td width="5%">
+                <div class="song-duration">
+                  <img src="images/filled_heart.png" width="23px;">
+                </div>
+              </td>
+              <td width="5%">
+                <div class="popup" onclick="myFunction3()">
+                  <div>
+                   <i class="fas fa-ellipsis-v fa-lg" aria-hidden="true"></i>
+                 </div>
+                 <div class="popuptext" id="myPopup3">
+                  <ul style="list-style-type:none;">
+                    <li class="p-2"><a href=""><i class="fas fa-play fa-lg" aria-hidden="true"></i></a></li>
+                    <li class="p-2"><a href=""><i class="fas fa-play fa-lg" style="position: relative;" aria-hidden="true"></i><i class="fas fa-plus fa-lg" style="position: absolute;left: 30px;bottom: 60px;-webkit-text-stroke-width: 1px;-webkit-text-stroke-color: white;" aria-hidden="true"></i></a></li>
+                    <li class="p-2"><a href=""><i class="fas fa-ban fa-lg" aria-hidden="true"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </td>
+          </tr>
+
+          <tr class="ui-sortable-handle" style="">
+            <td width="5%">
+              <img src="images/singer/4.jpg" alt="" class="table-image">
+            </td>
+            <td width="50%">
+              <div class="pt-2 margin-9">
+                <p class="padding-zero table-artist-name">Noga Erez</p>
+                <p class="padding-zero">Views</p>
+              </div>
+            </td>
+            <td width="5%">
+              <div class="song-duration">
+                <img src="images/filled_heart.png" width="23px;">
+              </div>
+            </td>
+            <td width="5%">
+              <div class="popup" onclick="myFunction4()">
+                <div>
+                 <i class="fas fa-ellipsis-v fa-lg" aria-hidden="true"></i>
+               </div>
+               <div class="popuptext" id="myPopup4">
+                <ul style="list-style-type:none;">
+                  <li class="p-2"><a href=""><i class="fas fa-play fa-lg" aria-hidden="true"></i></a></li>
+                  <li class="p-2"><a href=""><i class="fas fa-play fa-lg" style="position: relative;" aria-hidden="true"></i><i class="fas fa-plus fa-lg" style="position: absolute;left: 30px;bottom: 60px;-webkit-text-stroke-width: 1px;-webkit-text-stroke-color: white;" aria-hidden="true"></i></a></li>
+                  <li class="p-2"><a href=""><i class="fas fa-ban fa-lg" aria-hidden="true"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </td>
+        </tr>
+
+        <tr class="ui-sortable-handle" style="">
+          <td width="5%">
+            <img src="images/singer/5.jpg" alt="" class="table-image">
+          </td>
+          <td width="50%">
+            <div class="pt-2 margin-9">
+              <p class="padding-zero table-artist-name">Noga Erez</p>
+              <p class="padding-zero">Views</p>
+            </div>
+          </td>
+          <td width="5%">
+            <div class="song-duration">
+              <img src="images/filled_heart.png" width="23px;">
+            </div>
+          </td>
+          <td width="5%">
+            <div class="popup" onclick="myFunction5()">
+              <div>
+               <i class="fas fa-ellipsis-v fa-lg" aria-hidden="true"></i>
+             </div>
+             <div class="popuptext" id="myPopup5">
+               <ul style="list-style-type:none;">
+                <li class="p-2"><a href=""><i class="fas fa-play fa-lg" aria-hidden="true"></i></a></li>
+                <li class="p-2"><a href=""><i class="fas fa-play fa-lg" style="position: relative;" aria-hidden="true"></i><i class="fas fa-plus fa-lg" style="position: absolute;left: 30px;bottom: 60px;-webkit-text-stroke-width: 1px;-webkit-text-stroke-color: white;" aria-hidden="true"></i></a></li>
+                <li class="p-2"><a href=""><i class="fas fa-ban fa-lg" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </td>
+      </tr>
+      </tbody>
+      </table>              
+      </div>
+      </div>   
+
+      <div class="tab-pane fade" id="custom-tabs-four-messages" role="tabpanel" aria-labelledby="custom-tabs-four-messages-tab">
+        <div class="container-fluid tab-container-size hide-scrollbars" style="padding: 18px;">
+          <div class="curve-container card shadow">
+            <div class="container-fluid p-2">
+              <div class="row">
+                <div class="col-8" style="line-height: 2px;font-weight: bold;">
+                  <p>1.6.2021 | 14.33</p>
+                  <p>Active schedule</p>
+                </div>
+                <div class="col-4 text-center">
+                  <label class="switch">
+                    <input id="schedule" type="checkbox" checked="">
+                    <span class="slider round noSwipe"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <table class="table">
+              <tbody>
+                <tr>
+                  <th width="5%">
+                    <img src="images/singer/6.jpg" alt="" class="table-image">
+                  </th>
+                  <td width="35%">
+                    <div class="pt-2 margin-25">
+                      <p class="padding-zero table-artist-name">Noga Erez</p>
+                      <p class="padding-zero">1.6.2021 | 14.33</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th width="5%">
+                    <img src="images/singer/2.jpg" alt="" class="table-image">
+                  </th>
+                  <td width="35%">
+                    <div class="pt-2 margin-25">
+                      <p class="padding-zero table-artist-name">Noga Erez</p>
+                      <p class="padding-zero">1.6.2021 | 14.33</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th width="5%">
+                    <img src="images/singer/3.jpg" alt="" class="table-image">
+                  </th>
+                  <td width="35%">
+                    <div class="pt-2 margin-25">
+                      <p class="padding-zero table-artist-name">Noga Erez</p>
+                      <p class="padding-zero">1.6.2021 | 14.33</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th width="5%">
+                    <img src="images/singer/4.jpg" alt="" class="table-image">
+                  </th>
+                  <td width="35%">
+                    <div class="pt-2 margin-25">
+                      <p class="padding-zero table-artist-name">Noga Erez</p>
+                      <p class="padding-zero">1.6.2021 | 14.33</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th width="5%">
+                    <img src="images/singer/4.jpg" alt="" class="table-image">
+                  </th>
+                  <td width="35%">
+                    <div class="pt-2 margin-25">
+                      <p class="padding-zero table-artist-name">Noga Erez</p>
+                      <p class="padding-zero">1.6.2021 | 14.33</p>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div> 
+      </div>
+    </div>     
+ </div>
+
+<!--------------Bottom buttons to manage songs----------------------------->
+
+<div class="container-fluid shadow-add" style="height: 63px;">
+  <div class="d-flex justify-content-between">
+
+    <div class="p-0">
+      <div class="button button-lg">
+        <i class="fas fa-ban fa-lg" aria-hidden="true"></i>
+        <span class="sr-only">Ban</span>
+      </div>
+    </div>
+
+    <div class="container" style="display: flex;justify-content: center;">
+      <div class="d-inline-flex">  
+        <div class="p-0">
+          <div class="button-heart button-lg">
+            <!-- <i class="fas fa-heart fa-lg"></i> -->
+            <img src="images/heart_blue.png" width="24px;">
+            <span class="sr-only">Repeat Song</span>
+          </div>
+        </div>
+        <div class="p-0">
+          <div class=" button-pause playpause-track" onclick="playpauseTrack()">
+            <img src="images/pause_blue.png" width="38px;">
+            <span class="sr-only">Pause</span>
+          </div>
+        </div>
+        <div class="p-0">
+          <div class="button button-lg next-track" onclick="nextTrack()">
+            <img src="images/play-and-pause-button.png" width="18px;">
+            <span class="sr-only">Next Music</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="p-0">
+      <div class="container">
+        <div class="button button-lg volumepopup" onclick="volumeclick()">
+          <img src="images/volume_icon.png" width="24px;">
+          <div class="volumepopuptext" id="volumePopup">
+            <ol style="margin-bottom: 0rem !important;">
+              <li><i class="fas fa-plus" aria-hidden="true"></i></li>
+              <li><input class="input-range" orient="vertical" type="range" step="1" value="3" onchange="setVolume()"></li>
+              <li><i class="fas fa-minus" aria-hidden="true"></i></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!--------------Bottom buttons to manage songs----------------------------->
+
+<div class="container-fluid mt-1">
+  <div class="d-flex justify-content-between" style="margin: -5px;background: black;">
+
+    <div>
+      <img src="images/singer/5.jpg" alt="song image" style="width: 106px; height: 92px;">
+    </div>
+
+    <div class="container-fluid">
+
+      <div class="pt-2">
+        <div class="details" style="padding-left: 5px;">
+          <div class="now-playing"></div>
+          <div class="track-art" style="background-image: url(&quot;https://images.pexels.com/photos/2264753/pexels-photo-2264753.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=250&amp;w=250&quot;);"></div>
+          <div class="track-name text-white">Night Owl</div>
+          <div class="track-artist text-white">Broke For Free</div>
+        </div>
+      </div>
+
+      <div class="p-1">
+        <div class="media-progress">
+          <div class="progress-bar-wrapper progress">
+            <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+            <!-- <input type="range" id="myRange" max="1000" min="0" style="width:80%"> -->
+          </div>
+          <div class="current-time text-white">00:00</div>
+          <div class="total-duration text-white">3:14</div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+
+</div>
+
+
+
+</main>
+<script src="https://kit.fontawesome.com/7d35781f0a.js" crossorigin="anonymous"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/eruda"></script> -->
+<script src="html5slider.js"></script>
+<script type="text/javascript" src="main.js"></script>
+<script src="swipe.js"></script>
+
+<!-- <script>eruda.init();</script> -->
+
+<script>
+
+  $('.channel-img').click(function(){
+    $("#album-list").hide();
+    $("#album-inside-list").show();
+  });
+
+  $('.album-img').click(function(){
+    $("#album-list").hide();
+    $("#album-inside-list").hide();
+    $("#song-list").show();
+  });
+
+
+  function show_list_of_songs_in_now_playing() {
+    $("#img-modal").hide();
+    $("#list-modal").show();
+  }
+
+  function front() {
+    $("#img-modal").show();
+    $("#list-modal").hide();
+  }
+
+  $('#custom-tabs-four-profile-tab').click(function(){
+    $("#album-list").show();
+    $("#album-inside-list").hide();
+    $("#song-list").hide();
+  });
+
+  function back1() {
+    $("#album-list").show();
+    $("#album-inside-list").hide();
+  }
+  function back2() {
+    $("#song-list").hide();
+    $("#album-inside-list").show();
+  }
+
+// When the user clicks on div, open the popup
+function myFunction1() {
+  var popup = document.getElementById("myPopup1");
+  popup.classList.toggle("show");
+}
+
+function myFunction2() {
+  var popup = document.getElementById("myPopup2");
+  popup.classList.toggle("show");
+}
+
+function myFunction3() {
+  var popup = document.getElementById("myPopup3");
+  popup.classList.toggle("show");
+}
+
+function myFunction4() {
+  var popup = document.getElementById("myPopup4");
+  popup.classList.toggle("show");
+}
+function myFunction10() {
+  var popup = document.getElementById("myPopup10");
+  popup.classList.toggle("show");
+}
+
+function volumeclick() {
+  var popup = document.getElementById("volumePopup");
+  popup.classList.toggle("show");
+}
+
+
+
+function like() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+function upthumb() {
+ alert('you liked the song');
+}
+function downthumb() {
+ alert('you disliked the song');
+}
+
+
+// for dragging list items
+$(document).ready(function () {
+  $("tbody.connectedSortable")
+  .sortable({
+    connectWith: ".connectedSortable",
+    items: "> tr",
+    appendTo: "parent",
+    helper: "clone",
+    cursor: "move",
+    zIndex: 999990,
+    delay:100,
+        // receive: function () {
+        //     alert("The ajax should be called");
+        // }
+      });
+});
+
+
+// $("table connectedSortable").sortable({
+//     handle: '.drag',
+//     cancel: ''
+// }).disableSelection();
+
+
+$(".table").on('click','.whiteheart',function(){
+
+ $(".whiteheart").hide();
+ $(".redheart").show();
+
+});
+
+$(".table").on('click','.redheart',function(){
+ $(".whiteheart").show();
+ $(".redheart").hide();
+
+});
+$(".table tbody tr td div div i").click(function() {
+ $(this).addClass('color-class');
+});
+
+$('#schedule').on( 'change', function() {
+
+  var checkbox = $('input[type="checkbox"]');
+  if ($(checkbox).prop('checked')) {
+
+    $(".green-dot").show();
+    $(".red-dot").hide();
+
+  } else {
+    $(".green-dot").hide();
+    $(".red-dot").show();
+  }
+  
+});
+
+$('.btn').click(function() {
+               //if value < max
+               $("#range").val(parseInt($("#range").val())+9);  
+               $("#range").trigger('change');
+             });
+           </script>
+           <script>
+            var count = 1;
+            function setColor(btn, color) {
+              var property = document.getElementById(btn);
+              if (count == 0) {
+                property.style.backgroundColor = "#FFFFFF"
+                count = 1;        
+              }
+              else {
+                property.style.backgroundColor = "#7FFF00"
+                count = 0;
+              }
+            }
+          </script>
+        </body>
+        </html>
