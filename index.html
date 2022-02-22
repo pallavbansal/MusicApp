@@ -14,7 +14,7 @@
   <title>ME.J Songs</title> 
 </head>
 <body>
-  <main class="player" >
+<main class="player" style="overflow: hidden;">
 
     <div class="row">
       <div class="col-md-12 text-center">
@@ -37,23 +37,23 @@
   </div>
 
   <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
     <div class="sidebar" style="margin-top: 180px;">
       <div class="row">
        <a href="#">About</a>
-       <i class="fas fa-angle-right"></i>
+       <i class="fas fa-angle-right" aria-hidden="true"></i>
      </div>
      <div class="row">
        <a href="#">Help</a>
-       <i class="fas fa-angle-right"></i>
+       <i class="fas fa-angle-right" aria-hidden="true"></i>
      </div>
      <div class="row">
        <a href="#">Sync</a>
-       <i class="fas fa-angle-right"></i>
+       <i class="fas fa-angle-right" aria-hidden="true"></i>
      </div>
      <div class="row">
        <a href="login.html">Logout</a>
-       <i class="fas fa-angle-right"></i>
+       <i class="fas fa-angle-right" aria-hidden="true"></i>
      </div>
    </div>
    <div class="footer">
@@ -67,7 +67,7 @@
   </div>
 </div>
 
-<div style="background: #fff;">
+<div style="background: #fff;/*! height: 541px; */">
   <ul class="nav nav-tabs nav-justified themecolor" role="tablist" style="margin-top:10px;">
     <li class="nav-item">
       <a class="nav-link active tab-text" id="custom-tabs-four-home-tab" data-toggle="pill" href="#custom-tabs-four-home" role="tab" aria-controls="custom-tabs-four-home" aria-selected="true">Now playing</a>
@@ -76,27 +76,27 @@
       <a class="nav-link tab-text" id="custom-tabs-four-profile-tab" data-toggle="pill" href="#custom-tabs-four-profile" role="tab" aria-controls="custom-tabs-four-profile" aria-selected="false">Channels</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link tab-text" id="custom-tabs-four-messages-tab" data-toggle="pill" href="#custom-tabs-four-messages" role="tab" aria-controls="custom-tabs-four-messages" aria-selected="false">Schedule <i class="fa fa-circle green-dot" style="font-size: 8px;color:#42ff1d"></i> <i class="fa fa-circle red-dot" style="display: none;font-size: 8px;color:red"></i></a>
+      <a class="nav-link tab-text" id="custom-tabs-four-messages-tab" data-toggle="pill" href="#custom-tabs-four-messages" role="tab" aria-controls="custom-tabs-four-messages" aria-selected="false">Schedule <i class="fa fa-circle green-dot" style="font-size: 8px;color:#42ff1d" aria-hidden="true"></i> <i class="fa fa-circle red-dot" style="display: none;font-size: 8px;color:red" aria-hidden="true"></i></a>
     </li>
   </ul>
-  <div > 
-    <div class="tab-content" id="custom-tabs-four-tabContent">
+  <div style="max-height: 40vh;"> 
+    <div class="tab-content" id="custom-tabs-four-tabContent" style="/*! overflow: hidden; */">
 
       <div class="tab-pane fade show active" id="custom-tabs-four-home" role="tabpanel" aria-labelledby="custom-tabs-four-home-tab">
 
          <div class="container tab-container-size" style="padding: 17px;" id="img-modal">
-            <div class="card img-fluid" style="border-radius: 6%;">
+            <div class="card img-fluid" style="border-radius: 6%;height: 35vh;">
                 <a class="img-shadow">
-                  <img class="card-img-top" src="images/singer/9.jpg" alt="Card image" style="height: 505px; border-radius: 6%;">
+                  <img class="card-img-top" src="images/singer/9.jpg" alt="Card image" style="height: 35vh; border-radius: 6%;">
                 </a>
                 <div class="card-img-overlay image-class">
                   <h4 class="card-title mt-3">Chilled Bits 
-                    <img src="images/down-arrow.png" width="14px;" class="noSwipe" onclick="show_list_of_songs_in_now_playing()"/>
+                    <img src="images/down-arrow.png" class="noSwipe" onclick="show_list_of_songs_in_now_playing()" width="14px;">
                   </h4>
                 </div>
                 <div class="card-overlay-bottom">
                     <div class="container-fluid" style="border: solid 1px #474747;
-                    background-color: #000000b5; padding: 11px 11px 11px 13px; border-radius :10px;" >
+                    background-color: #000000b5; padding: 11px 11px 11px 13px; border-radius :10px;">
                       <div class="row">
                         <div class="col-8">
                           <span class="Next-song"> Next song:</span>
@@ -112,13 +112,13 @@
             </div>
          </div>
 
-         <div class="container hide-scrollbars" style="border-radius:6%;padding: 18px;display:none;" id="list-modal">
+         <div class="container hide-scrollbars tab-container-size" style="border-radius:6%;padding: 18px;display:none;" id="list-modal">
             <div class="card img-fluid shadow hide-scrollbars" style="border-radius: 6%;padding: 10px;">
               <div class="container-fluid p-2">
                 <div class="row">
                   <div class="col-1">
                     <!-- <i aria-hidden="true" class="fas fa-angle-left noSwipe" ></i> -->
-                    <img src="images/back_icon.png" width="15px;" height="15px;" class="noSwipe" onclick="front()" />
+                    <img src="images/back_icon.png" class="noSwipe" onclick="front()" width="15px;" height="15px;">
                   </div>
                   <div class="col-10 text-center font-16">Chilled Bits</div>
                 </div>
@@ -139,19 +139,19 @@
                       <div class="song-duration">
                         <!-- <i class="fa fa-heart-o whiteheart" aria-hidden="true"></i> -->
                         <!-- <i class='fas fa-heart redheart'style="display:none;color:red"></i> -->
-                        <img src="images/holo_heart.png" class="whiteheart"  width="23px;">
+                        <img src="images/holo_heart.png" class="whiteheart" width="23px;">
                         <img src="images/filled_heart.png" class="redheart" style="display:none;" width="23px;">
                       </div>
                     </td>
                     <td width="5%">
                       <div class="popup" onclick="myFunction10()">
                         <div>
-                          <i class='fas fa-ellipsis-v fa-lg'></i>
+                          <i class="fas fa-ellipsis-v fa-lg" aria-hidden="true"></i>
                         </div>
-                        <div class="popuptext"  id="myPopup10">
+                        <div class="popuptext" id="myPopup10">
                           <ul style="list-style-type:none;">
-                            <li class="p-2"><a href=""><i class="fas fa-play fa-lg"></i></a></li>
-                            <li class="p-2"><a href=""><i class="fas fa-play fa-lg" style="position: relative;"></i><i class="fas fa-plus fa-lg" style="position: absolute;left: 30px;bottom: 60px;-webkit-text-stroke-width: 1px;-webkit-text-stroke-color: white;"></i></a></li>
+                            <li class="p-2"><a href=""><i class="fas fa-play fa-lg" aria-hidden="true"></i></a></li>
+                            <li class="p-2"><a href=""><i class="fas fa-play fa-lg" style="position: relative;" aria-hidden="true"></i><i class="fas fa-plus fa-lg" style="position: absolute;left: 30px;bottom: 60px;-webkit-text-stroke-width: 1px;-webkit-text-stroke-color: white;" aria-hidden="true"></i></a></li>
                             <li class="p-2"><a href=""><i class="fas fa-ban fa-lg" aria-hidden="true"></i></a></li>
                           </ul>
                         </div>
@@ -177,12 +177,12 @@
                     <td width="5%">
                       <div class="popup" onclick="()">
                         <div>
-                          <i class='fas fa-ellipsis-v fa-lg'></i>
+                          <i class="fas fa-ellipsis-v fa-lg" aria-hidden="true"></i>
                         </div>
-                        <div class="popuptext"  id="">
+                        <div class="popuptext" id="">
                           <ul style="list-style-type:none;">
-                            <li class="p-2"><a href=""><i class="fas fa-play fa-lg"></i></a></li>
-                            <li class="p-2"><a href=""><i class="fas fa-play fa-lg" style="position: relative;"></i><i class="fas fa-plus fa-lg" style="position: absolute;left: 30px;bottom: 60px;-webkit-text-stroke-width: 1px;-webkit-text-stroke-color: white;"></i></a></li>
+                            <li class="p-2"><a href=""><i class="fas fa-play fa-lg" aria-hidden="true"></i></a></li>
+                            <li class="p-2"><a href=""><i class="fas fa-play fa-lg" style="position: relative;" aria-hidden="true"></i><i class="fas fa-plus fa-lg" style="position: absolute;left: 30px;bottom: 60px;-webkit-text-stroke-width: 1px;-webkit-text-stroke-color: white;" aria-hidden="true"></i></a></li>
                             <li class="p-2"><a href=""><i class="fas fa-ban fa-lg" aria-hidden="true"></i></a></li>
                           </ul>
                         </div>
@@ -192,7 +192,7 @@
 
                   <tr>
                     <th width="5%">
-                      <img src="images/singer/3.jpg" class="table-image"/>
+                      <img src="images/singer/3.jpg" class="table-image">
                     </th>
                     <td width="35%">
                       <div class="pt-2 margin-9">
@@ -208,12 +208,12 @@
                     <td width="5%">
                       <div class="popup" onclick="()">
                         <div>
-                          <i class='fas fa-ellipsis-v fa-lg'></i>
+                          <i class="fas fa-ellipsis-v fa-lg" aria-hidden="true"></i>
                         </div>
-                        <div class="popuptext"  id="">
+                        <div class="popuptext" id="">
                           <ul style="list-style-type:none;">
-                            <li class="p-2"><a href=""><i class="fas fa-play fa-lg"></i></a></li>
-                            <li class="p-2"><a href=""><i class="fas fa-play fa-lg" style="position: relative;"></i><i class="fas fa-plus fa-lg" style="position: absolute;left: 30px;bottom: 60px;-webkit-text-stroke-width: 1px;-webkit-text-stroke-color: white;"></i></a></li>
+                            <li class="p-2"><a href=""><i class="fas fa-play fa-lg" aria-hidden="true"></i></a></li>
+                            <li class="p-2"><a href=""><i class="fas fa-play fa-lg" style="position: relative;" aria-hidden="true"></i><i class="fas fa-plus fa-lg" style="position: absolute;left: 30px;bottom: 60px;-webkit-text-stroke-width: 1px;-webkit-text-stroke-color: white;" aria-hidden="true"></i></a></li>
                             <li class="p-2"><a href=""><i class="fas fa-ban fa-lg" aria-hidden="true"></i></a></li>
                           </ul>
                         </div>
@@ -223,7 +223,7 @@
 
                   <tr>
                     <th width="5%">
-                      <img src="images/singer/4.jpg" class="table-image"/>
+                      <img src="images/singer/4.jpg" class="table-image">
                     </th>
                     <td width="35%">
                       <div class="pt-2 margin-9">
@@ -239,12 +239,12 @@
                     <td width="5%">
                       <div class="popup" onclick="()">
                         <div>
-                          <i class='fas fa-ellipsis-v fa-lg'></i>
+                          <i class="fas fa-ellipsis-v fa-lg" aria-hidden="true"></i>
                         </div>
-                        <div class="popuptext"  id="">
+                        <div class="popuptext" id="">
                           <ul style="list-style-type:none;">
-                            <li class="p-2"><a href=""><i class="fas fa-play fa-lg"></i></a></li>
-                            <li class="p-2"><a href=""><i class="fas fa-play fa-lg" style="position: relative;"></i><i class="fas fa-plus fa-lg" style="position: absolute;left: 30px;bottom: 60px;-webkit-text-stroke-width: 1px;-webkit-text-stroke-color: white;"></i></a></li>
+                            <li class="p-2"><a href=""><i class="fas fa-play fa-lg" aria-hidden="true"></i></a></li>
+                            <li class="p-2"><a href=""><i class="fas fa-play fa-lg" style="position: relative;" aria-hidden="true"></i><i class="fas fa-plus fa-lg" style="position: absolute;left: 30px;bottom: 60px;-webkit-text-stroke-width: 1px;-webkit-text-stroke-color: white;" aria-hidden="true"></i></a></li>
                             <li class="p-2"><a href=""><i class="fas fa-ban fa-lg" aria-hidden="true"></i></a></li>
                           </ul>
                         </div>
@@ -254,7 +254,7 @@
 
                   <tr>
                     <th width="5%">
-                      <img src="images/singer/5.jpg" class="table-image"/>
+                      <img src="images/singer/5.jpg" class="table-image">
                     </th>
                     <td width="35%">
                       <div class="pt-2 margin-9">
@@ -270,12 +270,12 @@
                     <td width="5%">
                       <div class="popup" onclick="()">
                         <div>
-                          <i class='fas fa-ellipsis-v fa-lg'></i>
+                          <i class="fas fa-ellipsis-v fa-lg" aria-hidden="true"></i>
                         </div>
-                        <div class="popuptext"  id="">
+                        <div class="popuptext" id="">
                           <ul style="list-style-type:none;">
-                            <li class="p-2"><a href=""><i class="fas fa-play fa-lg"></i></a></li>
-                            <li class="p-2"><a href=""><i class="fas fa-play fa-lg" style="position: relative;"></i><i class="fas fa-plus fa-lg" style="position: absolute;left: 30px;bottom: 60px;-webkit-text-stroke-width: 1px;-webkit-text-stroke-color: white;"></i></a></li>
+                            <li class="p-2"><a href=""><i class="fas fa-play fa-lg" aria-hidden="true"></i></a></li>
+                            <li class="p-2"><a href=""><i class="fas fa-play fa-lg" style="position: relative;" aria-hidden="true"></i><i class="fas fa-plus fa-lg" style="position: absolute;left: 30px;bottom: 60px;-webkit-text-stroke-width: 1px;-webkit-text-stroke-color: white;" aria-hidden="true"></i></a></li>
                             <li class="p-2"><a href=""><i class="fas fa-ban fa-lg" aria-hidden="true"></i></a></li>
                           </ul>
                         </div>
@@ -388,8 +388,8 @@
         <!--------------List of channels---------------------->
 
         <!--------------Album list to be displayed on click channel---------------------->
-        <div class="container-fluid hide-scrollbars" style="height: 547px; border-radius:6%;padding: 18px;" id="album-inside-list">
-          <div class="card img-fluid curve-container shadow" >
+        <div class="container-fluid hide-scrollbars tab-container-size" style=" border-radius:6%;padding: 18px;" id="album-inside-list">
+          <div class="card img-fluid curve-container shadow">
            <div class="container-fluid p-2">
             <div class="row">
               <div class="col-1" style="text-align: right;">
@@ -406,7 +406,7 @@
               <div class="card album-img">
                 <img class="card-img channel-image-size" src="images/singer/7.jpg" alt="Card image" style="border-radius: 10px;">
                 <div class="card-img-overlay">
-                  <a href="#" style="color:white"><i class="fas fa-play"></i></a>
+                  <a href="#" style="color:white"><i class="fas fa-play" aria-hidden="true"></i></a>
                 </div>
               </div>
               <p class="text-center"><b>DJ Khalid</b></p>
@@ -415,7 +415,7 @@
               <div class="card album-img">
                 <img class="card-img channel-image-size" src="images/singer/2.jpg" alt="Card image" style="border-radius: 10px;">
                 <div class="card-img-overlay">
-                  <a href="#" style="color:white"><i class="fas fa-play"></i></a>
+                  <a href="#" style="color:white"><i class="fas fa-play" aria-hidden="true"></i></a>
                 </div>
               </div>
               <p class="text-center"><b>Watson Shane</b></p>
@@ -426,7 +426,7 @@
               <div class="card album-img">
                 <img class="card-img channel-image-size" src="images/singer/3.jpg" alt="Card image" style="border-radius: 10px;">
                 <div class="card-img-overlay">
-                  <a href="#" style="color:white"><i class="fas fa-play"></i></a>
+                  <a href="#" style="color:white"><i class="fas fa-play" aria-hidden="true"></i></a>
                 </div>
               </div>
               <p class="text-center"><b>Emma Bantai</b></p>
@@ -435,7 +435,7 @@
               <div class="card album-img">
                 <img class="card-img channel-image-size" src="images/singer/4.jpg" alt="Card image" style="border-radius: 10px;">
                 <div class="card-img-overlay">
-                  <a href="#" style="color:white"><i class="fas fa-play"></i></a>
+                  <a href="#" style="color:white"><i class="fas fa-play" aria-hidden="true"></i></a>
                 </div>
               </div>
               <p class="text-center"><b>Zyan Malik</b></p>
@@ -446,7 +446,7 @@
               <div class="card album-img">
                 <img class="card-img channel-image-size" src="images/singer/5.jpg" alt="Card image" style="border-radius: 10px;">
                 <div class="card-img-overlay">
-                  <a href="#" style="color:white"><i class="fas fa-play"></i></a>
+                  <a href="#" style="color:white"><i class="fas fa-play" aria-hidden="true"></i></a>
                 </div>
               </div>
               <p class="text-center"><b>ED Sheren</b></p>
@@ -455,7 +455,7 @@
               <div class="card album-img">
                 <img class="card-img channel-image-size" src="images/singer/6.jpg" alt="Card image" style="border-radius: 10px;">
                 <div class="card-img-overlay">
-                  <a href="#" style="color:white"><i class="fas fa-play"></i></a>
+                  <a href="#" style="color:white"><i class="fas fa-play" aria-hidden="true"></i></a>
                 </div>
               </div>
               <p class="text-center"><b>DJ Khalid</b></p>
@@ -467,7 +467,7 @@
               <div class="card album-img">
                 <img class="card-img channel-image-size" src="images/singer/5.jpg" alt="Card image" style="border-radius: 10px;">
                 <div class="card-img-overlay">
-                  <a href="#" style="color:white"><i class="fas fa-play"></i></a>
+                  <a href="#" style="color:white"><i class="fas fa-play" aria-hidden="true"></i></a>
                 </div>
               </div>
               <p class="text-center"><b>ED Sheren</b></p>
@@ -476,7 +476,7 @@
               <div class="card album-img">
                 <img class="card-img channel-image-size" src="images/singer/6.jpg" alt="Card image" style="border-radius: 10px;">
                 <div class="card-img-overlay">
-                  <a href="#" style="color:white"><i class="fas fa-play"></i></a>
+                  <a href="#" style="color:white"><i class="fas fa-play" aria-hidden="true"></i></a>
                 </div>
               </div>
               <p class="text-center"><b>DJ Khalid</b></p>
@@ -487,7 +487,7 @@
               <div class="card album-img">
                 <img class="card-img channel-image-size" src="images/singer/5.jpg" alt="Card image" style="border-radius: 10px;">
                 <div class="card-img-overlay">
-                  <a href="#" style="color:white"><i class="fas fa-play"></i></a>
+                  <a href="#" style="color:white"><i class="fas fa-play" aria-hidden="true"></i></a>
                 </div>
               </div>
               <p class="text-center"><b>ED Sheren</b></p>
@@ -496,7 +496,7 @@
               <div class="card album-img">
                 <img class="card-img channel-image-size" src="images/singer/6.jpg" alt="Card image" style="border-radius: 10px;">
                 <div class="card-img-overlay">
-                  <a href="#" style="color:white"><i class="fas fa-play"></i></a>
+                  <a href="#" style="color:white"><i class="fas fa-play" aria-hidden="true"></i></a>
                 </div>
               </div>
               <p class="text-center"><b>DJ Khalid</b></p>
@@ -508,7 +508,7 @@
 
 <!--------------Songs list to be displayed on click channel---------------------->
 
-      <div class="container-fluid hide-scrollbars" style="height: 547px; display: none;padding: 18px;" id="song-list">
+      <div class="container-fluid hide-scrollbars tab-container-size" style=" display: none;padding: 18px;" id="song-list">
         <div class="card img-fluid curve-container shadow">
           <div class="container-fluid p-2">
             <div class="row">
@@ -520,8 +520,8 @@
            </div>
          </div>
          <table class="table">
-          <tbody class="connectedSortable">
-            <tr >
+          <tbody class="connectedSortable ui-sortable" style="">
+            <tr class="ui-sortable-handle" style="">
               <!-- <td><button class="drag">a</button></td> -->
               <td width="5%">
                 <img src="images/singer/6.jpg" class="table-image" alt="">
@@ -534,19 +534,19 @@
               </td>
               <td width="5%">
                 <div class="song-duration">
-                  <img src="images/holo_heart.png" class="whiteheart"  width="23px;">
+                  <img src="images/holo_heart.png" class="whiteheart" width="23px;">
                   <img src="images/filled_heart.png" class="redheart" style="display:none;" width="23px;">
                 </div>
               </td>
               <td width="5%">
                 <div class="popup" onclick="myFunction1()">
                   <div>
-                    <i class='fas fa-ellipsis-v fa-lg'></i>
+                    <i class="fas fa-ellipsis-v fa-lg" aria-hidden="true"></i>
                   </div>
-                  <div class="popuptext"  id="myPopup1">
+                  <div class="popuptext" id="myPopup1">
                     <ul style="list-style-type:none;">
-                      <li class="p-2"><a href=""><i class="fas fa-play fa-lg"></i></a></li>
-                      <li class="p-2"><a href=""><i class="fas fa-play fa-lg" style="position: relative;"></i><i class="fas fa-plus fa-lg" style="position: absolute;left: 30px;bottom: 60px;-webkit-text-stroke-width: 1px;-webkit-text-stroke-color: white;"></i></a></li>
+                      <li class="p-2"><a href=""><i class="fas fa-play fa-lg" aria-hidden="true"></i></a></li>
+                      <li class="p-2"><a href=""><i class="fas fa-play fa-lg" style="position: relative;" aria-hidden="true"></i><i class="fas fa-plus fa-lg" style="position: absolute;left: 30px;bottom: 60px;-webkit-text-stroke-width: 1px;-webkit-text-stroke-color: white;" aria-hidden="true"></i></a></li>
                       <li class="p-2"><a href=""><i class="fas fa-ban fa-lg" aria-hidden="true"></i></a></li>
                     </ul>
                   </div>
@@ -554,7 +554,7 @@
               </td>
             </tr>
 
-            <tr >
+            <tr class="ui-sortable-handle" style="">
               <td width="5%">
                 <img src="images/singer/2.jpg" alt="" class="table-image">
               </td>
@@ -572,12 +572,12 @@
               <td width="5%">
                 <div class="popup" onclick="myFunction2()">
                   <div>
-                    <i class='fas fa-ellipsis-v fa-lg'></i>
+                    <i class="fas fa-ellipsis-v fa-lg" aria-hidden="true"></i>
                   </div>
-                  <div class="popuptext"  id="myPopup2">
+                  <div class="popuptext" id="myPopup2">
                     <ul style="list-style-type:none;">
-                      <li class="p-2"><a href=""><i class="fas fa-play fa-lg"></i></a></li>
-                      <li class="p-2"><a href=""><i class="fas fa-play fa-lg" style="position: relative;"></i><i class="fas fa-plus fa-lg" style="position: absolute;left: 30px;bottom: 60px;-webkit-text-stroke-width: 1px;-webkit-text-stroke-color: white;"></i></a></li>
+                      <li class="p-2"><a href=""><i class="fas fa-play fa-lg" aria-hidden="true"></i></a></li>
+                      <li class="p-2"><a href=""><i class="fas fa-play fa-lg" style="position: relative;" aria-hidden="true"></i><i class="fas fa-plus fa-lg" style="position: absolute;left: 30px;bottom: 60px;-webkit-text-stroke-width: 1px;-webkit-text-stroke-color: white;" aria-hidden="true"></i></a></li>
                       <li class="p-2"><a href=""><i class="fas fa-ban fa-lg" aria-hidden="true"></i></a></li>
                     </ul>
                   </div>
@@ -585,7 +585,7 @@
               </td>
             </tr>
 
-            <tr>
+            <tr class="ui-sortable-handle" style="">
               <td width="5%">
                 <img src="images/singer/3.jpg" alt="" class="table-image">
               </td>
@@ -603,12 +603,12 @@
               <td width="5%">
                 <div class="popup" onclick="myFunction3()">
                   <div>
-                   <i class='fas fa-ellipsis-v fa-lg'></i>
+                   <i class="fas fa-ellipsis-v fa-lg" aria-hidden="true"></i>
                  </div>
-                 <div class="popuptext"  id="myPopup3">
+                 <div class="popuptext" id="myPopup3">
                   <ul style="list-style-type:none;">
-                    <li class="p-2"><a href=""><i class="fas fa-play fa-lg"></i></a></li>
-                    <li class="p-2"><a href=""><i class="fas fa-play fa-lg" style="position: relative;"></i><i class="fas fa-plus fa-lg" style="position: absolute;left: 30px;bottom: 60px;-webkit-text-stroke-width: 1px;-webkit-text-stroke-color: white;"></i></a></li>
+                    <li class="p-2"><a href=""><i class="fas fa-play fa-lg" aria-hidden="true"></i></a></li>
+                    <li class="p-2"><a href=""><i class="fas fa-play fa-lg" style="position: relative;" aria-hidden="true"></i><i class="fas fa-plus fa-lg" style="position: absolute;left: 30px;bottom: 60px;-webkit-text-stroke-width: 1px;-webkit-text-stroke-color: white;" aria-hidden="true"></i></a></li>
                     <li class="p-2"><a href=""><i class="fas fa-ban fa-lg" aria-hidden="true"></i></a></li>
                   </ul>
                 </div>
@@ -616,7 +616,7 @@
             </td>
           </tr>
 
-          <tr>
+          <tr class="ui-sortable-handle" style="">
             <td width="5%">
               <img src="images/singer/4.jpg" alt="" class="table-image">
             </td>
@@ -634,12 +634,12 @@
             <td width="5%">
               <div class="popup" onclick="myFunction4()">
                 <div>
-                 <i class='fas fa-ellipsis-v fa-lg'></i>
+                 <i class="fas fa-ellipsis-v fa-lg" aria-hidden="true"></i>
                </div>
-               <div class="popuptext"  id="myPopup4">
+               <div class="popuptext" id="myPopup4">
                 <ul style="list-style-type:none;">
-                  <li class="p-2"><a href=""><i class="fas fa-play fa-lg"></i></a></li>
-                  <li class="p-2"><a href=""><i class="fas fa-play fa-lg" style="position: relative;"></i><i class="fas fa-plus fa-lg" style="position: absolute;left: 30px;bottom: 60px;-webkit-text-stroke-width: 1px;-webkit-text-stroke-color: white;"></i></a></li>
+                  <li class="p-2"><a href=""><i class="fas fa-play fa-lg" aria-hidden="true"></i></a></li>
+                  <li class="p-2"><a href=""><i class="fas fa-play fa-lg" style="position: relative;" aria-hidden="true"></i><i class="fas fa-plus fa-lg" style="position: absolute;left: 30px;bottom: 60px;-webkit-text-stroke-width: 1px;-webkit-text-stroke-color: white;" aria-hidden="true"></i></a></li>
                   <li class="p-2"><a href=""><i class="fas fa-ban fa-lg" aria-hidden="true"></i></a></li>
                 </ul>
               </div>
@@ -647,7 +647,7 @@
           </td>
         </tr>
 
-        <tr>
+        <tr class="ui-sortable-handle" style="">
           <td width="5%">
             <img src="images/singer/5.jpg" alt="" class="table-image">
           </td>
@@ -665,12 +665,12 @@
           <td width="5%">
             <div class="popup" onclick="myFunction5()">
               <div>
-               <i class='fas fa-ellipsis-v fa-lg'></i>
+               <i class="fas fa-ellipsis-v fa-lg" aria-hidden="true"></i>
              </div>
-             <div class="popuptext"  id="myPopup5">
+             <div class="popuptext" id="myPopup5">
                <ul style="list-style-type:none;">
-                <li class="p-2"><a href=""><i class="fas fa-play fa-lg"></i></a></li>
-                <li class="p-2"><a href=""><i class="fas fa-play fa-lg" style="position: relative;"></i><i class="fas fa-plus fa-lg" style="position: absolute;left: 30px;bottom: 60px;-webkit-text-stroke-width: 1px;-webkit-text-stroke-color: white;"></i></a></li>
+                <li class="p-2"><a href=""><i class="fas fa-play fa-lg" aria-hidden="true"></i></a></li>
+                <li class="p-2"><a href=""><i class="fas fa-play fa-lg" style="position: relative;" aria-hidden="true"></i><i class="fas fa-plus fa-lg" style="position: absolute;left: 30px;bottom: 60px;-webkit-text-stroke-width: 1px;-webkit-text-stroke-color: white;" aria-hidden="true"></i></a></li>
                 <li class="p-2"><a href=""><i class="fas fa-ban fa-lg" aria-hidden="true"></i></a></li>
               </ul>
             </div>
@@ -693,7 +693,7 @@
                 </div>
                 <div class="col-4 text-center">
                   <label class="switch">
-                    <input id="schedule" type="checkbox" checked>
+                    <input id="schedule" type="checkbox" checked="">
                     <span class="slider round noSwipe"></span>
                   </label>
                 </div>
@@ -781,19 +781,19 @@
         <div class="p-0">
           <div class="button-heart button-lg">
             <!-- <i class="fas fa-heart fa-lg"></i> -->
-            <img src="images/heart_blue.png" width="24px;" />
+            <img src="images/heart_blue.png" width="24px;">
             <span class="sr-only">Repeat Song</span>
           </div>
         </div>
         <div class="p-0">
           <div class=" button-pause playpause-track" onclick="playpauseTrack()">
-            <img src="images/pause_blue.png" width="38px;" />
+            <img src="images/pause_blue.png" width="38px;">
             <span class="sr-only">Pause</span>
           </div>
         </div>
         <div class="p-0">
           <div class="button button-lg next-track" onclick="nextTrack()">
-            <img src="images/play-and-pause-button.png" width="18px;" />
+            <img src="images/play-and-pause-button.png" width="18px;">
             <span class="sr-only">Next Music</span>
           </div>
         </div>
@@ -803,12 +803,12 @@
     <div class="p-0">
       <div class="container">
         <div class="button button-lg volumepopup" onclick="volumeclick()">
-          <img src="images/volume_icon.png" width="24px;" />
+          <img src="images/volume_icon.png" width="24px;">
           <div class="volumepopuptext" id="volumePopup">
             <ol style="margin-bottom: 0rem !important;">
-              <li><i class="fas fa-plus"></i></li>
-              <li><input class="input-range" orient="vertical" type="range" step="1" value="3" onchange="setVolume()"/></li>
-              <li><i class="fas fa-minus"></i></li>
+              <li><i class="fas fa-plus" aria-hidden="true"></i></li>
+              <li><input class="input-range" orient="vertical" type="range" step="1" value="3" onchange="setVolume()"></li>
+              <li><i class="fas fa-minus" aria-hidden="true"></i></li>
             </ol>
           </div>
         </div>
@@ -830,11 +830,11 @@
     <div class="container-fluid">
 
       <div class="pt-2">
-        <div class="details"  style="padding-left: 5px;">
+        <div class="details" style="padding-left: 5px;">
           <div class="now-playing"></div>
-          <div class="track-art"></div>
-          <div class="track-name text-white"><b>DJ Khalid</b></div>
-          <div class="track-artist text-white">Views</div>
+          <div class="track-art" style="background-image: url(&quot;https://images.pexels.com/photos/2264753/pexels-photo-2264753.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=250&amp;w=250&quot;);"></div>
+          <div class="track-name text-white">Night Owl</div>
+          <div class="track-artist text-white">Broke For Free</div>
         </div>
       </div>
 
@@ -844,12 +844,8 @@
             <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
             <!-- <input type="range" id="myRange" max="1000" min="0" style="width:80%"> -->
           </div>
-          <div class="current-time text-white">
-            00:00
-          </div>
-          <div class="total-duration text-white">
-            00:00
-          </div>
+          <div class="current-time text-white">00:00</div>
+          <div class="total-duration text-white">3:14</div>
         </div>
       </div>
 
@@ -860,7 +856,7 @@
 
 
 </div>
-</div>
+
 
 
 </main>
